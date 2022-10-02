@@ -1,0 +1,90 @@
+﻿
+@{
+    ViewBag.Title = "ReportPost";
+    Layout = "~/Views/Shared/_LayoutDashBoard.cshtml"; 
+    }
+
+<div class="row">
+    <div class="col-sm-9 main-content-scoll" style="background-color: #0c0d0f;">
+
+        <div class="container-fluid post">
+            <div class="row">
+                <div class="col-sm-12 ">
+                    <div class="row post-heading" style="background-color: #0c0d0f; border:1px solid #197d52; padding-bottom:15px; border-radius:10px;">
+                       
+                        @*<div class="col-sm-1 col-sm-offset-0" style="padding:1rem 0;"></div>*@
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <div class="col-sm-2 col-sm-offset-0 search-content">
+
+        <!--    <ul class="nav nav-pills nav-stacked search-bar">
+             <li>
+                 <a href="@Url.Action("Profile","User")" style="padding: 2rem 1rem">
+                     <span class="row-no-gutters">
+                         <span class="col-sm-2">
+                             <i class="fa-solid fa-user">
+                             </i>
+                         </span>
+                         <span class="col-sm-offset-0">
+                             About
+                         </span>
+                     </span>
+                 </a>
+             </li>
+             <li>
+                 <a href="@Url.Action("Personal_Timeline","User")" style="padding: 2rem 1rem">
+                     <span class="row-no-gutters">
+                         <span class="col-sm-2">
+                             <i class="fa-solid fa-timeline">
+                             </i>
+                         </span>
+                         <span class="col-sm-offset-0">
+                             Your Timeline
+                         </span>
+                     </span>
+                 </a>
+             </li>
+             <li>
+                 <a href="@Url.Action("Activity","User")" style="padding: 2rem 1rem">
+                     <span class="row-no-gutters">
+                         <span class="col-sm-2">
+                             <i class="fa-solid fa-bolt-lightning">
+                             </i>
+                         </span>
+                         <span class="col-sm-offset-0">
+                             Your Activities
+                         </span>
+                     </span>
+                 </a>
+             </li>
+         </ul>-->
+    </div>
+
+
+    <div id="popupCPE" align="center" style="background-color: #0f1011; position: fixed; left: 13%; top: 10%; width: 75%; height: 80%; display: block; box-shadow: 0 0 20px #21ebff; transition: 0.5s; border-radius: 20px; filter: hue-rotate(160deg);">
+        @Html.Partial("~/Views/User/ReportPostRequest.cshtml")
+        <a href="/User/Timeline" id="call" style="box-shadow: 0 0 20px #000000; transition-delay: 0.5s; border-radius: 20px; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; text-decoration: none; background-color: #4b4949; border-radius: 10px; font-size: 18px; color: #ee7e7e; border: 2px solid #21ebff;">
+            <i class="fa-solid fa-arrow-up" style=" filter: hue-rotate(180deg);">
+            </i>
+        </a>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+

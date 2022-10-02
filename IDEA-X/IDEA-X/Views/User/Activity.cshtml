@@ -1,0 +1,244 @@
+﻿
+@{
+    ViewBag.Title = "Activity";
+    Layout = "~/Views/Shared/_LayoutDashBoard.cshtml";
+
+}
+
+
+<link href="@Url.Content("~/Content/Text_Box.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/ButtonFillGlow.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/MidWordLine.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/Text_Decor.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/TextBoxLog.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/VerificationCode.css")" rel="stylesheet" type="text/css" />
+
+
+
+<link href="@Url.Content("~/Content/CircleProgress.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/Chart.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/Activity.css")" rel="stylesheet" type="text/css" />
+<div class="row">
+    <div class="col-sm-9 main-content-scoll" style="background-color: #0c0d0f;" align="center">
+
+        <input type="number" id="T-like" style="display: none" value="@Model.TotalUpvote">
+        <input type="number" id="T-dislike" style="display:none" value="@Model.TotalDownvote">
+
+        <input type="number" id="TL-1" style="display:none" value="@Model.PostLike1">
+        <input type="number" id="TL-2" style="display:none" value="@Model.PostLike2">
+        <input type="number" id="TL-3" style="display:none" value="@Model.PostLike3">
+        <input type="number" id="TL-4" style="display:none" value="@Model.PostLike4">
+        <input type="number" id="TL-5" style="display:none" value="@Model.PostLike5">
+        <input type="number" id="TL-6" style="display:none" value="@Model.PostLike6">
+        <input type="number" id="TL-7" style="display:none" value="@Model.PostLike7">
+        <input type="number" id="TL-8" style="display:none" value="@Model.PostLike8">
+        <input type="number" id="TL-9" style="display:none" value="@Model.PostLike9">
+        <input type="number" id="TL-10" style="display:none" value="@Model.PostLike10">
+
+        <input type="number" id="TD-1" style="display:none" value="@Model.PostDisLike1">
+        <input type="number" id="TD-2" style="display:none" value="@Model.PostDisLike2">
+        <input type="number" id="TD-3" style="display:none" value="@Model.PostDisLike3">
+        <input type="number" id="TD-4" style="display:none" value="@Model.PostDisLike4">
+        <input type="number" id="TD-5" style="display:none" value="@Model.PostDisLike5">
+        <input type="number" id="TD-6" style="display:none" value="@Model.PostDisLike6">
+        <input type="number" id="TD-7" style="display:none" value="@Model.PostDisLike7">
+        <input type="number" id="TD-8" style="display:none" value="@Model.PostDisLike8">
+        <input type="number" id="TD-9" style="display:none" value="@Model.PostDisLike9">
+        <input type="number" id="TD-10" style="display:none" value="@Model.PostDisLike10">
+
+
+        <br />
+
+        <div align="center">
+            <h4 style="text-align:center; color:#808080; border-bottom:1px solid #808080; padding-bottom:10px; width:300px;"><b style="color:#0abab5">Upvote</b> & <b style="color: #f08080 ">Downvote</b> (%)</h4>
+            <br />
+            <div align="center" style="width:100%; display:flex; ">
+
+                <!---->
+                <div class="wrapper wrapperL" align="center" style="width: 100%; display: flex; align-items: center; justify-content: center; ">
+
+                    <div class="card cardL upL">
+                        <div class="circle circleL">
+                            <div class="bar barL"></div>
+                            <div class="box boxL"><span></span></div>
+                        </div>
+                        <div class="text textL">UpVote</div>
+                    </div>
+                    <span style="padding:1%"></span>
+
+                    <div class="card cardD downD">
+                        <div class="circle circleD">
+                            <div class="bar barD"></div>
+                            <div class="box boxD"><span></span></div>
+                        </div>
+                        <div class="text textD">DownVote</div>
+                    </div>
+                </div>
+
+                <!---->
+
+            </div>
+        </div>
+
+
+        <br /><br /><br />
+
+        <div align="center">
+            <h4 style="text-align:center; color:#808080; border-bottom:1px solid #808080; padding-bottom:10px; width:450px;"><b style="color:#0abab5">Upvote</b> & <b style="color: #f08080 ">Downvote</b> (Recent 10 post)</h4>
+            <br />
+            <canvas id="myChart" style="width: 100%;" class="graph1"></canvas>
+            <br /><br /><br />
+        </div>
+
+        <div align="center">
+            <h4 style="text-align:center; color:#808080; border-bottom:1px solid #808080; padding-bottom:10px; width:350px;"><b style="color:#0abab5">Upvote</b> & <b style="color: #f08080 ">Downvote</b> (Overall)</h4>
+            <br />
+            <canvas id="myPie" class="pie1"></canvas>
+            <br /><br /><br />
+        </div>
+
+
+
+
+
+        <a href="javascript:void(0);" onclick="myFunction();" id="call" style="margin-right: 5px; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; text-decoration: none; background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.1)); border-radius: 10px; font-size: 18px; color: #ee7e7e;">Login Informations</a>
+        <a href="javascript:void(0);" onclick="myFunctionPost();" id="callPost" style="margin-left:20px; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; text-decoration: none; background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.1)); border-radius: 10px; font-size: 18px; color: #ee7e7e;">View Post Activities</a>
+        <a href="javascript:void(0);" onclick="myFunctionReInfo();" id="callRep" style="margin-left:20px; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; text-decoration: none; background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.1)); border-radius: 10px; font-size: 18px; color: #ee7e7e;">View Reports</a>
+
+        <div id="popupCP" align="center" style="position:fixed; left: 32%; top: 10%; width: 30%; height: 80%; display: none; box-shadow: 0 0 20px #21ebff; transition-delay: 0.5s; border-radius:20px;">
+            @Html.Partial("~/Views/User/passMatchForLoginInfo.cshtml")
+            <a href="javascript:void(0);" onclick="myFunctionRem();" id="call" style="box-shadow: 0 0 0px #000000; transition-delay: 0.5s; border-radius: 20px; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; text-decoration: none; background-color: #4b4949; border-radius: 10px; font-size: 18px; color: #ee7e7e; border:2px solid #21ebff;">
+                <i class="fa-solid fa-arrow-up">
+                </i>
+            </a>
+
+        </div>
+
+        <div id="popupCPost" align="center" style="position:fixed; left: 32%; top: 10%; width: 30%; height: 80%; display: none; box-shadow: 0 0 20px #21ebff; transition-delay: 0.5s; border-radius:20px;">
+            @Html.Partial("~/Views/User/passMatchForPostActions.cshtml")
+            <a href="javascript:void(0);" onclick="myFunctionRemPost();" id="call" style="box-shadow: 0 0 0px #000000; transition-delay: 0.5s; border-radius: 20px; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; text-decoration: none; background-color: #4b4949; border-radius: 10px; font-size: 18px; color: #ee7e7e; border:2px solid #21ebff;">
+                <i class="fa-solid fa-arrow-up">
+                </i>
+            </a>
+
+        </div>
+
+        <div id="popupCR" align="center" style="position:fixed; left: 32%; top: 10%; width: 30%; height: 80%; display: none; box-shadow: 0 0 20px #21ebff; transition-delay: 0.5s; border-radius:20px;">
+            @Html.Partial("~/Views/User/passMatchForRepInfo.cshtml")
+            <a href="javascript:void(0);" onclick="myFunctionRep();" id="call" style="box-shadow: 0 0 0px #000000; transition-delay: 0.5s; border-radius: 20px; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; text-decoration: none; background-color: #4b4949; border-radius: 10px; font-size: 18px; color: #ee7e7e; border:2px solid #21ebff;">
+                <i class="fa-solid fa-arrow-up">
+                </i>
+            </a>
+
+        </div>
+
+
+
+
+
+    </div>
+    <div class="col-sm-2 col-sm-offset-0 search-content">
+        @*<form class="form-group search-bar">
+
+                <div class="row-no-gutters">
+                    <div class="col-sm-10">
+                        <input type="search" class="form-control" placeholder="search for user" />
+                    </div>
+                    <div class="col-sm-1 col-sm-offset-1">
+                        <a href="#" class="btn btn-default">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
+                </div>
+            </form>*@
+        <ul class="nav nav-pills nav-stacked search-bar">
+            <li>
+                <a href="@Url.Action("Profile","User")" style="padding: 2rem 1rem">
+                    <span class="row-no-gutters">
+                        <span class="col-sm-2">
+                            <i class="fa-solid fa-user">
+                            </i>
+                        </span>
+                        <span class="col-sm-offset-0">
+                            About
+                        </span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Personal_Timeline","User")" style="padding: 2rem 1rem">
+                    <span class="row-no-gutters">
+                        <span class="col-sm-2">
+                            <i class="fa-solid fa-timeline">
+                            </i>
+                        </span>
+                        <span class="col-sm-offset-0">
+                            Your Timeline
+                        </span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Activity","User")" style="padding: 2rem 1rem">
+                    <span class="row-no-gutters">
+                        <span class="col-sm-2">
+                            <i class="fa-solid fa-bolt-lightning">
+                            </i>
+                        </span>
+                        <span class="col-sm-offset-0">
+                            Your Activities
+                        </span>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="@Url.Content("~/Scripts/jquery-3.4.1.js")"></script>
+<script src="@Url.Content("~/Scripts/Chart.js")"></script>
+
+<script src="@Url.Content("~/Scripts/jquery.min.js")"></script>
+<script src="@Url.Content("~/Scripts/circle-progress.min.js")"></script>
+<script src="@Url.Content("~/Scripts/ActivityChart.js")"></script>
+
+
+<script>
+    function myFunction() {
+        // document.getElementById("call").style.color = "#000000";
+        var element = document.getElementById("popupCP");
+        element.style.display = "block";
+
+    }
+    function myFunctionRem() {
+        // document.getElementById("call").style.color = "#000000";
+        var element = document.getElementById("popupCP");
+        element.style.display = "none";
+    }
+
+    function myFunctionPost() {
+        // document.getElementById("call").style.color = "#000000";
+        var element = document.getElementById("popupCPost");
+        element.style.display = "block";
+
+    }
+    function myFunctionRemPost() {
+        // document.getElementById("call").style.color = "#000000";
+        var element = document.getElementById("popupCPost");
+        element.style.display = "none";
+    }
+
+    function myFunctionReInfo() {
+        // document.getElementById("call").style.color = "#000000";
+        var element = document.getElementById("popupCR");
+        element.style.display = "block";
+
+    }
+    function myFunctionRep() {
+        // document.getElementById("call").style.color = "#000000";
+        var element = document.getElementById("popupCR");
+        element.style.display = "none";
+    }
+
+
+
+</script>

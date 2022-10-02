@@ -1,0 +1,172 @@
+﻿@{
+    ViewBag.Title = "UserProfile";
+    Layout = "~/Views/Shared/_AdminDashBoard.cshtml";
+}
+<link href="@Url.Content("~/Content/TextBoxLog.css")" rel="stylesheet" type="text/css" />
+<body onload="CheckBan();">
+
+    <div class="row">
+        <div class="col-sm-9 main-content-scoll">
+            <div class="container-fluid" style="padding:2rem;">
+                <div class="row-no-gutters">
+                    <div class="col-sm-1">
+                        @if (Request["page"] != null)
+                        {
+                            <a href="@Url.Action(Request["page"],"Admin")">
+                                <i class="fa-2xl fa-solid fa-angle-left back-btn-style"></i>
+                            </a>
+                        }
+                        else
+                        {
+                            <a href="@Url.Action("Profile","Admin")">
+                                <i class="fa-2xl fa-solid fa-angle-left back-btn-style"></i>
+                            </a>
+                        }
+                    </div>
+                    @if (Request["page"] != null)
+                    {
+                <div class="col-sm-10 col-sm-offset-0">
+                    <span class="fa-2xl">Administrative View</span>
+                    <br />
+                    <br />
+                    <br />
+                </div>
+                    }
+                    else
+                    {
+                        <div class="col-sm-10 col-sm-offset-0">
+                            <span class="fa-2xl">Search User : @Request["search_text"]</span>
+                        </div>
+                    }
+
+                </div>
+            </div>
+
+            <div width="85%" align="center" style="font-family: 'Times New Roman'; font-size: 20px; color: #e2344d ">
+                @{ var imgUrl = Url.Action("GetImage", "Admin", new { name = Model.USERNAME });}
+                @if (Model.PROFILE_PICTURE != null)
+                {
+                    <img src="@imgUrl" title="UserProfile" class="img-circle hover-profile" width="200" height="200" /> }
+                else
+                {
+                    <img src="~/image/dashboard/Default_pfp.jpg" title="Profile" class="img-circle hover-profile" width="200" height="200" />}
+                <br /><br />
+                <label style="color: #cac163" id="uname">@Model.USERNAME</label>
+                <br />
+                @*<a href="/User/EditProfile" style="padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; text-decoration: none; background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.1)); border-radius: 10px; font-size: 18px; color: #bedafb;">Edit Profile</a>*@
+
+                <hr style="width:50%" />
+
+                <br />
+                <div style="text-align: left; padding-left: 10%; font-family: 'Times New Roman'; font-size: 20px; color: #eade94">
+
+                    <span style="border-image: linear-gradient(135deg, #d8bd1b, #808080); border-image-slice: 1; border-bottom: solid; padding-left: 0px; padding-right: 20px; padding-bottom:5px;">
+                        User Details
+                    </span>
+                    <br />
+
+                    <br />
+                    <div style="text-align: left; padding-left: 10%; font-family: 'Times New Roman'; font-size: 20px; color: #2e91ef">
+                        User Name : <span style="color:#bedafb">@Model.USERNAME</span>
+                        <br />
+                        First Name : <span style="color: #bedafb ">@Model.FIRST_NAME</span>
+                        <br />
+                        Last Name&nbsp;: <span style="color: #bedafb ">@Model.LAST_NAME</span>
+                        <br />
+                        Headline&nbsp;&nbsp;&nbsp; : <span style="color: #bedafb ">@Model.HEADLINE</span>
+                        <br />
+                        Country&nbsp;&nbsp;&nbsp;&nbsp; : <span style="color: #bedafb ">@Model.COUNTRY</span>
+                        <br />
+                        Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span style="color: #bedafb ">@Model.USER_STATUS</span>
+                        <br />
+                    </div>
+                </div>
+                <br />
+                <hr />
+                <br />
+                <div style="text-align: left; padding-left: 10%; font-family: 'Times New Roman'; font-size: 20px; color: #eade94">
+                    <span style="border-image: linear-gradient(135deg, #d8bd1b, #808080); border-image-slice: 1; border-bottom: solid; padding-left: 0px; padding-right: 20px; padding-bottom:5px;">
+
+                        About User
+                    </span>
+                    <br /><br />
+                    <div style="text-align: left; padding-left: 10%; font-family: 'Times New Roman'; font-size: 20px; color: #2e91ef">
+                        Date Of Birth &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span style="color: #bedafb">@Model.DATE_OF_BIRTH</span>
+                        <br />
+                        Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span style="color: #bedafb">@Model.GENDER</span>
+                        <br />
+                        Industry&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span style="color: #bedafb">@Model.INDUSTRY</span>
+                        <br />
+                        Education Institution : <span style="color: #bedafb">@Model.EDUCATIONAL_INSTITUTION</span>
+                        <br />
+                        Department&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span style="color: #bedafb">@Model.DEPARTMENT</span>
+                        <br />
+
+                    </div>
+                </div>
+                <br />
+                <hr />
+                <br />
+                <div style="text-align: left; padding-left: 10%; font-family: 'Times New Roman'; font-size: 20px; color: #eade94">
+                    <span style="border-image: linear-gradient(135deg, #d8bd1b, #808080); border-image-slice: 1; border-bottom: solid; padding-left: 0px; padding-right: 20px; padding-bottom:5px;">
+
+                        Contact Details
+                    </span>
+                    <br /><br />
+                    <div style="text-align: left; padding-left: 10%; font-family: 'Times New Roman'; font-size: 20px; color: #2e91ef">
+
+
+                        Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span style="color: #bedafb">@Model.USER_ADDRESS</span>
+                        <br />
+                        State&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span style="color: #bedafb">@Model.USER_STATE</span>
+                        <br />
+                        Zip Code&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span style="color: #bedafb">@Model.ZIP_CODE</span>
+                        <br />
+                        Country &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span style="color: #bedafb">@Model.COUNTRY</span>
+                        <br />
+                        Mobile &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span style="color: #bedafb">01787700037</span>
+                        <br />
+                        Contact URL : <span style="color: #bedafb">@Model.CONTACT_URL</span>
+                        <br />
+
+                    </div>
+                </div>
+                <br />
+
+                <br />
+
+
+                <div align="center" class="ban-user">
+                    <a onclick="BanUser()" id="call" style="cursor:pointer;margin-right: 20px; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; text-decoration: none; background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.1)); border-radius: 10px; font-size: 18px; color: #ee7e7e; ">Ban User</a>
+                </div>
+
+                <div align="center" class="unban-user">
+                    <a onclick="UnBanUser()" id="call" style="cursor:pointer;margin-right: 20px; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; text-decoration: none; background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.1)); border-radius: 10px; font-size: 18px; color: #ee7e7e; ">Revoke Ban</a>
+                </div>
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+        <div class="col-sm-2 col-sm-offset-0 search-content">
+
+
+            <div class="row">
+
+            </div>
+
+            <div class="row">
+                <ul class="nav nav-pills nav-stacked search-result-user"></ul>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="@Url.Content("~/Scripts/jquery-3.4.1.js")"></script>
+    <script src="@Url.Content("~/Scripts/UserProfile_Admin.js")"></script>
+</body>

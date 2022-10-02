@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IDEA_XModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ADMIN">
+    <Key>
+      <PropertyRef Name="USERNAME" />
+    </Key>
+    <Property Name="USERNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USER_PASSWORD" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ALL_USERS">
+    <Key>
+      <PropertyRef Name="USERNAME" />
+    </Key>
+    <Property Name="USERNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PASSWORD" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LEVEL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CHAT_BOXS">
+    <Key>
+      <PropertyRef Name="CHAT_SESSION" />
+    </Key>
+    <Property Name="CHAT_SESSION" Type="String" MaxLength="120" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SENDER" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RECEIVER" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CHAT_TIME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CONTACT">
+    <Key>
+      <PropertyRef Name="CONTACT_ID" />
+    </Key>
+    <Property Name="CONTACT_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FIRST_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="USERNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MESSAGE" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="LEVEL" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="STATUS" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="LOGIN_TIME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LOGIN_IP" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GENERAL_POSTS">
+    <Key>
+      <PropertyRef Name="POST_ID" />
+    </Key>
+    <Property Name="POST_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AUTHOR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TIMELINE_TEXT" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TIMELINE_IMAGE" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="POSTING_TIME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="POSTING_STATUS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="POST_LIKE" Type="Int32" Nullable="false" />
+    <Property Name="POST_DISLIKE" Type="Int32" Nullable="false" />
+    <Property Name="POST_IP" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="POST_TAG" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="LOGIN">
+    <Key>
+      <PropertyRef Name="LOGIN_ID" />
+    </Key>
+    <Property Name="LOGIN_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="USERNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LOGIN_TIME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LOGIN_IP" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="MESSAGE_REQUESTS">
+    <Key>
+      <PropertyRef Name="REQUEST_ID" />
+    </Key>
+    <Property Name="REQUEST_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SENDER" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RECEIVER" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MESSAGE_TIME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="NOTE">
+    <Key>
+      <PropertyRef Name="NOTE_ID" />
+    </Key>
+    <Property Name="NOTE_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="USERNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NOTE_DATE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="NOTE_TEXT" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="STATUS" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="NOTE_TIME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="NOTE_IP" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="POST_ACTIONS">
+    <Key>
+      <PropertyRef Name="POST_ACTION_ID" />
+    </Key>
+    <Property Name="POST_ACTION_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="USERNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="POST_ID" Type="Int32" />
+    <Property Name="POST_STATUS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="POST_REPORT">
+    <Key>
+      <PropertyRef Name="REPORT_ID" />
+    </Key>
+    <Property Name="REPORT_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="POST_ID" Type="Int32" />
+    <Property Name="POST_AUTHOR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="REPORTED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="REPORT_CATEGORY" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="REPORT_DETAILS" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="REPORT_TIME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="REPORT_IP" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="REPORT_STATUS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="USER_ACCESS_CONTROLLER">
+    <Key>
+      <PropertyRef Name="USERNAME" />
+    </Key>
+    <Property Name="USERNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USER_PASSWORD" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="USER_DETAILS">
+    <Key>
+      <PropertyRef Name="USERNAME" />
+    </Key>
+    <Property Name="USERNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FIRST_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="HEADLINE" Type="String" MaxLength="320" FixedLength="false" Unicode="false" />
+    <Property Name="DATE_OF_BIRTH" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="GENDER" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MOBILE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="USER_ADDRESS" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="USER_STATE" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="ZIP_CODE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="COUNTRY" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="INDUSTRY" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="EDUCATIONAL_INSTITUTION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DEPARTMENT" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CONTACT_URL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="PROFILE_PICTURE" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="SIGNUP_TIME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="USER_STATUS" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="SIGNUP_IP" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="USER_MESSAGES">
+    <Key>
+      <PropertyRef Name="MESSAGE_ID" />
+    </Key>
+    <Property Name="MESSAGE_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SESSION_NAME" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="SENDER" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RECEIVER" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="USER_MESSAGE" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="MESSAGE_TIME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="IDEA_XEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ADMINS" EntityType="Self.ADMIN" />
+    <EntitySet Name="ALL_USERS" EntityType="Self.ALL_USERS" />
+    <EntitySet Name="CHAT_BOXS" EntityType="Self.CHAT_BOXS" />
+    <EntitySet Name="CONTACTS" EntityType="Self.CONTACT" />
+    <EntitySet Name="GENERAL_POSTS" EntityType="Self.GENERAL_POSTS" />
+    <EntitySet Name="LOGINS" EntityType="Self.LOGIN" />
+    <EntitySet Name="MESSAGE_REQUESTS" EntityType="Self.MESSAGE_REQUESTS" />
+    <EntitySet Name="NOTES" EntityType="Self.NOTE" />
+    <EntitySet Name="POST_ACTIONS" EntityType="Self.POST_ACTIONS" />
+    <EntitySet Name="POST_REPORT" EntityType="Self.POST_REPORT" />
+    <EntitySet Name="USER_ACCESS_CONTROLLER" EntityType="Self.USER_ACCESS_CONTROLLER" />
+    <EntitySet Name="USER_DETAILS" EntityType="Self.USER_DETAILS" />
+    <EntitySet Name="USER_MESSAGES" EntityType="Self.USER_MESSAGES" />
+  </EntityContainer>
+</Schema>

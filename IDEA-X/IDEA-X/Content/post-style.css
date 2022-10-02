@@ -1,0 +1,128 @@
+﻿:root {
+    --primary-dark: #424242;
+    --radius: 10px;
+    --bg: #0f1011;
+    --border: grey;
+    --secondary: #76b8ac;
+    --thumb-light: #76b8ac66;
+    --secondary-white: #efefef;
+    --report-back: #F8593b33;
+    --report-main: #F8593b;
+    --upvote-back: #8dc6f480;
+    --downvote-back: #ff777780;
+    --action-link-white: #efefef80;
+}
+.text-color{
+    color:var(--secondary-white);
+}
+.post-heading {
+    background-color: var(--primary-dark);
+    padding: 1.5rem 0rem 0rem 0rem;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+.post-body {
+    padding: 0.8rem 0.2rem 0.8rem 0.2rem;
+    background-color: var(--primary-dark);
+}
+
+.post-action {
+    background-color: var(--primary-dark);
+    padding: 1.5rem 0.8rem 1.5rem 0.8rem;
+    border-top: 2px solid grey;
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}
+
+.post-action-style {
+    text-decoration: none;
+    background-color: var(--action-link-white);
+    padding: 1% 10% 1% 10%;
+    border-radius: 20px;
+}
+
+.report-btn-style {
+    text-decoration: none;
+    background-color: var(--report-back);
+    padding: 20% 40% 20% 40%; 
+    border-radius: 20px;
+    color: var(--report-main);
+    border: 2px solid var(--report-main);
+}
+
+    .report-btn-style:hover {
+        background-color: var(--report-main);
+        color: var(--secondary-white);
+    }
+
+
+.menu-link-style{
+    color: var(--secondary-white);
+}
+
+.upvote-active-style{
+    background-color :var(--upvote-back);
+    border:1px solid #2196f3;
+}
+.downvote-active-style{
+    background-color: var(--downvote-back);
+    border:1px solid #ff0000;
+}
+
+.tag-style {
+    color: var(--secondary);
+    padding: 3%;
+    text-align:center;
+    border: 2px solid var(--secondary);
+    border-radius:20px;
+    font-size:1rem;
+
+}
+
+.main-content-scoll{
+    max-height:85vh;
+    overflow-y:scroll;
+    margin-top:3rem;
+    
+}
+
+::-webkit-scrollbar{
+    width:0.5rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color : none;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--thumb-light);
+    border-radius:5px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+     background-color: var(--secondary);
+}
+
+
+.post-img {
+    
+    background-color: var(--primary-dark);
+}
+
+.flex-row-style {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.back-btn-style {
+    pointer-events:all;
+   color:var(--primary-dark);
+
+}
+
+.back-btn-style:hover,.back-btn-style:active{
+    color:var(--secondary);
+}

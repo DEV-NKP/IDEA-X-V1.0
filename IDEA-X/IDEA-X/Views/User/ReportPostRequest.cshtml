@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "ReportPostRequest";
+
+}
+
+
+<link href="@Url.Content("~/Content/Text_Box.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/ButtonFillGlow.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/MidWordLine.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/Text_Decor.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/TextBoxLog.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/VerificationCode.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/GlowBoxButton.css")" rel="stylesheet" type="text/css" />
+
+<div style="background-color: #0f1011; height: 100%; width: 100%; border-radius: 20px;">
+
+
+    <h4 style="width: 300px; color: #b0acac; border-bottom: 1px solid white; padding-bottom: 15px; padding-top: 10px;">Report Post</h4>
+    <h6 style="width:300px; color: #808080; padding-top:10px;">Please check/fill all of the information here before report.</h6>
+    <br />
+    <form action="/User/ReportPost" enctype="multipart/form-data" method="post" id="form">
+        <table style="width:100%; background-color:transparent;">
+            <tr>
+                <td style="width: 50%;" align="center">
+                    <h6 style="color:#b0acac">Post ID:</h6>
+                    <input type="number" style="display:normal" name="POST_ID" value="@(Model != null? Model.POST_ID:"")" class="form-control timeline_id_box" id="text-box-normal" readonly />
+                </td>
+                <td style="width: 50%;" align="center">
+                    <h6 style="color:#b0acac">Post Author:</h6>
+                    <input type="text" style="display:normal" name="POST_AUTHOR" value="@(Model != null? Model.POST_AUTHOR:"")" class="form-control timeline_id_box" id="text-box-normal" readonly />
+
+                </td>
+            </tr>
+        </table>
+
+   
+        <h6 style="color:#b0acac">Select report category:</h6>
+           
+   
+
+        <input type="text" name="REPORT_CATEGORY" value="" list="tagList" id="text-box-normal" class="form-control timeline_tag_box">
+        <datalist id="tagList">
+         
+            <option value="Harassment" style="color:#808080">Harassment</option>
+            <option value="Harassment" style="color:#808080">Software Issues</option>
+
+        </datalist>
+
+        <br />
+
+        <h6 style="color:#b0acac">Brief about your problem:</h6>
+
+        <textarea id="text-box-normal" name="REPORT_DETAILS" rows="4" class="form-control timeline_text_box" style="max-width: 60%; max-height:15vh; min-width:60%; min-height:15vh "></textarea>
+        <br />        <br />
+
+        <a href="javascript:$('form').submit();" id="button-glow" >Send Report</a>
+    </form>
+</div>
+
+
+<script src="@Url.Content("~/Scripts/jquery-3.4.1.js")"></script>
+
+
+
+
+
+

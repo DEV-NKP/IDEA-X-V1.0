@@ -1,0 +1,205 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+<link href="@Url.Content("~/Content/Text_Box.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/ButtonFillGlow.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/MidWordLine.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/Text_Decor.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/TextBoxLog.css")" rel="stylesheet" type="text/css" />
+
+
+<body style="background-color: #0f1011; ">
+    <h2 align="center"></h2>
+    <br />
+    <table border="0" style="height:600px; width: 100%; background-color: #0f1011; border-radius:15px;">
+        <tr>
+
+            <td width="50%" align="center">
+                <img src=@Url.Content("~/image/login/login-back.SVG") width="80%">
+
+
+
+
+            </td>
+
+            <td width="50%">
+                <div id="non-register-div" align="center" style="background-color: #303030; height: 100%; width: 100%; border-radius: 10px; padding-top: 20px; padding-left: 4vw; padding-right: 4vw; padding-bottom: 25px; border: 1px solid #008b8b;  ">
+
+
+
+                    <h4 style="width:300px; color: #b0acac;  padding-bottom:15px;">Facing Issues?</h4>
+
+                    <div style="height: 95%; width: 100%; background-color: #0f1011; border-radius: 10px; border: 1px solid #008b8b; ">
+                        <div style="height: 50px; width: 100%; display:flex; background-color: transparent;  border-radius: 10px 10px 0px 0px;">
+
+                            <div onclick="shownonReg()" style="height: 50px; width: 50%; background-image: linear-gradient(180deg, #303030, #0f1011); padding-top: 10px; border-radius: 10px 0px 0px 0px; cursor: pointer;">
+                                <span style="font-family:Calibri; font-size:20px;"> Non-Registered User</span>
+
+                            </div>
+                            <div onclick="showReg()" style="height: 50px; width: 50%; background-color: #303030; padding-top: 10px; border-radius: 0px 10px 0px 0px; text-align: center; justify-content: center; border-left: 1px solid #008b8b;  cursor: pointer;">
+
+                                <span style="font-family:Calibri; font-size:20px;"> Registered User</span>
+                            </div>
+
+                        </div>
+                        <span align="center" id="show-result" style="padding-left: 20px; padding-right: 20px; padding-top: 8px; padding-bottom: 5px;  font-size: 16px; color: #ee7e7e; ">
+
+                        </span>
+                        <br />
+
+
+
+
+
+
+
+                        <form action="/Home/Contact" method="post" id="form">
+                            <h6 style="font-weight: lighter; color: #c9c9c9; ">First Name:  </h6>
+
+                            <input onkeyup="fnamecheck()" type="text" name="FIRST_NAME" value="@(Model != null? Model.FIRST_NAME:"")" class="form-control fname-nreg" id="text-box-normal" style="border: 1px solid #008b8b; " />
+
+                            @Html.ValidationMessage("FIRST_NAME", new { @class = "msg-require text-danger" })
+                            <span align="center" id="show-fname" style="padding-left: 20px; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;  font-size: 16px; color: #ee7e7e; ">
+
+                            </span>
+
+                            <h6 style="font-weight: lighter; padding-top: 10px; color: #c9c9c9; ">
+                                Last Name:
+                            </h6>
+
+                            <input onkeyup="lnamecheck()" type="text" name="LAST_NAME" value="@(Model != null? Model.LAST_NAME:"")" class="form-control lname-nreg" id="text-box-normal"style="border: 1px solid #008b8b; " />
+                            @Html.ValidationMessage("LAST_NAME", new { @class = "msg-require text-danger" })
+                            <span align="center" id="show-lname" style="padding-left: 20px; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;  font-size: 16px; color: #ee7e7e; ">
+
+                            </span>
+
+                            <h6 style="font-weight: lighter; padding-top: 10px; color: #c9c9c9; ">
+                                Email:
+                            </h6>
+
+                            <input onkeyup="emailcheck()" type="text" name="EMAIL" value="@(Model != null? Model.EMAIL:"")" class="form-control email-nreg" id="text-box-normal" style="border: 1px solid #008b8b; "/>
+                            @Html.ValidationMessage("EMAIL", new { @class = "msg-require text-danger email-box-validation-nreg" })
+                            <span align="center" id="show-email" style="padding-left: 20px; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;  font-size: 16px; color: #ee7e7e; ">
+
+                            </span>
+
+                            <h6 style="font-weight: lighter; padding-top: 10px; color: #c9c9c9; ">
+                                Message:
+                            </h6>
+                            <textarea onkeyup="msgcheck()" id="text-box-normal" name="MESSAGE" rows="4" class="form-control msg-nreg" style="max-width: 60%; max-height:100px; min-width:60%; min-height:100px; border: 1px solid #008b8b;  ">@(Model != null? Model.MESSAGE : "")</textarea>
+                            @Html.ValidationMessage("MESSAGE", new { @class = "msg-require text-danger" })
+                            <span align="center" id="show-msg" style="padding-left: 20px; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;  font-size: 16px; color: #ee7e7e; ">
+
+                            </span>
+
+                            <br /><br />
+
+
+                            <div style="padding-top:5px;"> </div>
+                            <!--<input type="submit" class="btn btn-success" id="button-glow" />-->
+                            <a onclick="sendNonReg()" class="send_nonreg nreg-emailsuccess " id="button-glow" style=" filter: hue-rotate(180deg); pointer-events:none;">Send</a>
+                            <br /><br /><br />
+                        </form>
+                    </div>
+                    <br><br>
+
+
+                </div>
+
+
+                <div id="register-div" align="center" style=" background-color: #303030; height: 100%; width: 100%; border-radius: 10px; padding-top: 20px; padding-left: 4vw; padding-right: 4vw; padding-bottom: 10vh; border: 1px solid #008b8b; ">
+
+
+
+                    <h4 style="width:300px; color: #b0acac;  padding-bottom:15px;">Facing Issues?</h4>
+
+                    <div style="height: 90%; width: 100%; background-color: #0f1011; border-radius: 10px;  border: 1px solid #008b8b; ">
+                        <div style="height: 50px; width: 100%; display:flex; background-color: transparent;  border-radius: 10px 10px 0px 0px;">
+
+                            <div onclick="shownonReg()" style="height: 50px; width: 50%; background-color: #303030; padding-top: 10px; border-radius: 10px 0px 0px 0px; text-align: center; justify-content: center;  border-right: 1px solid #008b8b;  cursor:pointer;">
+                                <span style="font-family:Calibri; font-size:20px;"> Non-Registered User</span>
+
+                            </div>
+                            <div onclick="showReg()" style="height: 50px; width: 50%; background-image: linear-gradient(180deg, #303030, #0f1011); padding-top: 10px; border-radius: 0px 10px 0px 0px; cursor: pointer;">
+
+                                <span style="font-family:Calibri; font-size:20px;"> Registered User</span>
+                            </div>
+
+                        </div>
+                        <span align="center" id="show-result-reg" style="padding-left: 20px; padding-right: 20px; padding-top: 8px; padding-bottom: 5px;  font-size: 16px; color: #ee7e7e; ">
+
+                        </span>
+
+                        <br />
+                        <form action="/Home/Contact" method="post" id="form">
+                            <h6 style="font-weight: lighter; color: #c9c9c9; ">Username:  </h6>
+
+                            <input onkeyup="checkunamereg()" type="text" name="USERNAME" value="@(Model != null? Model.USERNAME:"")" class="form-control uname-reg" id="text-box-normal" style="border: 1px solid #008b8b; "/>
+
+                            @Html.ValidationMessage("USERNAME", new { @class = "msg-require text-danger uname-box-validation" })
+                            <span align="center" id="show-uname-reg" style="padding-left: 20px; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;  font-size: 16px; color: #ee7e7e; ">
+
+                            </span>
+
+                            <h6 style="font-weight: lighter; padding-top: 10px; color: #c9c9c9; ">
+                                Email:
+                            </h6>
+
+                            <input onkeyup="emailcheckreg()" type="text" name="EMAIL" value="@(Model != null? Model.EMAIL:"")" class="form-control email-reg" id="text-box-normal"style="border: 1px solid #008b8b; " />
+                            @Html.ValidationMessage("EMAIL", new { @class = "msg-require text-danger email-box-validation-reg" })
+                            <span align="center" id="show-email-reg" style="padding-left: 20px; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;  font-size: 16px; color: #ee7e7e; ">
+
+                            </span>
+
+                            <h6 style="font-weight: lighter; padding-top: 10px; color: #c9c9c9; ">
+                                Message:
+                            </h6>
+                            <textarea onkeyup="msgcheckreg()" id="text-box-normal" name="MESSAGE" rows="4" class="form-control msg-reg" style="max-width: 60%; max-height:100px; min-width:60%; min-height:100%; border: 1px solid #008b8b;  ">@(Model != null? Model.MESSAGE : "")</textarea>
+                            @Html.ValidationMessage("MESSAGE", new { @class = "msg-require text-danger" })
+                            <span align="center" id="show-msg-reg" style="padding-left: 20px; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;  font-size: 16px; color: #ee7e7e; ">
+
+                            </span>
+
+                            <br /><br />
+
+
+                            <div style="padding-top:5px;"> </div>
+                            <!--<input type="submit" class="btn btn-success" id="button-glow" />-->
+                            <a onclick="sendReg()" class="emailsuccess" id="button-glow" style=" filter: hue-rotate(180deg); pointer-events: none;">Send</a>
+                            <br /><br /><br />
+                        </form>
+                    </div>
+                    <br><br>
+
+
+                </div> 
+
+                <div id="send-success" align="center" style=" background-color: #303030; height: 100%; width: 90%; border-radius: 10px; padding-top: 20px; padding-left: 2vw; padding-right: 2vw; padding-bottom: 10vh; border: 1px solid #808080 ">
+                    <br /><br /><br />
+                    <h4 style="width:300px; color: #b0acac;  padding-bottom:35px;"><strong>Successfully sent your message!</strong></h4>
+                    <p style="width: 300px;  color:white; font-size: 55px; padding-bottom: 0px;"><strong>Thank You </strong></p>
+                    <h6 style="width:300px; color: #b0acac;  padding-bottom:15px;">for filling out your information.</h6>
+                    <br /><br /><br /><br />
+                    <a href="@Url.Action("Index","Home")" id="button-glow" style=" filter: hue-rotate(180deg);">Go Back Home</a>
+
+
+                </div>
+
+            </td>
+
+
+        </tr>
+
+
+
+    </table>
+    <script src="@Url.Content("~/Scripts/jquery-3.4.1.js")"></script>
+    <script src="@Url.Content("~/Scripts/Contact_Validation.js")"></script>
+
+    <script src="@Url.Content("~/Scripts/Email_Validation.js")"></script>
+    <script src="@Url.Content("~/Scripts/UserName_Validation.js")"></script>
+
+
+
+</body>

@@ -1,0 +1,22 @@
+﻿
+#title-shade {
+    font-size: 150px;
+    line-height: 120px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 0.5px #fff;
+    background: url(../image/home/text-back3.png);
+    background-size: 1920px 4px;
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+
+
+
+@keyframes back {
+    100% {
+background-position:1000px 0;
+    }
+}

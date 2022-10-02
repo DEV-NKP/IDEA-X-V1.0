@@ -1,0 +1,83 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+<link href="@Url.Content("~/Content/Text_Box.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/ButtonFillGlow.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/MidWordLine.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/Text_Decor.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/TextBoxLog.css")" rel="stylesheet" type="text/css" />
+
+
+<body style="background-color: #0f1011; ">
+    <h2 align="center"></h2>
+    <table border="0" style="height: 75vh; width: 100%; background-color: #0f1011;">
+        <tr>
+
+            <td width="50%" align="center">
+                <img src=@Url.Content("~/image/login/login-back.SVG") width="80%">
+
+            </td>
+
+            <td width="50%">
+                <div align="center" style="margin-left: 40px; background-color: #303030; height: 550px; width: 450px; border-radius: 10px; padding-top: 20px; padding-left: 4vw; padding-right: 4vw; padding-bottom: 10vh; border: 1px solid #808080 ">
+
+
+
+                    <h4 style="width:300px; color: #b0acac; border-bottom:1px solid white; padding-bottom:15px;">Hello Again!</h4>
+                    
+
+                    <span class="msg-require text-danger">
+                        @ViewBag.message
+
+                    </span>
+                    <br />
+                    <form action="" method="post" id="form">
+                        <h6 style="font-weight: lighter; color: #c9c9c9; margin-left:-150px;">UserName/Email:  </h6>
+
+                        <input type="text" name="USERNAME" value="@(Model != null? Model.USERNAME:"")" class="form-control" id="text-box-normal" />
+                        <font style="color:#fe9783">
+                            @Html.ValidationMessage("USERNAME", new { @class = "msg-require text-danger" })
+                        </font>
+                        <h6 style="font-weight: lighter; padding-top: 10px; color: #c9c9c9; margin-left: -200px;">
+                            Password:
+                        </h6>
+
+                        <input type="password" name="PASSWORD" value="@(Model != null? Model.PASSWORD:"")" class="form-control" id="text-box-normal" />
+                        @Html.ValidationMessage("PASSWORD", new { @class = "msg-require text-danger" })
+                        <a href="/Home/ForgotPasswordEmail" onMouseOver="this.style.color='#1bbdd6'"
+                           onMouseOut="this.style.color='#fe9783'"
+                           style="margin-left: 170px; color: #fe9783; text-decoration: none; margin-top: 10px; line-height: 4; ">Forget Password</a>
+                        <br />
+                        <div style="margin-top: -40px; margin-left: -160px; color: #b0acac ">
+                            <input type="checkbox" name="REMEMBER" class="" value="REMEMBER" /> Remember Me
+                        </div>
+
+                        <br /><br />
+
+
+                        <div style="padding-top:5px;"> </div>
+                        <!--<input type="submit" class="btn btn-success" id="button-glow" />-->
+                        <a href="javascript:$('form').submit();" id="button-glow" style=" filter: hue-rotate(180deg);">Log in</a>
+                        @*<input type="submit" value="Log In" id="button-glow" style="filter:hue-rotate(180deg);" />*@
+
+                    </form>
+                    <br><br>
+
+                    <font id="word-mid-line"> OR </font><br /><br />
+                    <font> No account created?  &nbsp; </font> <a href="/Home/SignUp"
+                                                                  onMouseOver="this.style.color='#1bbdd6'"
+                                                                  onMouseOut="this.style.color='#fe9783'"
+                                                                  style="color: #fe9783; text-decoration: none;">Sign Up</a>
+
+                </div>
+
+            </td>
+
+
+        </tr>
+
+
+
+    </table>
+</body>

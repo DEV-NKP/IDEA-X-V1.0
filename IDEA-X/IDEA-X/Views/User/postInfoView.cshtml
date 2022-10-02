@@ -1,0 +1,168 @@
+﻿@{
+    ViewBag.Title = "postInfoView";
+    Layout = "~/Views/Shared/_LayoutDashBoard.cshtml";
+}
+
+@Styles.Render("~/Content/User_Table.css")
+<link href="@Url.Content("~/Content/Scroll_Up.css")" rel="stylesheet" type="text/css" />
+
+<div class="row">
+    <div class="col-sm-9  main-content-scoll">
+
+        <br />
+        <div class="container-fluid" align="center" style="padding:2rem;">
+            <div class="row-no-gutters">
+                <div class="col-sm-1">
+                    <a href="/User/Activity">
+                        <i class="fa-2xl fa-solid fa-angle-left back-btn-style"></i>
+                    </a>
+                </div>
+                <div class="col-sm-10 col-sm-offset-0">
+                    <span style="font-size:24px;" class="fa-2xl">Post Likes and Dislikes</span>
+                </div>
+            </div>
+            <br />
+            <br /><br />
+            <a href="/User/DownloadUserPost_User" id="call" style="margin-right: 20px; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; text-decoration: none; background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.1)); border-radius: 10px; font-size: 18px; color: #ee7e7e;">Export Informations</a>
+        </div>
+
+        <div align="center">
+
+            <table class="user_table">
+                <thead>
+                    <tr>
+
+                        <th>Author</th>
+                        <th>Timeline Text</th>
+                        <th>Timeline Image</th>
+                        <th>Posting Time</th>
+                        <th>Post Tag</th>
+                        <th>Post Status</th>
+                        <th>Total Upvote</th>
+                        <th>Total Downvote</th>
+                        <th>Voted By</th>
+                        <th>Vote</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var ulog in Model)
+                    {
+                        <tr>
+                            <td>@ulog.AUTHOR</td>
+                            <td>@ulog.TIMELINE_TEXT</td>
+
+                            @if (ulog.TIMELINE_IMAGE != null)
+                            {
+                                <td><img src="@Url.Action("GetPostImage", "User", new { id = ulog.POST_ID })" style="max-height:70px; max-width:70px"></td>
+
+                            }
+                            else
+                            {
+                                <td><img src="~/image/dashboard/Default_pfp.jpg" style="max-height:70px; max-width:70px" /></td>
+
+                            }
+                            <td>@ulog.POSTING_TIME</td>
+                            <td>@ulog.POST_TAG</td>
+                            <td>@ulog.POSTING_STATUS</td>
+                            <td>@ulog.POST_LIKE</td>
+                            <td>@ulog.POST_DISLIKE</td>
+                            <td>@ulog.USERNAME</td>
+                            <td>@ulog.POST_STATUS</td>
+                        </tr>
+                    }
+
+
+
+                    @*<tr>
+                            <td>101</td>
+                            <td>Ikicchi1</td>
+                            <td>ikicchi1@gmail.com</td>
+                            <td>1.00</td>
+                            <td>101.101.101.101</td>
+                        </tr>
+                        <tr>
+                            <td>102</td>
+                            <td>Ikicchi2</td>
+                            <td>ikicchi2@gmail.com</td>
+                            <td>2.00</td>
+                            <td>102.102.102.102</td>
+                        </tr>
+                        <tr>
+                            <td>103</td>
+                            <td>Ikicchi3</td>
+                            <td>ikicchi3@gmail.com</td>
+                            <td>3.00</td>
+                            <td>103.103.103.103</td>
+                        </tr>
+                        <tr>
+                            <td>104</td>
+                            <td>Ikicchi4</td>
+                            <td>ikicchi4@gmail.com</td>
+                            <td>4.00</td>
+                            <td>104.104.104.104</td>
+                        </tr>*@
+                </tbody>
+            </table>
+
+        </div>
+
+        <div align="center" class="scroll-up-btn">
+            <a id="back_to_top" style="box-shadow: 0 0 20px #000000; transition-delay: 0.5s; border-radius: 20px; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; text-decoration: none; background-color: rgb(75, 73, 73,0.8); border-radius: 10px; font-size: 18px; color: #ee7e7e; border: 2px solid #009879; filter: blur(0.5); ">
+                <i class="fa-solid fa-arrow-up">
+                </i>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="col-sm-2 col-sm-offset-0 search-content">
+        <ul class="nav nav-pills nav-stacked search-bar">
+            <!--  <li>
+                <a href="@Url.Action("Profile","User")" style="padding: 2rem 1rem">
+                    <span class="row-no-gutters">
+                        <span class="col-sm-2">
+                            <i class="fa-solid fa-user">
+                            </i>
+                        </span>
+                        <span class="col-sm-offset-0">
+                            About
+                        </span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Personal_Timeline","User")" style="padding: 2rem 1rem">
+                    <span class="row-no-gutters">
+                        <span class="col-sm-2">
+                            <i class="fa-solid fa-timeline">
+                            </i>
+                        </span>
+                        <span class="col-sm-offset-0">
+                            Your Timeline
+                        </span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Activity","User")" style="padding: 2rem 1rem">
+                    <span class="row-no-gutters">
+                        <span class="col-sm-2">
+                            <i class="fa-solid fa-bolt-lightning">
+                            </i>
+                        </span>
+                        <span class="col-sm-offset-0">
+                            Your Activities
+                        </span>
+                    </span>
+                </a>
+            </li>-->
+        </ul>
+    </div>
+</div>
+
+
+<script src="@Url.Content("~/Scripts/jquery-3.4.1.js")"></script>
+<script src="@Url.Content("~/Scripts/Scroll_Up.js")"></script>
+

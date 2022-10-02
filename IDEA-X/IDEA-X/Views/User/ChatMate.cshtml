@@ -1,0 +1,140 @@
+﻿
+@{
+    ViewBag.Title = "ChatMate";
+    Layout = "~/Views/Shared/_LayoutDashBoard.cshtml";
+}
+<link href="@Url.Content("~/Content/TextBoxLog.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/div-gradiant.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/home-menu-layout.css")" rel="stylesheet" type="text/css" />
+
+
+<div class="row">
+    <div class="col-sm-9 main-content-scoll">
+
+        <div class="container-fluid" style="padding:2rem;">
+            <div class="row-no-gutters">
+                <div class="col-sm-1">
+                    <a href="@Url.Action("Chat","User")">
+                        <i class="fa-2xl fa-solid fa-angle-left back-btn-style"></i>
+                    </a>
+                </div>
+                <div class="col-sm-10 col-sm-offset-0">
+                    <span class="fa-2xl">Chat Box</span>
+                    <span id="uname" style="display:none">@Session["UNAME"]</span>
+
+                </div>
+            </div>
+        </div>
+        <!--Image post starts here-->
+
+
+        <div class="container-fluid post">
+            <div class="row">
+                <div class="col-sm-12 ">
+                    <div aling="center" style="background-color: #303030; border-top-left-radius: 15px; border-top-right-radius: 15px; margin-left:3%; margin-top: 0px; height: 100%; width: 98%; overflow:hidden">
+                        <div align="left" style="border-top-left-radius: 15px; border-top-right-radius: 15px; border: 2px solid #76b8ac;  height: 10%; width: 100%; " id="div-grad">
+                            <table style="border-radius: 15px; margin-left: 10px; background-color: transparent; height: 70px; width: 70%; ">
+                                <tr style="  margin-left: 10px; margin-bottom: -5px; ">
+                                    <td style=" padding: 10px; padding-right: 10px; width: 70px; ">
+                                        @if (Model.PROFILE_PICTURE != null)
+                                        {
+                                            <img src="@Url.Action("GetImage","User",new{name=Model.USERNAME})" class="img-circle" width="40px" height="40px" />
+                                        }
+                                        else
+                                        {
+                                            <img src="~/image/dashboard/Default_pfp.jpg" class="img-circle" width="40px" height="40px" />
+                                        }
+                                    </td>
+                                    <td>
+                                        <table align="left" style=" margin-left: 0px; background-color: transparent; ">
+                                            <tr>
+                                                <td style="background-color:transparent;">
+                                                    <font size="5" face="Monospace" style="font-weight: bold; color: white; ">@Model.FIRST_NAME @Model.LAST_NAME</font>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="background-color: transparent;">
+                                                    <font size="3" face="Monospace" id="user-name" style="color: #696969; ">@Model.USERNAME</font>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+
+                                </tr>
+                            </table>
+
+                        </div>
+
+                        <!--Chat box-->
+                        <div style="margin-top: 5px; padding-left: 30px; padding-bottom: 5px; padding-top: 5px; padding-right: 30px; background-color: #303030; height: 60vh; width: 100%; overflow-y: scroll " class="chat-box" id="scroll-to-bottom">
+
+                        </div>
+
+
+
+                        <div align="center" style="padding: 5px;  background-color: #0f1011; height: 15%; width: 100%; ">
+
+                            <table border="0" align="center" style="padding-left: 10px; padding-right: 10px; margin-top:1%; margin-bottom:5px; width: 100%; border-top: 2px; border-color: #30d5c8; ">
+                                <tr align="center">
+                                    <td align="right" style=" width: 80%; padding-right: 40px;margin-top:5px; background-color: #0f1011; ">
+                                        <textarea name="USER_MESSAGE" placeholder="Type Message Here" class=" form-control chat-msg-input-x" id="text-box-normal" rows="2" style=" border-radius: 12px; border: 2px solid #76b8ac; max-width: 35vw; max-height:50px; min-width: 35vw; min-height: 50px "></textarea>
+                                    </td>
+                                    <td align="left" style=" width: 20%;  background-color: #0f1011; ">
+                                        <h7>
+                                            <a onclick="SendChatMessage();" style="text-decoration:none; cursor:pointer;" class="send-chat-msg-btn" id="sign-btn">SEND</a>
+                                        </h7>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+
+
+    </div>
+    <div class="col-sm-2 col-sm-offset-0 search-content">
+        <ul class="nav nav-pills nav-stacked search-bar"> 
+            <li>
+                <a onclick="RemoveChat()" style="padding: 2rem 1rem; cursor:pointer;">
+                    <span class="row-no-gutters">
+                        <span class="col-sm-2">
+                            <i class="fa-solid fa-trash-alt">
+                            </i>
+                        </span>
+                        <span class="col-sm-offset-0">
+                            Delete Chat History
+                        </span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a onclick="RemoveMate()" style="padding: 2rem 1rem; cursor: pointer;">
+                    <span class="row-no-gutters">
+                        <span class="col-sm-2">
+                            <i class="fa-solid fa-ban">
+                            </i>
+                        </span>
+                        <span class="col-sm-offset-0">
+                            Remove Mate
+                        </span>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+    <script src="@Url.Content("~/Scripts/jquery-3.4.1.js")"></script>
+    <script src="@Url.Content("~/Scripts/ChatMate.js")"></script>
+    <script>
+
+   
+
+    </script>

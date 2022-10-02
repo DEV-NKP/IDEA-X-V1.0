@@ -1,0 +1,314 @@
+﻿
+@{
+    ViewBag.Title = "UserActivity";
+    Layout = "~/Views/Shared/_AdminDashboard.cshtml";
+
+}
+
+<link href="@Url.Content("~/Content/Text_Box.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/ButtonFillGlow.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/MidWordLine.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/Text_Decor.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/TextBoxLog.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/VerificationCode.css")" rel="stylesheet" type="text/css" />
+
+
+
+<link href="@Url.Content("~/Content/CircleProgress.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/Chart.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/Activity.css")" rel="stylesheet" type="text/css" />
+
+
+
+<div class="row" style="background-color: #0c0d0f;">
+    <div class="col-sm-9 main-content-scoll" style="background-color: #0c0d0f;" align="center">
+
+
+
+        <div class="container-fluid" style="padding:2rem;">
+            <div class="row-no-gutters">
+                <div class="col-sm-1">
+
+                    <a href="@Url.Action("Monitoring","Admin")">
+                        <i class="fa-2xl fa-solid fa-angle-left back-btn-style"></i>
+                    </a>
+                    <span style="display:none;" id="uname">@Model.USERNAME</span>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div align="center">
+            <h4 style="text-align:center; color:#808080; border-bottom:1px solid #808080; padding-bottom:10px; width:350px;"><b style="color:#0abab5">Upvote</b> & <b style="color: #f08080 ">Downvote</b> Given (%)</h4>
+            <br />
+            <div align="center" style="width:100%; display:flex; ">
+
+                <!---->
+                <div class="wrapper wrapperL" align="center" style="width: 100%; display: flex; align-items: center; justify-content: center; ">
+
+                    <div class="card cardL upL">
+                        <div class="circle circleL">
+                            <div class="bar barL"></div>
+                            <div class="box boxL"><span></span></div>
+                        </div>
+                        <div class="text textL">UpVote</div>
+                    </div>
+                    <span style="padding:1%"></span>
+
+                    <div class="card cardD downD">
+                        <div class="circle circleD">
+                            <div class="bar barD"></div>
+                            <div class="box boxD"><span></span></div>
+                        </div>
+                        <div class="text textD">DownVote</div>
+                    </div>
+                </div>
+
+                <!---->
+
+            </div>
+        </div>
+
+
+        <br /><br /><br />
+
+
+
+
+
+
+
+
+        <div align="center">
+            <h4 style="text-align:center; color:#808080; border-bottom:1px solid #808080; padding-bottom:10px; width:350px;"><b style="color:#0abab5">Upvote</b> & <b style="color: #f08080 ">Downvote</b> Taken (%)</h4>
+            <br />
+            <div align="center" style="width:100%; display:flex; ">
+
+                <!---->
+                <div class="wrapper wrapperLN" align="center" style="width: 100%; display: flex; align-items: center; justify-content: center; ">
+
+                    <div class="card cardLN upLN">
+                        <div class="circle circleLN">
+                            <div class="bar barLN"></div>
+                            <div class="box boxLN"><span></span></div>
+                        </div>
+                        <div class="text textLN">UpVote</div>
+                    </div>
+                    <span style="padding:1%"></span>
+
+                    <div class="card cardDN downDN">
+                        <div class="circle circleDN">
+                            <div class="bar barDN"></div>
+                            <div class="box boxDN"><span></span></div>
+                        </div>
+                        <div class="text textDN">DownVote</div>
+                    </div>
+                </div>
+
+                <!---->
+
+            </div>
+        </div>
+
+
+        <br /><br /><br />
+
+
+
+
+
+
+
+        <div align="center">
+            <h4 style="text-align:center; color:#808080; border-bottom:1px solid #808080; padding-bottom:10px; width:500px;"><b style="color:#0abab5">Upvote</b> & <b style="color: #f08080 ">Downvote</b> Taken (Recent 100 post)</h4>
+            <br />
+            <canvas id="myChart" style="width: 100%;" class="graph1"></canvas>
+            <br /><br /><br />
+        </div>
+
+
+        <div align="center">
+            <h4 style="text-align:center; color:#808080; border-bottom:1px solid #808080; padding-bottom:10px; width:450px;"><b style="color:#0abab5">Upvote</b> & <b style="color: #f08080 ">Downvote</b> Given (Overall)</h4>
+            <br />
+            <canvas id="myPieG" class="pie1"></canvas>
+            <br /><br /><br />
+        </div>
+
+
+        <div align="center">
+            <h4 style="text-align:center; color:#808080; border-bottom:1px solid #808080; padding-bottom:10px; width:450px;"><b style="color:#0abab5">Upvote</b> & <b style="color: #f08080 ">Downvote</b> Taken (Overall)</h4>
+            <br />
+            <canvas id="myPie" class="pie1"></canvas>
+            <br /><br /><br />
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+</div>
+
+<script src="@Url.Content("~/Scripts/jquery-3.4.1.js")"></script>
+<script src="@Url.Content("~/Scripts/Chart.js")"></script>
+
+<script src="@Url.Content("~/Scripts/jquery.min.js")"></script>
+<script src="@Url.Content("~/Scripts/circle-progress.min.js")"></script>
+<script src="@Url.Content("~/Scripts/Admin_UserActivityChart.js")"></script>
+
+
+
+<script>
+    var yValuesPupvote = @Model.LIKE;
+    var yValuesPdownvote = @Model.DISLIKE;
+
+    var calcTotal = Number(yValuesPupvote) + Number(yValuesPdownvote);
+
+    var percUpvote = 0;
+    var percDownvote = 0;
+
+    if (Number(calcTotal) != 0) {
+        percUpvote = (Number(yValuesPupvote) / Number(calcTotal));
+        percDownvote = (Number(yValuesPdownvote) / Number(calcTotal));
+    }
+
+
+
+
+    let optionL = {
+        startAngle: -1.55,
+        size: 150,
+        value: 1.00,
+        fill: {
+            gradient: ['#f08080', '#0bdad3']
+        }
+    }
+    let optionD = {
+        startAngle: -1.55,
+        size: 150,
+        value: 1.00,
+        fill: {
+            gradient: ['#66ffff', '#ff6666']
+        }
+    }
+
+    $(".circleL .barL").circleProgress(optionL).on('circle-animation-progress',
+        function (event, progress, stepValue) {
+            $(this).parent().find("span").text(String((stepValue.toFixed(2).substr(0) * 100).toFixed(0).substr(0)) + "%");
+        });
+
+    $(".circleD .barD").circleProgress(optionD).on('circle-animation-progress',
+        function (event, progress, stepValue) {
+            $(this).parent().find("span").text(String((stepValue.toFixed(2).substr(0) * 100).toFixed(0).substr(0)) + "%");
+        });
+
+
+    $(".upL .barL").circleProgress({
+        value: percUpvote
+    });
+    $(".downD .barD").circleProgress({
+        value: percDownvote
+    });
+
+
+
+       var yValuesPupvoteTake = @Model.LIKEtake;
+    var yValuesPdownvoteTake = @Model.DISLIKEtake;
+
+    var calcTotalTake = Number(yValuesPupvoteTake) + Number(yValuesPdownvoteTake);
+
+    var percUpvoteTake = 0;
+    var percDownvoteTake = 0;
+
+    if (Number(calcTotalTake) != 0) {
+        percUpvoteTake = (Number(yValuesPupvoteTake) / Number(calcTotalTake));
+        percDownvoteTake = (Number(yValuesPdownvoteTake) / Number(calcTotalTake));
+    }
+
+
+
+
+    let optionLN = {
+        startAngle: -1.55,
+        size: 150,
+        value: 1.00,
+        fill: {
+            gradient: ['#f08080', '#0bdad3']
+        }
+    }
+    let optionDN = {
+        startAngle: -1.55,
+        size: 150,
+        value: 1.00,
+        fill: {
+            gradient: ['#66ffff', '#ff6666']
+        }
+    }
+
+    $(".circleLN .barLN").circleProgress(optionLN).on('circle-animation-progress',
+        function (event, progress, stepValue) {
+            $(this).parent().find("span").text(String((stepValue.toFixed(2).substr(0) * 100).toFixed(0).substr(0)) + "%");
+        });
+
+    $(".circleDN .barDN").circleProgress(optionDN).on('circle-animation-progress',
+        function (event, progress, stepValue) {
+            $(this).parent().find("span").text(String((stepValue.toFixed(2).substr(0) * 100).toFixed(0).substr(0)) + "%");
+        });
+
+
+    $(".upLN .barLN").circleProgress({
+        value: percUpvoteTake
+    });
+    $(".downDN .barDN").circleProgress({
+        value: percDownvoteTake
+    });
+
+
+
+
+
+
+    var xValuesP = ["UpVote", "DownVote"];
+    var yValuesP = [yValuesPupvote, yValuesPdownvote];
+    var barColors = [
+        "#0abab5",
+        "#f08080"
+    ];
+
+    new Chart("myPieG", {
+        type: "pie",
+        data: {
+            labels: xValuesP,
+            datasets: [{
+                backgroundColor: barColors,
+                borderColor: barColors,
+                data: yValuesP
+            }]
+        },
+        options: {
+            legend: {
+                position: 'bottom',
+                labels: {
+                    boxWidth: 10,
+                }
+
+            },
+            title: {
+                display: true,
+                //text: ""
+            }
+        }
+    });
+
+
+
+</script>
+
+
+

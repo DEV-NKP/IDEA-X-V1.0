@@ -1,0 +1,201 @@
+﻿
+@{
+    ViewBag.Title = "SolvedMessage";
+    Layout = "~/Views/Shared/_AdminDashboard.cshtml";
+}
+
+
+<link href="@Url.Content("~/Content/Text_Box.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/ButtonFillGlow.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/MidWordLine.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/Text_Decor.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/TextBoxLog.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/Scroll_Up.css")" rel="stylesheet" type="text/css" />
+
+
+<div class="row">
+
+    <div class="col-sm-9 main-content-scoll main_content_result">
+
+        <div align="center">
+            <br />
+            <h4>Previous Messages</h4>
+            <hr style="height: 2px; background-color: #009879; border: none;" />
+
+            <h6 style="font-weight: lighter; color: #c9c9c9;">Type Username</h6>
+            <input type="text" name="SEARCH_USER" value="" class="form-control search_box" id="text-box-normal" style="text-align:center;" />
+
+            <br />
+            <br />
+
+            <a href="/Admin/DownloadSolvedMessages_Admin" style="padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; text-decoration: none; background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.1)); border-radius: 10px; font-size: 18px; color: #ee7e7e;">Export Informations</a>
+
+
+        </div>
+
+
+
+        <div class="" align="center">
+
+            <table class="user_table">
+                <thead>
+                    <tr>
+                        <th>Contact ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>UserName</th>
+                        <th>Email</th>
+                        <th>Message</th>
+                        <th>Level</th>
+                        <th>Status</th>
+                        <th>LogIn Time</th>
+                        <th>LogIn IP</th>
+                        <th>Your Action</th>
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                    @{var count = 0; }
+                    @foreach (var reports in Model)
+                    {
+                        <tr>
+                            @{count = count + 1;}
+                            @if (reports.LEVEL == "USER" || reports.LEVEL == "BANNED")
+                            {
+
+
+                                <td onclick="window.location.replace('/Admin/UserProfile/@reports.USERNAME?page=SolvedMessage')" style="cursor: pointer; ">@reports.CONTACT_ID</td>
+                                <td onclick="window.location.replace('/Admin/UserProfile/@reports.USERNAME?page=SolvedMessage')" style="cursor: pointer; ">@reports.FIRST_NAME</td>
+                                <td onclick="window.location.replace('/Admin/UserProfile/@reports.USERNAME?page=SolvedMessage')" style="cursor: pointer; ">@reports.LAST_NAME</td>
+                                <td onclick="window.location.replace('/Admin/UserProfile/@reports.USERNAME?page=SolvedMessage')" style="cursor: pointer; ">@reports.USERNAME</td>
+                                <td onclick="window.location.replace('/Admin/UserProfile/@reports.USERNAME?page=SolvedMessage')" style="cursor: pointer; ">@reports.EMAIL</td>
+                                <td onclick="window.location.replace('/Admin/UserProfile/@reports.USERNAME?page=SolvedMessage')" style="cursor: pointer; ">@reports.MESSAGE</td>
+                                <td onclick="window.location.replace('/Admin/UserProfile/@reports.USERNAME?page=SolvedMessage')" style="cursor: pointer; ">@reports.LEVEL</td>
+                                <td onclick="window.location.replace('/Admin/UserProfile/@reports.USERNAME?page=SolvedMessage')" style="cursor: pointer; ">@reports.STATUS</td>
+                                <td onclick="window.location.replace('/Admin/UserProfile/@reports.USERNAME?page=SolvedMessage')" style="cursor: pointer; ">@reports.LOGIN_TIME</td>
+                                <td onclick="window.location.replace('/Admin/UserProfile/@reports.USERNAME?page=SolvedMessage')" style="cursor: pointer; ">@reports.LOGIN_IP</td>
+                                <td align="center">
+                                    <button onclick="MessageDelete(@reports.CONTACT_ID)" id="call" style="margin-right: 20px; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; text-decoration: none; background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.1)); border-radius: 10px; font-size: 18px; color: #ee7e7e; cursor:pointer;">Delete Message</button>
+                                </td>
+
+                            }
+                            @if (reports.LEVEL == "NONREG" || reports.LEVEL == "UAC")
+                            {
+
+
+                                <td>@reports.CONTACT_ID</td>
+                                <td>@reports.FIRST_NAME</td>
+                                <td>@reports.LAST_NAME</td>
+                                <td>@reports.USERNAME</td>
+                                <td>@reports.EMAIL</td>
+                                <td>@reports.MESSAGE</td>
+                                <td>@reports.LEVEL</td>
+                                <td>@reports.STATUS</td>
+                                <td>@reports.LOGIN_TIME</td>
+                                <td>@reports.LOGIN_IP</td>
+                                <td align="center">
+                                    <button onclick="MessageDelete(@reports.CONTACT_ID)" id="call" style="margin-right: 20px; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; text-decoration: none; background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.1)); border-radius: 10px; font-size: 18px; color: #ee7e7e; cursor:pointer;">Delete Message</button>
+                                </td>
+
+
+                            }
+                        </tr>
+                    }
+                    @*<tr>
+                            <td>101</td>
+                            <td>Ikicchi1</td>
+                            <td>ikicchi1@gmail.com</td>
+                            <td>1.00</td>
+                            <td>101.101.101.101</td>
+                        </tr>
+                        <tr>
+                            <td>102</td>
+                            <td>Ikicchi2</td>
+                            <td>ikicchi2@gmail.com</td>
+                            <td>2.00</td>
+                            <td>102.102.102.102</td>
+                        </tr>
+                        <tr>
+                            <td>103</td>
+                            <td>Ikicchi3</td>
+                            <td>ikicchi3@gmail.com</td>
+                            <td>3.00</td>
+                            <td>103.103.103.103</td>
+                        </tr>
+                        <tr>
+                            <td>104</td>
+                            <td>Ikicchi4</td>
+                            <td>ikicchi4@gmail.com</td>
+                            <td>4.00</td>
+                            <td>104.104.104.104</td>
+                        </tr>*@
+                </tbody>
+            </table>
+
+        </div>
+
+        <br />
+        <br />
+        <div align="center" class="scroll-up-btn">
+            <a id="back_to_top" style="box-shadow: 0 0 20px #000000; transition-delay: 0.5s; border-radius: 20px; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; text-decoration: none; background-color: rgb(75, 73, 73,0.8); border-radius: 10px; font-size: 18px; color: #ee7e7e; border: 2px solid #009879; filter: blur(0.5); ">
+                <i class="fa-solid fa-arrow-up">
+                </i>
+            </a>
+        </div>
+        <div align="center" class="show-result-btn">
+
+            <span align="center" id="show-result" style="box-shadow: 0 0 20px #000000; transition-delay: 0.5s; border-radius: 20px; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; text-decoration: none; background-color: rgb(75, 73, 73,0.8); border-radius: 10px; font-size: 18px; color: #ee7e7e; border: 2px solid #009879; filter: blur(0.5); ">
+
+                Total @count results found
+
+            </span>
+
+        </div>
+    </div>
+
+    <div class="col-sm-2 col-sm-offset-0 search-content">
+        <ul class="nav nav-pills nav-stacked search-bar">
+            <li>
+                <a href="@Url.Action("PendingMessage","Admin")" style="padding: 2rem 1rem">
+                    <span class="row-no-gutters">
+                        <span class="col-sm-2">
+                            <i class="fa fa-history">
+                            </i>
+                        </span>
+                        <span class="col-sm-offset-0">
+                            Pending Messages
+                        </span>
+                    </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="@Url.Action("SolvedMessage","Admin")" style="padding: 2rem 1rem">
+                    <span class="row-no-gutters">
+                        <span class="col-sm-2">
+                            <i class="fa-solid fa-check-square">
+                            </i>
+                        </span>
+                        <span class="col-sm-offset-0">
+                            Previous Messages
+                        </span>
+                    </span>
+                </a>
+            </li>
+
+
+
+
+
+        </ul>
+    </div>
+</div>
+
+
+<script src="@Url.Content("~/Scripts/jquery-3.4.1.js")"></script>
+<script src="@Url.Content("~/Scripts/Scroll_Up.js")"></script>
+<script src="@Url.Content("~/Scripts/Admin_SearchSolvedMessages.js")"></script>
+
+
+
+
+

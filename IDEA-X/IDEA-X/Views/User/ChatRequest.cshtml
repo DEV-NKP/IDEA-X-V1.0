@@ -1,0 +1,112 @@
+﻿
+@{
+    ViewBag.Title = "ChatRequest";
+    Layout = "~/Views/Shared/_LayoutDashBoard.cshtml";
+}
+
+
+<link href="@Url.Content("~/Content/TextBoxLog.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/div-gradiant.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/home-menu-layout.css")" rel="stylesheet" type="text/css" />
+<body onload="loadCon();">
+<div class="row">
+    <div class="col-sm-9 main-content-scoll">
+
+        <div class="container-fluid" style="padding:2rem;">
+            <div class="row-no-gutters">
+                <div class="col-sm-1">
+                    <a href="/User/Chat">
+                        <i class="fa-2xl fa-solid fa-angle-left back-btn-style"></i>
+                    </a>
+                </div>
+                <div class="col-sm-10 col-sm-offset-0">
+                    <span class="fa-2xl">Chat Box</span>
+                    <span style="color: #0f1011;" id="mname-text">@(Model != null ? Model.USERNAME : "")</span>
+                </div>
+            </div>
+        </div>
+        <!--Image post starts here-->
+
+
+        <div class="container-fluid post send-option" style="display:none;">
+            <div class="row">
+                <div class="col-sm-12 col-sm-offset-0">
+                    <div aling="center" style="padding: 5px; background-color: #0f1011; height: 70vh; width: 100%; text-align: center; vertical-align: middle; padding-top:100px;">
+
+                        <p>
+                            <font size="4" face="Monospace" style=" color: #808080; width: 80%; ">Have not connected yet? Send a request and become mate.</font>
+                        </p>
+                        <br />
+                        <h7><a onclick="sendreq();" style="text-decoration:none; cursor:pointer;" id="sign-btn">REQUEST</a></h7>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid post alredy-send" style="display:none;">
+            <div class="row">
+                <div class="col-sm-12 col-sm-offset-0">
+                    <div aling="center" style="padding: 5px; background-color: #0f1011; height: 70vh; width: 100%; text-align: center; vertical-align: middle; padding-top:100px;">
+
+                        <p>
+                            <font size="4" face="Monospace" style=" color: #808080; width: 80%; ">You have already send a request to this user. Please wait for his/her response.</font>
+                        </p>
+                        <br />
+                        <h7><a onclick="delreq();" style="text-decoration:none; cursor:pointer;" id="sign-btn">Cancel Request</a></h7>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid post waiting-accept" style="display:none;">
+            <div class="row">
+                <div class="col-sm-12 col-sm-offset-0">
+                    <div aling="center" style="padding: 5px; background-color: #0f1011; height: 70vh; width: 100%; text-align: center; vertical-align: middle; padding-top:100px;">
+                        <p>
+                            <font size="4" face="Monospace" style=" color: #808080; width: 80%; ">Pending request for your response.</font>
+                        </p>
+                        <br />
+                        <h7><a onclick="acceptreq();" style="text-decoration:none; cursor:pointer;" id="sign-btn">Accept Request</a></h7>
+                        <h7><a onclick="declinereq();" style="text-decoration:none; cursor:pointer;" id="sign-btn">Decline Request</a></h7>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid post send-now" style="display:none;">
+            <div class="row">
+                <div class="col-sm-12 col-sm-offset-0">
+                    <div aling="center" style="padding: 5px; background-color: #0f1011; height: 70vh; width: 100%; text-align: center; vertical-align: middle; padding-top:100px;">
+                        <p>
+                            <font size="4" face="Monospace" style=" color: #808080; width: 80%; ">Successfully sent! Waiting for his/her response.</font>
+                        </p>
+                  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br />
+
+
+    </div>
+    <div class="col-sm-2 col-sm-offset-0 search-content">
+        <div class="row">
+
+        </div>
+        <div class="row">
+            <ul class="nav nav-pills nav-stacked search-result"></ul>
+        </div>
+    </div>
+</div>
+
+<script src="@Url.Content("~/Scripts/jquery-3.4.1.js")"></script>
+<script src="@Url.Content("~/Scripts/Chat_Request.js")"></script>
+
+
+
+

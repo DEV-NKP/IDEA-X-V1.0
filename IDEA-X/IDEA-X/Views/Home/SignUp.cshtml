@@ -1,0 +1,218 @@
+﻿
+@{ ViewBag.Title = "SignUp"; }
+<link href="@Url.Content("~/Content/Text_Box.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/ButtonFillGlow.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/MidWordLine.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/Text_Decor.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/TextBoxLog.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/VerificationCode.css")" rel="stylesheet" type="text/css" />
+
+
+
+<body style="background-color: #0f1011; " onload="emailcheck()">
+    <h2 align="center"></h2>
+    @*<form action="@Url.Action("UploadImg","Home")" id="img_form" method="post" enctype="multipart/form-data"></form>*@
+    <table border="0" style="height: 75vh; width: 100%; background-color: #0f1011;">
+        <tr>
+
+
+            <td width="100%" align="center">
+                <div align="center" style="margin-left: 0px; background-color: #303030; height: 680px; width: 1050px; border-radius: 10px; padding-top: 20px; padding-left: 10px; padding-right: 10px; padding-bottom: 20px; border: 1px solid #808080 ">
+                    <h4 style="width:300px; color: #b0acac; border-bottom:1px solid white; padding-bottom:15px;">General Information</h4>
+                    <br />
+
+                    <form enctype="multipart/form-data" action="" method="post" id="form">
+                        <table>
+                            <tr>
+                                <td width="22%" align="center" style="background-color: #303030; padding-left: 20px">
+
+                                    <img src=@Url.Content("~/image/dashboard/Default_pfp.jpg") id="output" width="200" height="200" class="img-circle" />
+                                    <br />
+                                    <br />
+
+                                    <label for="file" id="button-glow" style="cursor: pointer; font-size:12px">Select Image</label>
+                                    <input type="file" asp-for="PROFILE_PICTURE" accept="image/*" name="PROFILE_PICTURE" id="file" onchange="loadFile(event)"
+                                           style="display: none;">
+                             
+
+
+
+                                </td>
+
+                                <td width="78%" align="center" style="background-color: #303030">
+
+
+                                    <table>
+                                        <tr>
+
+                                            <td width="50%" style="margin-left: 0px; background-color: #303030;">
+
+                                                <h6 style="font-weight: lighter; color: #c9c9c9; margin-left: -80px;">
+                                                    First Name:
+                                                </h6>
+
+                                                <input style="margin-left:-80px;" type="text" name="FIRST_NAME" value="@(Model != null? Model.FIRST_NAME:"")" class="form-control" id="text-box-normal" />
+                                                <font style="margin-left: -80px; color: #fe9783">
+                                                    @Html.ValidationMessage("FIRST_NAME", new { @class = "msg-require" })
+                                                </font>
+                                            </td>
+
+                                            <td width="50%" style="margin-left: 0px; background-color: #303030;">
+                                                <h6 style="font-weight: lighter; padding-top: 0px; color: #c9c9c9; margin-left: 40px;">
+                                                    Last Name:
+                                                </h6>
+
+                                                <input style="margin-left: 40px;" type="text" name="LAST_NAME" value="@(Model != null? Model.LAST_NAME:"")" class="form-control" id="text-box-normal" />
+                                                <font style="margin-left: 40px; color: #fe9783">
+                                                    @Html.ValidationMessage("LAST_NAME", new { @class = "msg-require" })
+                                                </font>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+
+                                            <td width="50%" style="margin-left: 0px; background-color: #303030;">
+                                                <h6 style="font-weight: lighter; padding-top: 0px; color: #c9c9c9; margin-left: -80px;">
+                                                    Email:
+                                                </h6>
+
+                                                <input style="margin-left: -80px;" type="text" name="EMAIL" value="@(Model != null? Model.EMAIL:"")" class="form-control email_box" id="text-box-normal" />
+                                                <font style="margin-left: -80px; color: #fe9783">
+                                                    @Html.ValidationMessage("EMAIL", new { @class = "msg-require email-box-validation text-danger" })
+                                                </font>
+                                            </td>
+
+
+                                            <td width="50%" style="margin-left: 0px; background-color: #303030;">
+
+                                                <a onclick="sendcode()" id="button-glow" class="emailsuccess" style="margin-left: 130px; filter: hue-rotate(280deg); pointer-events:none;">Verify</a>
+                                            </td>
+                                        </tr>
+
+
+
+                                        <tr>
+                                            <td colspan="2" width="50%" style="margin-left: 0px; background-color: #303030;">
+
+                                                <h6 style="font-weight: lighter; padding-top: 0px; color: #c9c9c9; text-align:center">
+                                                    Verification Code:
+                                                </h6>
+
+                                                <div class="userInput">
+                                                    <input type="text" class="code-verify" id='ist' style="text-transform:uppercase" maxlength="1" onkeyup="clickEvent(this,'sec')">
+                                                    <input type="text" class="code-verify" id="sec" style="text-transform:uppercase" maxlength="1" onkeyup="clickEvent(this,'third')">
+                                                    <input type="text" class="code-verify" id="third" style="text-transform:uppercase" maxlength="1" onkeyup="clickEvent(this,'fourth')">
+                                                    <input type="text" class="code-verify" id="fourth" style="text-transform:uppercase" maxlength="1" onkeyup="clickEvent(this,'fifth')">
+                                                    <input type="text" class="code-verify" id="fifth" style="text-transform:uppercase" maxlength="1" onkeyup="redirecPage()">
+                                                </div>
+                                                <span style="color: #fe9783; margin-left:250px; text-align:center;" class="msg-require verify-valid">
+
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="50%" style="margin-left: 0px; background-color: #303030;">
+                                                <br />
+
+                                                <h6 style="font-weight: lighter; color: #c9c9c9; margin-left: -80px;">
+                                                    Date of Birth:
+                                                </h6>
+
+                                                <input style="margin-left:-80px;" type="date" name="DATE_OF_BIRTH" value="@(Model != null? Model.DATE_OF_BIRTH:"")" class="form-control" id="text-box-normal" />
+                                                <font style="margin-left: -80px; color: #fe9783">
+                                                    @Html.ValidationMessage("DATE_OF_BIRTH", new { @class = "msg-require" })
+                                                </font>
+                                            </td>
+
+                                            <td width="50%" style="margin-left: 0px; background-color: #303030;">
+                                                <h6 style="font-weight: lighter; padding-top: 0px; color: #c9c9c9; margin-left: 40px;">
+                                                    Gender:
+                                                </h6>
+
+                                                <table>
+                                                    <tr style="margin-left: 40px; background-color: #303030;">
+                                                        <td style="margin-left: 40px; background-color: #303030;">
+                                                            <input style="margin-left: 40px;" class="form-check-input" type="radio" name="GENDER" id="male" value="MALE">Male
+                                                        </td>
+
+                                                        <td>
+                                                            <input style="margin-left: 45px;" class="form-check-input" type="radio" name="GENDER" id="female" value="FEMALE">Female
+                                                        </td>
+                                                        <td>
+                                                            <input style="margin-left: 55px;" class="form-check-input" type="radio" name="GENDER" id="others" value="OTHER">Other
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                                <font style="margin-left: 40px; color: #fe9783">
+                                                    @Html.ValidationMessage("GENDER", new { @class = "msg-require" })
+                                                </font>
+                                            </td>
+
+                                        </tr>
+
+
+
+
+
+                                    </table>
+
+                                    @*<a href="/Home/ForgotPasswordEmail" onMouseOver="this.style.color='#1bbdd6'"
+                                           onMouseOut="this.style.color='#fe9783'"
+                                           style="margin-left: 0px; color: #fe9783; text-decoration: none; margin-top: 10px; line-height: 4; ">Forget Password</a>
+                                        <br /> <br />*@
+
+
+                                </td>
+                            </tr>
+                        </table>
+
+
+
+
+                        <br />
+                        <br />
+
+
+                        <div style="padding-top:10px; margin-left:750px">
+                            <!--<input type="submit" class="btn btn-success" id="button-glow" />-->
+                            @*<a href="javascript:$('form').submit();" id="button-glow" style=" filter: hue-rotate(280deg);">Next</a>*@
+
+                            <a href="javascript:$('form').submit();" id="button-glow" class="codesuccess" style=" filter: hue-rotate(280deg); pointer-events: none;">Next</a>
+
+                        </div><br />
+                        <br />
+
+
+                    </form>
+
+                    @*<br><br>
+
+                        <font id="word-mid-line"> OR </font><br /><br />
+                        <font> No account created?  &nbsp; </font> <a href="/Home/Login"
+                                                                      onMouseOver="this.style.color='#1bbdd6'"
+                                                                      onMouseOut="this.style.color='#fe9783'"
+                                                                      style="color: #fe9783; text-decoration: none;">Sign Up</a>*@
+
+
+                </div>
+
+
+            </td>
+
+
+        </tr>
+
+    </table>
+
+
+</body>
+
+<script src="@Url.Content("~/Scripts/jquery-3.4.1.js")"></script>
+<script src="@Url.Content("~/Scripts/toastr.js")"></script>
+<script src="@Url.Content("~/Scripts/Email_Validation.js")"></script>
+
+
+
+

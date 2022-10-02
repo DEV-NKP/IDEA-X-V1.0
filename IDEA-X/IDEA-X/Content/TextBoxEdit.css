@@ -1,0 +1,14 @@
+﻿#text-box-normal {
+    background: linear-gradient(135deg, rgb(50,50,50), rgb(100,100,100));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 2px solid rgb(175 238 238 / 0.5);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    color: #e7e7e7;
+}
+
+    #text-box-normal:focus {
+        background: linear-gradient(135deg, rgb(100,100,100), rgb(50,50,50));
+        color: #e7e7e7;
+    }

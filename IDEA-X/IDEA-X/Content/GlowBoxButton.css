@@ -1,0 +1,21 @@
+﻿.BoxGlowButton {
+    position: relative;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    font-size:1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px, 30px;
+    transition: 0.5s;
+    border: 1px solid white;
+}
+
+    .BoxGlowButton:hover {
+        background: var(--clr);
+        color: #000000;
+        letter-spacing: 0.25em;
+        box-shadow: 0 0 35px var(--clr);
+    }
+
+  

@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewBag.Title = "IdeaTracker";
+    Layout = "~/Views/Shared/_LayoutDashBoard.cshtml";
+}
+
+<link href="@Url.Content("~/Content/dycalendar.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/calender.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/notepage.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/TextBoxLog.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/ButtonFillGlow.css")" rel="stylesheet" type="text/css" />
+<div class="row" >
+    <div class="col-sm-7 main-content-scoll" style="height:100vh;">
+
+      
+        <div width="85%" align="center" style="font-family: 'Times New Roman'; font-size: 20px; color: #e2344d ">
+            <form action="" method="post" id="form">
+                <div>
+                    <span style="color:aliceblue;">Note's Date</span> <br />
+                    <input type="text" name="NOTE_DATE" value="@(Model != null? Model.NOTE_DATE:"")" class="date-time-show" id="text-box-normal" style="text-align:center;" readonly />
+                </div>
+
+
+
+                <br />
+                <div class="paper">
+                    <div class="paper-content">
+                        <textarea name="NOTE_TEXT" class="note-text" placeholder="Hello @Session["UNAME"] !&#10;Here's you can store any Idea/Task/Work that you want." autofocus>@(Model != null? Model.NOTE_TEXT : "")</textarea>
+                    </div>
+                </div>
+                <br />
+
+                <div>
+                    <a href="javascript:$('form').submit();" id="button-glow" style=" filter: hue-rotate(180deg);">Save Changes</a>
+
+                </div>
+                </form>
+        </div>
+
+
+
+
+    </div>
+
+
+    <div class="col-sm-4 col-sm-offset-0 search-content" align="center" >
+        <br /><br />
+        <section>
+            <div class="box">
+                <div class="container-c">
+                    <div id="dycalendar"></div>
+                </div>
+              
+            </div>
+        </section>
+    </div>
+    
+
+</div>
+
+
+
+
+
+
+
+
+<script src="@Url.Content("~/Scripts/jquery-3.4.1.js")"></script>
+<script src="@Url.Content("~/Scripts/dycalendar.js")"></script>
+<script src="@Url.Content("~/Scripts/calendar.js")"></script>
+<script>
+   
+</script>
+
+

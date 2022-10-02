@@ -1,0 +1,28 @@
+﻿:root {
+    --primary-dark: #424242;
+    --radius: 10px;
+    --bg: #0f1011;
+    --border: grey;
+    --secondary: #76b8ac;
+    --secondary-white: #efefef;
+    --report-back: #F8593b33;
+    --report-main: #F8593b;
+    --upvote-back: #8dc6f480;
+    --downvote-back: #ff777780;
+    --action-link-white: #efefef80;
+}
+.search-content {
+    margin: 0rem 0rem 0rem 2.5rem;
+   
+    border-left: 2px solid var(--border);
+    height: 100vh;
+    background-color: var(--bg);
+    
+}
+
+.search-bar{
+    margin-top:3rem;
+    margin-left:3rem;
+}
+
+

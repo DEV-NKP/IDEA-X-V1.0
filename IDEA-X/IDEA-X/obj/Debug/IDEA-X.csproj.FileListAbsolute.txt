@@ -1,0 +1,1224 @@
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\IDEA-X.dll.config
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\IDEA-X.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\IDEA-X.pdb
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csc.exe
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csc.exe.config
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csc.rsp
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csi.exe
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csi.exe.config
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csi.rsp
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.AppContext.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Console.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.Compression.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Net.Http.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Net.Sockets.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.ValueTuple.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XPath.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\vbc.exe
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\vbc.exe.config
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\vbc.rsp
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\VBCSCompiler.exe
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Antlr3.Runtime.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\EntityFramework.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Newtonsoft.Json.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Helpers.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Mvc.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Optimization.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Razor.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Deployment.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Razor.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\WebGrease.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\EntityFramework.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Helpers.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Mvc.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Optimization.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Razor.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Deployment.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Razor.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Newtonsoft.Json.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Antlr3.Runtime.pdb
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.CopyComplete
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.pdb
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\IDEA-X.dll.config
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\IDEA-X.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\IDEA-X.pdb
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csc.exe
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csc.exe.config
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csc.rsp
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csi.exe
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csi.exe.config
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csi.rsp
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.AppContext.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Console.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.Compression.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Net.Http.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Net.Sockets.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.ValueTuple.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XPath.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\vbc.exe
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\vbc.exe.config
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\vbc.rsp
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\VBCSCompiler.exe
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Antlr3.Runtime.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\EntityFramework.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Newtonsoft.Json.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Helpers.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Mvc.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Optimization.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Razor.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Razor.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\WebGrease.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\EntityFramework.xml
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Helpers.xml
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Mvc.xml
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Optimization.xml
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Razor.xml
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.xml
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Razor.xml
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Newtonsoft.Json.xml
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Antlr3.Runtime.pdb
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.CopyComplete
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.dll
+C:\Users\ASUS\Desktop\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.pdb
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\IDEA-X.dll.config
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\IDEA-X.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\IDEA-X.pdb
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\csc.exe
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\csc.exe.config
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\csc.rsp
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\csi.exe
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\csi.exe.config
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\csi.rsp
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Managed.Core.targets
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.AppContext.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Collections.Immutable.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Console.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Globalization.Calendars.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.IO.Compression.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.IO.FileSystem.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Net.Http.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Net.Sockets.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Reflection.Metadata.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.ValueTuple.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XmlDocument.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XPath.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\vbc.exe
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\vbc.exe.config
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\vbc.rsp
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\VBCSCompiler.exe
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\VBCSCompiler.exe.config
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\Antlr3.Runtime.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\EntityFramework.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\EntityFramework.SqlServer.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Web.Infrastructure.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\Newtonsoft.Json.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Helpers.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Mvc.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Optimization.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Razor.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.WebPages.Deployment.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.WebPages.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.WebPages.Razor.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\WebGrease.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\EntityFramework.xml
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\EntityFramework.SqlServer.xml
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Helpers.xml
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Mvc.xml
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Optimization.xml
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Razor.xml
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.WebPages.xml
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.WebPages.Deployment.xml
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.WebPages.Razor.xml
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\Newtonsoft.Json.xml
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\Antlr3.Runtime.pdb
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\C#\IDEA-X\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csprojAssemblyReference.cache
+D:\C#\IDEA-X\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.CoreCompileInputs.cache
+D:\C#\IDEA-X\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.CopyComplete
+D:\C#\IDEA-X\IDEA-X\IDEA-X\obj\Debug\IDEA-X.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\obj\Debug\IDEA-X.pdb
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Buffers.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.IO.Pipelines.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Memory.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Numerics.Vectors.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Buffers.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.IO.Pipelines.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Memory.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Numerics.Vectors.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Threading.Tasks.Extensions.xml
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.AspNetCore.Http.Features.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Extensions.Primitives.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.Buffers.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.IO.Pipelines.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.Memory.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.Numerics.Vectors.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.Threading.Tasks.Extensions.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.AspNetCore.Http.Features.xml
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Extensions.Primitives.xml
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.Buffers.xml
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.IO.Pipelines.xml
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.Memory.xml
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.Numerics.Vectors.xml
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.Threading.Tasks.Extensions.xml
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\FluentEmail.Core.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\FluentEmail.Smtp.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\FluentEmail.Core.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\FluentEmail.Smtp.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.AssemblyReference.cache
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.CoreCompileInputs.cache
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.pdb
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\IDEA-X.dll.config
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\IDEA-X.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\IDEA-X.pdb
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csc.exe
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csc.exe.config
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csc.rsp
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csi.exe
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csi.exe.config
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csi.rsp
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.AppContext.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Console.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.Compression.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Net.Http.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Net.Sockets.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.ValueTuple.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XPath.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\vbc.exe
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\vbc.exe.config
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\vbc.rsp
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\VBCSCompiler.exe
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\Antlr3.Runtime.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\EntityFramework.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\EntityFramework.SqlServer.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\FluentEmail.Core.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\FluentEmail.Smtp.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\Newtonsoft.Json.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\System.Buffers.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\System.IO.Pipelines.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\System.Memory.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\System.Numerics.Vectors.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Helpers.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Mvc.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Optimization.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Razor.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Deployment.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Razor.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\WebGrease.dll
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\EntityFramework.xml
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\EntityFramework.SqlServer.xml
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\System.Buffers.xml
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\System.IO.Pipelines.xml
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\System.Memory.xml
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\System.Numerics.Vectors.xml
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Helpers.xml
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Mvc.xml
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Optimization.xml
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Razor.xml
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.xml
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Deployment.xml
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Razor.xml
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\Newtonsoft.Json.xml
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\Antlr3.Runtime.pdb
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\dipan\Downloads\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.CopyComplete
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\IDEA-X.dll.config
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\IDEA-X.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\IDEA-X.pdb
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\csc.exe
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\csc.exe.config
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\csc.rsp
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\csi.exe
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\csi.exe.config
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\csi.rsp
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.AppContext.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Console.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.IO.Compression.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Net.Http.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Net.Sockets.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.ValueTuple.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XPath.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\vbc.exe
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\vbc.exe.config
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\vbc.rsp
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\VBCSCompiler.exe
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\Antlr3.Runtime.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\EntityFramework.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\FluentEmail.Core.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\FluentEmail.Smtp.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\Newtonsoft.Json.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\System.Buffers.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\System.IO.Pipelines.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\System.Memory.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\System.Numerics.Vectors.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Helpers.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Mvc.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Optimization.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Razor.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.WebPages.Deployment.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.WebPages.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.WebPages.Razor.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\WebGrease.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\EntityFramework.xml
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\System.Buffers.xml
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\System.IO.Pipelines.xml
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\System.Memory.xml
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\System.Numerics.Vectors.xml
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Helpers.xml
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Mvc.xml
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Optimization.xml
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Razor.xml
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.WebPages.xml
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.WebPages.Deployment.xml
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.WebPages.Razor.xml
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\Newtonsoft.Json.xml
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\Antlr3.Runtime.pdb
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.CopyComplete
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\obj\Debug\IDEA-X.dll
+C:\Users\User\Desktop\8th Semester\IDEA-X\IDEA-X\IDEA-X\obj\Debug\IDEA-X.pdb
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\IDEA-X.dll.config
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\IDEA-X.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\IDEA-X.pdb
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\csc.exe
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\csc.exe.config
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\csc.rsp
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\csi.exe
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\csi.exe.config
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\csi.rsp
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.AppContext.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Console.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.IO.Compression.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Net.Http.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Net.Sockets.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.ValueTuple.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XPath.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\vbc.exe
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\vbc.exe.config
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\vbc.rsp
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\VBCSCompiler.exe
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\Antlr3.Runtime.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\EntityFramework.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\EntityFramework.SqlServer.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\FluentEmail.Core.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\FluentEmail.Smtp.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\Newtonsoft.Json.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\System.Buffers.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\System.IO.Pipelines.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\System.Memory.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\System.Numerics.Vectors.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Helpers.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Mvc.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Optimization.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Razor.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.WebPages.Deployment.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.WebPages.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.WebPages.Razor.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\WebGrease.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\EntityFramework.xml
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\EntityFramework.SqlServer.xml
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\System.Buffers.xml
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\System.IO.Pipelines.xml
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\System.Memory.xml
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\System.Numerics.Vectors.xml
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Helpers.xml
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Mvc.xml
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Optimization.xml
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Razor.xml
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.WebPages.xml
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.WebPages.Deployment.xml
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.WebPages.Razor.xml
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\Newtonsoft.Json.xml
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\Antlr3.Runtime.pdb
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.AssemblyReference.cache
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.CoreCompileInputs.cache
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.CopyComplete
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\obj\Debug\IDEA-X.dll
+C:\Users\kb381\Desktop\IDEA-X\IDEA-X\IDEA-X\obj\Debug\IDEA-X.pdb
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.AssemblyReference.cache
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.CoreCompileInputs.cache
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\obj\Debug\IDEA-X.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\obj\Debug\IDEA-X.pdb
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\IDEA-X.dll.config
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\IDEA-X.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\IDEA-X.pdb
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\csc.exe
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\csc.exe.config
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\csc.rsp
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\csi.exe
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\csi.exe.config
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\csi.rsp
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Managed.Core.targets
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.AppContext.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Collections.Immutable.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Console.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Globalization.Calendars.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.IO.Compression.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.IO.FileSystem.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Net.Http.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Net.Sockets.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Reflection.Metadata.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.ValueTuple.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XmlDocument.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XPath.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\vbc.exe
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\vbc.exe.config
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\vbc.rsp
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\VBCSCompiler.exe
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\roslyn\VBCSCompiler.exe.config
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\Antlr3.Runtime.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\EntityFramework.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\EntityFramework.SqlServer.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\FluentEmail.Core.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\FluentEmail.Smtp.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.AspNetCore.Http.Features.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Extensions.Primitives.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Web.Infrastructure.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\Newtonsoft.Json.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\System.Buffers.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\System.IO.Pipelines.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\System.Memory.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\System.Numerics.Vectors.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\System.Threading.Tasks.Extensions.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Helpers.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Mvc.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Optimization.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Razor.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.WebPages.Deployment.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.WebPages.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.WebPages.Razor.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\WebGrease.dll
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\EntityFramework.xml
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\EntityFramework.SqlServer.xml
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.AspNetCore.Http.Features.xml
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Extensions.Primitives.xml
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\System.Buffers.xml
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\System.IO.Pipelines.xml
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\System.Memory.xml
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\System.Numerics.Vectors.xml
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\System.Threading.Tasks.Extensions.xml
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Helpers.xml
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Mvc.xml
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Optimization.xml
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.Razor.xml
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.WebPages.xml
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.WebPages.Deployment.xml
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\System.Web.WebPages.Razor.xml
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\Newtonsoft.Json.xml
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\Antlr3.Runtime.pdb
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\PROJECT\Adv NET Project\IDEA-X\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.CopyComplete
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\AngleSharp.Css.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\AngleSharp.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\HtmlSanitizer.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.Text.Encoding.CodePages.dll
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\AngleSharp.xml
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\AngleSharp.Css.xml
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\HtmlSanitizer.xml
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\C#\IDEA-X\IDEA-X\IDEA-X\bin\System.Text.Encoding.CodePages.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\AngleSharp.Css.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\AngleSharp.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\HtmlSanitizer.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Text.Encoding.CodePages.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\AngleSharp.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\AngleSharp.Css.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\HtmlSanitizer.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Text.Encoding.CodePages.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\IDEA-X.dll.config
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\IDEA-X.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\IDEA-X.pdb
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csc.exe
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csc.exe.config
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csc.rsp
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csi.exe
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csi.exe.config
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csi.rsp
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.AppContext.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Console.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.Compression.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Net.Http.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Net.Sockets.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.ValueTuple.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XPath.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\vbc.exe
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\vbc.exe.config
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\vbc.rsp
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\VBCSCompiler.exe
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\AngleSharp.Css.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\AngleSharp.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Antlr3.Runtime.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\EntityFramework.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\EntityFramework.SqlServer.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\FluentEmail.Core.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\FluentEmail.Smtp.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\HtmlSanitizer.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Newtonsoft.Json.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Buffers.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.IO.Pipelines.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Memory.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Numerics.Vectors.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Text.Encoding.CodePages.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Helpers.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Mvc.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Optimization.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Razor.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Deployment.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Razor.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\WebGrease.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\AngleSharp.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\AngleSharp.Css.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\EntityFramework.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\EntityFramework.SqlServer.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\HtmlSanitizer.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Buffers.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.IO.Pipelines.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Memory.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Numerics.Vectors.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Text.Encoding.CodePages.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Helpers.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Mvc.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Optimization.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Razor.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Deployment.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Razor.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Newtonsoft.Json.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Antlr3.Runtime.pdb
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.AssemblyReference.cache
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.CoreCompileInputs.cache
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.CopyComplete
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.pdb
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\ClosedXML.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\DocumentFormat.OpenXml.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\ExcelNumberFormat.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\ClosedXML.pdb
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\ClosedXML.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\DocumentFormat.OpenXml.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\ExcelNumberFormat.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\IDEA-X.dll.config
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\IDEA-X.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\IDEA-X.pdb
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csc.exe
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csc.exe.config
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csc.rsp
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csi.exe
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csi.exe.config
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csi.rsp
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.AppContext.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Collections.Immutable.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Console.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Globalization.Calendars.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.Compression.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.FileSystem.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Net.Http.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Net.Sockets.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Reflection.Metadata.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.ValueTuple.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XPath.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\vbc.exe
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\vbc.exe.config
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\vbc.rsp
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\VBCSCompiler.exe
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\VBCSCompiler.exe.config
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\AngleSharp.Css.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\AngleSharp.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\Antlr3.Runtime.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\ClosedXML.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\DocumentFormat.OpenXml.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\EntityFramework.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\EntityFramework.SqlServer.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\ExcelNumberFormat.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\FluentEmail.Core.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\FluentEmail.Smtp.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\HtmlSanitizer.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.AspNetCore.Http.Features.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Extensions.Primitives.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Web.Infrastructure.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\Newtonsoft.Json.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.Buffers.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.IO.Pipelines.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.Memory.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.Numerics.Vectors.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.Text.Encoding.CodePages.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.Threading.Tasks.Extensions.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Helpers.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Mvc.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Optimization.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Razor.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Deployment.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Razor.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\WebGrease.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\AngleSharp.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\AngleSharp.Css.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\ClosedXML.pdb
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\ClosedXML.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\DocumentFormat.OpenXml.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\EntityFramework.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\EntityFramework.SqlServer.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\ExcelNumberFormat.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\HtmlSanitizer.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.AspNetCore.Http.Features.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Extensions.Primitives.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.Buffers.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.IO.Pipelines.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.Memory.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.Numerics.Vectors.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.Text.Encoding.CodePages.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.Threading.Tasks.Extensions.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Helpers.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Mvc.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Optimization.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Razor.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Deployment.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Razor.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\Newtonsoft.Json.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\Antlr3.Runtime.pdb
+D:\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.AssemblyReference.cache
+D:\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.CoreCompileInputs.cache
+D:\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.CopyComplete
+D:\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.dll
+D:\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.pdb
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\ClosedXML.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\DocumentFormat.OpenXml.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\ExcelNumberFormat.dll
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\ClosedXML.pdb
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\ClosedXML.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\DocumentFormat.OpenXml.xml
+C:\Users\kb381\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\ExcelNumberFormat.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\IDEA-X.dll.config
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\IDEA-X.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\IDEA-X.pdb
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csc.exe
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csc.exe.config
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csc.rsp
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csi.exe
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csi.exe.config
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\csi.rsp
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Managed.Core.targets
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.AppContext.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Collections.Immutable.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Console.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Globalization.Calendars.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.Compression.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.FileSystem.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Net.Http.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Net.Sockets.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Reflection.Metadata.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.ValueTuple.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XmlDocument.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XPath.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\vbc.exe
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\vbc.exe.config
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\vbc.rsp
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\VBCSCompiler.exe
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\roslyn\VBCSCompiler.exe.config
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\AngleSharp.Css.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\AngleSharp.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\Antlr3.Runtime.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\ClosedXML.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\DocumentFormat.OpenXml.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\EntityFramework.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\EntityFramework.SqlServer.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\ExcelNumberFormat.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\FluentEmail.Core.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\FluentEmail.Smtp.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\HtmlSanitizer.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.AspNetCore.Http.Features.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Bcl.AsyncInterfaces.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Extensions.Primitives.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Web.Infrastructure.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\Newtonsoft.Json.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Buffers.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.IO.Pipelines.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Memory.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Numerics.Vectors.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Text.Encoding.CodePages.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Threading.Tasks.Extensions.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Helpers.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Mvc.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Optimization.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Razor.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Deployment.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Razor.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\WebGrease.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\AngleSharp.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\AngleSharp.Css.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\ClosedXML.pdb
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\ClosedXML.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\DocumentFormat.OpenXml.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\EntityFramework.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\EntityFramework.SqlServer.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\ExcelNumberFormat.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\HtmlSanitizer.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.AspNetCore.Http.Features.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Bcl.AsyncInterfaces.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.Extensions.Primitives.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Buffers.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.IO.Pipelines.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Memory.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Numerics.Vectors.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Text.Encoding.CodePages.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Threading.Tasks.Extensions.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Helpers.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Mvc.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Optimization.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.Razor.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Deployment.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Razor.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\Newtonsoft.Json.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\Antlr3.Runtime.pdb
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csprojAssemblyReference.cache
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.CoreCompileInputs.cache
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.CopyComplete
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.pdb
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\EasyCrypto.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Diagnostics.DiagnosticSource.dll
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\EasyCrypto.xml
+E:\TeraBoxDownload\Project ADV NET_20220718_183055\Project ADV NET\IDEA-X\IDEA-X\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\EasyCrypto.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\EasyCrypto.xml
+C:\Users\User\Desktop\Project ADV NET\IDEA-X\IDEA-X\bin\System.Diagnostics.DiagnosticSource.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\IDEA-X.dll.config
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\IDEA-X.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\IDEA-X.pdb
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\csc.exe
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\csc.exe.config
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\csc.rsp
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\csi.exe
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\csi.exe.config
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\csi.rsp
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Managed.Core.targets
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\System.AppContext.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\System.Collections.Immutable.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\System.Console.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\System.Globalization.Calendars.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.Compression.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.FileSystem.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\System.Net.Http.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\System.Net.Sockets.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\System.Reflection.Metadata.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\System.ValueTuple.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XmlDocument.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XPath.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\vbc.exe
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\vbc.exe.config
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\vbc.rsp
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\VBCSCompiler.exe
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\roslyn\VBCSCompiler.exe.config
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\AngleSharp.Css.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\AngleSharp.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\Antlr3.Runtime.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\ClosedXML.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\DocumentFormat.OpenXml.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\EasyCrypto.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\EntityFramework.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\EntityFramework.SqlServer.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\ExcelNumberFormat.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\FluentEmail.Core.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\FluentEmail.Smtp.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\HtmlSanitizer.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\Microsoft.AspNetCore.Http.Features.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\Microsoft.Extensions.Primitives.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\Microsoft.Web.Infrastructure.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\Newtonsoft.Json.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Buffers.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Diagnostics.DiagnosticSource.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.IO.Pipelines.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Memory.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Numerics.Vectors.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Text.Encoding.CodePages.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Threading.Tasks.Extensions.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Web.Helpers.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Web.Mvc.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Web.Optimization.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Web.Razor.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Deployment.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Razor.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\WebGrease.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\AngleSharp.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\AngleSharp.Css.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\ClosedXML.pdb
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\ClosedXML.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\DocumentFormat.OpenXml.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\EasyCrypto.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\EntityFramework.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\EntityFramework.SqlServer.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\ExcelNumberFormat.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\HtmlSanitizer.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\Microsoft.AspNetCore.Http.Features.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\Microsoft.Extensions.Primitives.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Buffers.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Diagnostics.DiagnosticSource.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.IO.Pipelines.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Memory.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Numerics.Vectors.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Text.Encoding.CodePages.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Threading.Tasks.Extensions.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Web.Helpers.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Web.Mvc.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Web.Optimization.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Web.Razor.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Deployment.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\System.Web.WebPages.Razor.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\Newtonsoft.Json.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\Antlr3.Runtime.pdb
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.AssemblyReference.cache
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.CoreCompileInputs.cache
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.csproj.CopyComplete
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.dll
+D:\PROJECT\Project ADV .NET\IDEA-X\IDEA-X\obj\Debug\IDEA-X.pdb

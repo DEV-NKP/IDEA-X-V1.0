@@ -1,0 +1,150 @@
+﻿@model IEnumerable<IDEA_X.Models.POST_TIMELINE>
+@{
+    ViewBag.Title = "SearchPostView";
+    Layout = "~/Views/Shared/_LayoutDashBoard.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-sm-9 main-content-scoll">
+
+        <div class="container-fluid" style="padding:2rem;">
+            <div class="row-no-gutters">
+                <div class="col-sm-1">
+                    <a href="@Url.Action("Timeline","User")">
+                        <i class="fa-2xl fa-solid fa-angle-left back-btn-style"></i>
+                    </a>
+                </div>
+                <div class="col-sm-10 col-sm-offset-0">
+                    <span class="fa-2xl">Search Post : @Request["search_text"]</span>
+                </div>
+            </div>
+        </div>
+        <!--Image post starts here-->
+        @foreach (var post in Model)
+        {
+            <br />
+            <div class="container-fluid post">
+                <div class="row">
+                    <div class="col-sm-12 ">
+                        <div class="row post-heading">
+                            <div class="col-sm-2   flex-row-style">
+                                @{ var imgUrl = Url.Action("GetImage", "User", new { name = post.AUTHOR });}
+                                @if (post.PROFILE_IMG != null)
+                                {
+                                    <img src="@imgUrl" class="img-circle" width="40px" height="40px" style="margin-right:10%;" /> }
+                                else
+                                {
+                                    <img src="~/image/dashboard/Default_pfp.jpg" class="img-circle" width="40px" height="40px" style="margin-right:10%;" />}
+                                <p class="text-color text-left text-nowrap" style="vertical-align:central;margin-top:10%;">@post.AUTHOR</p>
+                            </div>
+
+                        </div>
+                        @if (post.TIMELINE_TEXT != null)
+                        {
+                            <div class="row post-body">
+                                <div class="col-sm-12 ">
+                                    <p class="text-color">
+                                        @post.TIMELINE_TEXT
+                                    </p>
+                                </div>
+                            </div>}
+
+                        @if (post.TIMELINE_IMAGE != null)
+                        {
+                            <div class="row post-body">
+                                <div class="col-sm-12 ">
+                                    <img src="@Url.Action("GetPostImage","User",new {id = post.POST_ID})" alt="Post image" class="img-responsive" />
+                                </div>
+                            </div>}
+
+                        <div class="row post-body flex-row-style">
+                            <div class="col-sm-2">
+                                <p class="tag-style">@post.POST_TAG</p>
+                            </div>
+
+                        </div>
+                        <div class="row post-action">
+                            <div class="col-sm-2  flex-row-style">
+                                <!--Place id here-->
+                                @if (post.POST_STATUS != null && post.POST_STATUS.Equals("UPVOTE"))
+                                {
+                                    <a onclick="upvoteSelect(@post.POST_ID)" id="@post.POST_ID" class="post-action-style upvote-select upvote upvote-active-style" style="margin-right: 0.5rem; display: normal; cursor: pointer;">
+                                        <img src="~/image/timeline/like-s.svg" class="img-responsive" width="25" height="25" />
+                                    </a>
+                                    <a onclick="upvoteNormal(@post.POST_ID)" id="@post.POST_ID" class="post-action-style upvote upvote-normal" style="margin-right: 0.5rem; display: none; cursor: pointer;">
+                                        <img src="~/image/timeline/like-n.svg" class="img-responsive" width="25" height="25" />
+                                    </a>
+                                }
+                                else
+                                {
+                                    <a onclick="upvoteSelect(@post.POST_ID)" id="@post.POST_ID" class="post-action-style upvote-select upvote upvote-active-style" style="margin-right: 0.5rem; display: none; cursor: pointer;">
+                                        <img src="~/image/timeline/like-s.svg" class="img-responsive" width="25" height="25" />
+                                    </a>
+                                    <a onclick="upvoteNormal(@post.POST_ID)" id="@post.POST_ID" class="post-action-style upvote upvote-normal" style="margin-right: 0.5rem; display: normal; cursor: pointer;">
+                                        <img src="~/image/timeline/like-n.svg" class="img-responsive" width="25" height="25" />
+                                    </a>
+                                }
+                                <b id="@post.POST_ID" class="upvote_count">@post.POST_LIKE</b>
+                            </div>
+
+                            <div class="col-sm-2  flex-row-style">
+                                <!--Place id here-->
+                                @if (post.POST_STATUS != null && post.POST_STATUS.Equals("DOWNVOTE"))
+                                {
+                                    <a onclick="downvoteSelect(@post.POST_ID)" id="@post.POST_ID" class="post-action-style downvote-select downvote downvote-active-style" style="margin-right: 0.5rem; display: normal; cursor: pointer; ">
+                                        <img src="~/image/timeline/dislike-s.svg" class="img-responsive" width="25" height="25" />
+                                    </a>
+
+                                    <a onclick="downvoteNormal(@post.POST_ID)" id="@post.POST_ID" class="post-action-style downvote downvote-normal" style="margin-right: 0.5rem; display: none; cursor: pointer; ">
+                                        <img src="~/image/timeline/dislike-n.svg" class="img-responsive" width="25" height="25" />
+                                    </a>
+                                }
+                                else
+                                {
+                                    <a onclick="downvoteSelect(@post.POST_ID)" id="@post.POST_ID" class="post-action-style downvote-select downvote downvote-active-style" style="margin-right: 0.5rem; display: none; cursor: pointer; ">
+                                        <img src="~/image/timeline/dislike-s.svg" class="img-responsive" width="25" height="25" />
+                                    </a>
+                                    <a onclick="downvoteNormal(@post.POST_ID)" id="@post.POST_ID" class="post-action-style downvote downvote-normal" style="margin-right: 0.5rem; display: normal; cursor: pointer; ">
+                                        <img src="~/image/timeline/dislike-n.svg" class="img-responsive" width="25" height="25" />
+                                    </a>
+                                }
+                                <b id="@post.POST_ID" class="downvote_count">@post.POST_DISLIKE</b>
+                            </div>
+
+                            <div class="col-sm-1  col-sm-offset-7">
+                                <a href="/User/ReportPost/@post.POST_ID">
+                                    @if (post.REPORTED_POST.Equals("REPORTED"))
+                                    {
+
+                                        <i class="fa-solid fa-flag report-btn-style" style="background-color:red; color: aliceblue;"></i>
+
+                                    }
+                                    else
+                                    {
+                                        <i class="fa-solid fa-flag report-btn-style"></i>
+                                    }
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+        }
+
+
+    </div>
+    <div class="col-sm-2 col-sm-offset-0 search-content">
+        <div class="row">
+
+        </div>
+        <div class="row">
+            <ul class="nav nav-pills nav-stacked search-result"></ul>
+        </div>
+    </div>
+</div>
+
+<script src="@Url.Content("~/Scripts/jquery-3.4.1.js")"></script>
+
+<script src="@Url.Content("~/Scripts/postAction.js")"></script>

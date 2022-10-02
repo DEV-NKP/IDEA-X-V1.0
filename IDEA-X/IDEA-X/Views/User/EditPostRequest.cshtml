@@ -1,0 +1,141 @@
+﻿
+@{
+    ViewBag.Title = "EditPostRequest";
+  
+}
+
+<link href="@Url.Content("~/Content/Text_Box.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/ButtonFillGlow.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/MidWordLine.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/Text_Decor.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/TextBoxLog.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/VerificationCode.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/GlowBoxButton.css")" rel="stylesheet" type="text/css" />
+
+<div style="background-color: #0f1011; height: 100%; width: 100%; border-radius: 20px;">
+
+    <table border="0" style="height: 100%; width: 100%; background-color: #0f1011; border-radius: 20px;">
+        <tr>
+            <td width="100%" align="center" valign="top" style="padding-top:20px;">
+
+                <h4 style="width:300px; color: #b0acac; border-bottom:1px solid white; padding-bottom:15px;">Edit Post</h4>
+
+                <form action="/User/EditPost" enctype="multipart/form-data" method="post" id="form">
+
+                    <input type="number" style="display:none" name="POST_IDR" value="@(Model != null? Model.POST_IDR:"")" class="form-control timeline_id_box" id="text-box-normal" readonly />
+
+                    <br />
+                    <h6 style="font-weight: lighter; padding-top: 10px; color: #c9c9c9;">
+                        What's On Your mind:
+                    </h6>
+
+
+                    <textarea id="text-box-normal" name="TIMELINE_TEXTR" rows="4" class="form-control timeline_text_box" style="max-width: 60%; max-height:15vh; min-width:60%; min-height:15vh ">@(Model != null? Model.TIMELINE_TEXTR : "")</textarea>
+
+
+                    <div style="padding-top: 20px;">
+                        <table border="0" style="background-color: #0f1011; width:70%">
+
+                            <tr>
+                                <td style="width:50%" align="center">
+
+
+                                   
+                                    @if (Model.TIMELINE_IMGRC != null)
+                                    {
+                                        <img src="@Url.Action("GetPostImage", "User", new { id = Model.POST_IDR })" alt="No Post Image Selected Yet" id="output" style="border-radius:10px; width:20vw; height:30vh;" />
+                                    }
+                                    else
+                                    {
+                                        <img src="~/image/dashboard/Default_pfp.jpg" alt="No Post Image Selected Yet" id="output" style="border-radius:10px; width:20vw; height:30vh;" />
+
+                                    }
+
+
+
+
+
+
+
+                                    <br /> <br />
+                                    <input type="file" accept="image/*" name="TIMELINE_IMGR" id="file" onchange="loadFile(event)" style="display: none;" class="timeline_image_box" />
+
+                                    <label for="file" class="BoxGlowButton" style="--clr: #a6e7ff; cursor: pointer; font-size: 20px; padding-left: 10px; padding-right: 10px; border-radius: 10px;">Upload Image</label>
+                                </td>
+
+                                <td style="width:50%" align="center">
+
+                                    <h6 style="font-weight: lighter; padding-top: 0px; color: #c9c9c9; ">
+                                        Post Tag:
+                                    </h6>
+
+
+                                    <input type="text" name="POST_TAGR" value="@(Model != null? Model.POST_TAGR:"")" list="tagList" id="text-box-normal" class="form-control timeline_tag_box">
+                                    <datalist id="tagList">
+                                        <option value="" style="color:#808080">Select Your Department</option>
+                                        <option value="Aeronautical Engineering" style="color:#808080">Aeronautical Engineering</option>
+                                        <option value="Textile Engineering" style="color:#808080">Textile Engineering</option>
+                                        <option value="Mechatronics Engineering" style="color:#808080">Mechatronics Engineering</option>
+                                        <option value="Aerospace Engineering" style="color:#808080">Aerospace Engineering</option>
+                                        <option value="Mechanical Engineering" style="color:#808080">Mechanical Engineering</option>
+                                        <option value="Structural Engineering" style="color:#808080">Structural Engineering</option>
+                                        <option value="Automobile Engineering" style="color:#808080">Automobile Engineering</option>
+                                        <option value="Production Engineering" style="color:#808080">Production Engineering</option>
+                                        <option value="Metallurgical Engineering" style="color:#808080">Metallurgical Engineering</option>
+                                        <option value="Ceramic Engineering" style="color:#808080">Ceramic Engineering</option>
+                                        <option value="Biomedical Engineering" style="color:#808080">Biomedical Engineering</option>
+                                        <option value="Construction Engineering" style="color:#808080">Construction Engineering</option>
+                                        <option value="Civil Engineering" style="color:#808080">Civil Engineering</option>
+                                        <option value="Robotics Engineering" style="color:#808080">Robotics Engineering</option>
+                                        <option value="Power Engineering" style="color:#808080">Power Engineering</option>
+                                        <option value="Communications Engineering" style="color:#808080">Communications Engineering</option>
+                                        <option value="Biotechnology Engineering" style="color:#808080">Biotechnology Engineering</option>
+                                        <option value="Electrical Engineering" style="color:#808080">Electrical Engineering</option>
+                                        <option value="Computer Science Engineering" style="color:#808080">Computer Science Engineering</option>
+                                        <option value="Chemical Engineering" style="color:#808080">Chemical Engineering</option>
+                                        <option value="Mining Engineering" style="color:#808080">Mining Engineering</option>
+                                        <option value="Electronics Engineering" style="color:#808080">Electronics Engineering</option>
+                                        <option value="Marine Engineering" style="color:#808080">Marine Engineering</option>
+                                        <option value="Tool Engineering" style="color:#808080">Tool Engineering</option>
+                                        <option value="Industrial Engineering" style="color:#808080">Industrial Engineering</option>
+                                        <option value="Marine Engineering" style="color:#808080">Marine Engineering</option>
+                                        <option value="Petroleum Engineering" style="color:#808080">Petroleum Engineering</option>
+                                        <option value="Software Engineering" style="color:#808080">Software Engineering</option>
+                                        <option value="Telecommunication Engineering" style="color:#808080">Telecommunication Engineering</option>
+                                        <option value="Environmental Engineering" style="color:#808080">Environmental Engineering</option>
+                                        <option value="Transportation Engineering" style="color:#808080">Transportation Engineering</option>
+
+                                    </datalist>
+                                    <br />
+                                    <br /><br />
+                                    <br />
+                                    <a href="javascript:$('form').submit();" id="button-glow">Save Changes</a>
+                </form>
+            </td>
+
+
+        </tr>
+    </table>
+</div>
+
+
+                                 </div>
+            </td>
+        </tr>
+
+
+    </table>
+
+</div>
+
+<script>var loadFile = function (event) {
+        var image = document.getElementById('output');
+        image.src = URL.createObjectURL(event.target.files[0]);
+    };</script>
+
+
+<script src="@Url.Content("~/Scripts/jquery-3.4.1.js")"></script>
+
+
+
+

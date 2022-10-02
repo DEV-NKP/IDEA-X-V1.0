@@ -1,0 +1,135 @@
+﻿
+@{
+    ViewBag.Title = "Profile";
+    Layout = "~/Views/Shared/_AdminDashboard.cshtml";
+}
+
+<link href="@Url.Content("~/Content/TextBoxLog.css")" rel="stylesheet" type="text/css" />
+
+<div class="row">
+    <div class="col-sm-9 main-content-scoll">
+
+
+        <div width="100%" align="center" style="font-family: 'Times New Roman'; font-size: 20px; color: #e2344d ">
+
+            <img src="~/image/ideax.svg" title="Profile" class="img-circle hover-profile" width="15%" height="15%" />
+            <br /><br />
+            @foreach (var ads1 in Model)
+            {
+                <label style="color: #cac163">@ads1.USERNAME</label>
+            }
+            <br />
+            @*<a href="/User/EditProfile" style="padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; text-decoration: none; background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.1)); border-radius: 10px; font-size: 18px; color: #bedafb;">Edit Profile</a>*@
+
+            <hr style="width:50%" />
+
+            <br />
+            <div style="text-align: left; padding-left: 10%; font-family: 'Times New Roman'; font-size: 20px; color: #eade94">
+
+                <span style="border-image: linear-gradient(135deg, #d8bd1b, #808080); border-image-slice: 1; border-bottom: solid; padding-left: 0px; padding-right: 20px; padding-bottom:5px;">
+                    User Details
+                </span>
+                <br />
+
+                <br />
+
+
+
+                @foreach (var a in Model)
+                {
+            <div style="text-align: left; padding-left: 10%; font-family: 'Times New Roman'; font-size: 20px; color: #2e91ef">
+
+                User Name : <span style="color:#bedafb"> @a.USERNAME</span>
+                <br />
+                Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span style="color: #bedafb "> @a.EMAIL</span>
+                <br />
+                @*<h5>User Name : <span style="color:#bedafb"> @a.USERNAME </span></h5>
+        <br />
+        <h5>Email: <span style="color: #bedafb "> @a.EMAIL </span></h5>*@
+            </div>
+                        }
+
+                 
+
+                </div>
+            <br />
+
+            <br />
+            <br />
+            <a href="javascript:void(0);" onclick="myFunction();" id="call" style="padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; text-decoration: none; background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.1)); border-radius: 10px; font-size: 18px; color: #ee7e7e;">Change Password</a>
+            <br />
+            <br />
+
+        </div>
+
+
+
+
+    </div>
+
+
+    <div class="col-sm-2 col-sm-offset-0 search-content" style="">
+
+
+        <div class="row">
+            <form class="form-group search-bar">
+                <div class="row-no-gutters">
+                    <div class="col-sm-10 ">
+                        <input type="search" class="form-control search_box_user" placeholder="search for user" id="text-box-normal" style="border: 2px solid #76b8ac;" />
+                    </div>
+                    <div class="col-sm-1 col-sm-offset-1">
+                        <a href="#" class="btn btn-default" id="text-box-normal" style="border: 2px solid #76b8ac;">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row main-content-scoll" style="overflow-y:scroll; overflow-x:hidden;">
+            <ul class="nav nav-pills nav-stacked search-result-user"></ul>
+        </div>
+       
+
+    </div>
+
+
+
+    <div id="popupCP" align="center" style="position: fixed; left: 8%; top: 10%; width: 84%; height: 80%; display: none; box-shadow: 0 0 20px #21ebff; transition-delay: 0.5s; border-radius:20px;">
+        @Html.Partial("~/Views/Admin/ChangePassword.cshtml")
+        <a href="javascript:void(0);" onclick="myFunctionRem();" id="call" style="box-shadow: 0 0 20px #000000; transition-delay: 0.5s; border-radius: 20px; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; text-decoration: none; background-color: #4b4949; border-radius: 10px; font-size: 18px; color: #ee7e7e; border:2px solid #21ebff;">
+            <i class="fa-solid fa-arrow-up">
+            </i>
+        </a>
+
+    </div>
+
+
+
+
+
+
+
+</div>
+
+
+
+<script>
+
+    function myFunction() {
+        // document.getElementById("call").style.color = "#000000";
+        var element = document.getElementById("popupCP");
+        element.style.display = "block";
+
+    }
+    function myFunctionRem() {
+        // document.getElementById("call").style.color = "#000000";
+        var element = document.getElementById("popupCP");
+        element.style.display = "none";
+    }
+</script>
+
+<script src="@Url.Content("~/Scripts/jquery-3.4.1.js")"></script>
+<script src="@Url.Content("~/Scripts/SearchProfileUser.js")"></script>
+
+
+

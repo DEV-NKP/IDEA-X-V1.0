@@ -1,0 +1,190 @@
+﻿@{
+    ViewBag.Title = "Profile";
+    Layout = "~/Views/Shared/_LayoutDashBoard.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-sm-9 main-content-scoll">
+
+
+        <div width="85%" align="center" style="font-family: 'Times New Roman'; font-size: 20px; color: #e2344d ">
+            @{ var imgUrl = Url.Action("GetImage", "User", new { name = Model.USERNAME });}
+            @if (Model.PROFILE_PICTURE != null)
+            {
+                <img src="@imgUrl" title="Profile" class="img-circle hover-profile" width="200" height="200"  />
+            }
+            else
+            {
+                <img src="~/image/dashboard/Default_pfp.jpg" title="Profile" class="img-circle hover-profile" width="200" height="200"  />
+            }
+            <br /><br />
+            <label style="color: #cac163">@Model.USERNAME</label>
+            <br />
+            <a href="/User/EditProfile" style="padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; text-decoration: none; background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.1)); border-radius: 10px; font-size: 18px; color: #bedafb;">Edit Profile</a>
+
+            <hr style="width:50%" />
+
+            <br />
+            <div style="text-align: left; padding-left: 10%; font-family: 'Times New Roman'; font-size: 20px; color: #eade94">
+
+                <span style="border-image: linear-gradient(135deg, #d8bd1b, #808080); border-image-slice: 1; border-bottom: solid; padding-left: 0px; padding-right: 20px; padding-bottom:5px;">
+                    User Details
+                </span>
+                <br />
+
+                <br />
+                <div style="text-align: left; padding-left: 10%; font-family: 'Times New Roman'; font-size: 20px; color: #2e91ef ">
+                    User Name : <span style="color:#bedafb">@Model.USERNAME</span>
+                    <br />
+                    First Name : <span style="color: #bedafb ">@Model.FIRST_NAME</span>
+                    <br />
+                    Last Name&nbsp;: <span style="color: #bedafb ">@Model.LAST_NAME</span>
+                    <br />
+                    Headline&nbsp;&nbsp;&nbsp; : <span style="color: #bedafb ">@Model.HEADLINE</span>
+                    <br />
+                    Country&nbsp;&nbsp;&nbsp;&nbsp; : <span style="color: #bedafb ">@Model.COUNTRY</span>
+                    <br />
+                    Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span style="color: #bedafb ">@Model.USER_STATUS</span>
+                    <br />
+                </div>
+            </div>
+            <br />
+            <hr />
+            <br />
+            <div style="text-align: left; padding-left: 10%; font-family: 'Times New Roman'; font-size: 20px; color: #eade94 ">
+                <span style="border-image: linear-gradient(135deg, #d8bd1b, #808080); border-image-slice: 1; border-bottom: solid; padding-left: 0px; padding-right: 20px; padding-bottom:5px;">
+
+                    About User
+                </span>
+                <br /><br />
+                <div style="text-align: left; padding-left: 10%; font-family: 'Times New Roman'; font-size: 20px; color: #2e91ef">
+                    Date Of Birth &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span style="color: #bedafb">@Model.DATE_OF_BIRTH</span>
+                    <br />
+                    Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span style="color: #bedafb">@Model.GENDER</span>
+                    <br />
+                    Industry&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span style="color: #bedafb">@Model.INDUSTRY</span>
+                    <br />
+                    Education Institution : <span style="color: #bedafb">@Model.EDUCATIONAL_INSTITUTION</span>
+                    <br />
+                    Department&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span style="color: #bedafb">@Model.DEPARTMENT</span>
+                    <br />
+
+                </div>
+            </div>
+            <br />
+            <hr />
+            <br />
+            <div style="text-align: left; padding-left: 10%; font-family: 'Times New Roman'; font-size: 20px; color: #eade94">
+                <span style="border-image: linear-gradient(135deg, #d8bd1b, #808080); border-image-slice: 1; border-bottom: solid; padding-left: 0px; padding-right: 20px; padding-bottom:5px;">
+
+                    Contact Details
+                </span>
+                <br /><br />
+                <div style="text-align: left; padding-left: 10%; font-family: 'Times New Roman'; font-size: 20px; color: #2e91ef">
+
+
+                    Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span style="color: #bedafb">@Model.USER_ADDRESS</span>
+                    <br />
+                    State&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span style="color: #bedafb">@Model.USER_STATE</span>
+                    <br />
+                    Zip Code&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span style="color: #bedafb">@Model.ZIP_CODE</span>
+                    <br />
+                    Country &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span style="color: #bedafb">@Model.COUNTRY</span>
+                    <br />
+                    Mobile &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span style="color: #bedafb">01787700037</span>
+                    <br />
+                    Contact URL : <span style="color: #bedafb">@Model.CONTACT_URL</span>
+                    <br />
+
+                </div>
+            </div>
+            <br />
+
+            <br />
+
+
+
+            <a href="javascript:void(0);" onclick="myFunction();" id="call" style="padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; text-decoration: none; background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.1)); border-radius: 10px; font-size: 18px; color: #ee7e7e;">Change Password</a>
+
+
+        </div>
+
+
+
+
+        </div>
+
+
+        <div class="col-sm-2 col-sm-offset-0 search-content">
+            <ul class="nav nav-pills nav-stacked search-bar">
+                <li>
+                    <a href="@Url.Action("Profile","User")" style="padding: 2rem 1rem">
+                        <span class="row-no-gutters">
+                            <span class="col-sm-2">
+                                <i class="fa-solid fa-user">
+                                </i>
+                            </span>
+                            <span class="col-sm-offset-0">
+                                About
+                            </span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Personal_Timeline","User")" style="padding: 2rem 1rem">
+                        <span class="row-no-gutters">
+                            <span class="col-sm-2">
+                                <i class="fa-solid fa-timeline">
+                                </i>
+                            </span>
+                            <span class="col-sm-offset-0">
+                                Your Timeline
+                            </span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Activity","User")" style="padding: 2rem 1rem">
+                        <span class="row-no-gutters">
+                            <span class="col-sm-2">
+                                <i class="fa-solid fa-bolt-lightning">
+                                </i>
+                            </span>
+                            <span class="col-sm-offset-0">
+                                Your Activities
+                            </span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="popupCP" align="center" style="position: fixed; left: 8%; top: 10%; width: 84%; height: 80%; display: none; box-shadow: 0 0 20px #21ebff; transition-delay: 0.5s; border-radius:20px;">
+            @Html.Partial("~/Views/User/ChangePassword.cshtml")
+            <a href="javascript:void(0);" onclick="myFunctionRem();" id="call" style="box-shadow: 0 0 20px #000000; transition-delay: 0.5s; border-radius: 20px; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; text-decoration: none; background-color: #4b4949; border-radius: 10px; font-size: 18px; color: #ee7e7e; border:2px solid #21ebff;">
+                <i class="fa-solid fa-arrow-up">
+                </i>
+            </a>
+
+        </div>
+
+    </div>
+
+
+<script>
+
+    function myFunction() {
+        // document.getElementById("call").style.color = "#000000";
+        var element = document.getElementById("popupCP");
+        element.style.display = "block";
+
+    }
+    function myFunctionRem() {
+        // document.getElementById("call").style.color = "#000000";
+        var element = document.getElementById("popupCP");
+        element.style.display = "none";
+    }
+</script>
+
+

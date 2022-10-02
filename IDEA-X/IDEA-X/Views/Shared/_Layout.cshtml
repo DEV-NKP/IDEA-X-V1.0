@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - IDEA-X</title>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <link href="@Url.Content("~/Content/home-menu-layout.css")" rel="stylesheet" type="text/css" />
+    @RenderSection("Styles", false)
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top menubar menuitem-center">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="/Home/Index">
+                    <img src=@Url.Content("~/image/ideax.svg") alt="IDEA-X Icon" class="navbar-left" style="width:70px; height: 50px;" />
+                    <span class="navbar-brand">IDEA-X</span>
+                </a>
+                <!--  @Html.ActionLink("IDEA-X", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" }) -->
+
+            </div>
+
+
+
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav gap-first">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+					<li>@Html.ActionLink("Meet The Team", "MeetTheTeam", "Home")</li>
+                    <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
+                    
+
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right ">
+                  
+                    <li><a href="/Home/Login"  
+                           onMouseOver="this.style.color='#1bbdd6'"
+                           onMouseOut="this.style.color='aliceblue'"
+                           style="color:aliceblue;">LOG IN</a>
+                    </li>
+
+                    <li class="gap-second"><a href="/Home/SignUp" id="sign-btn">SIGN UP</a>
+                    </li>
+                </ul>
+
+            </div>
+
+          
+
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer style="margin-top:-8px">
+
+            <span class="bottom-left" style="font-size:14px">IDEA-X</span>
+            <img src=@Url.Content("~/image/ideax.svg") alt="IDEA-X Icon" class="bottom-left" style="width:50px; height: 40px; " />
+
+            <p style="font-size:12px" class="bottom-left"> &copy; Copyright @DateTime.Now.Year</p>
+      
+            <address class="bottom-right" style="font-family:SimSun; font-size:14px; text-align:right; margin-top:-45px;"> &#9989; ALL RIGHTS RESERVED BY &#10077;BRAVO-ALIEN&#10078;</address>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

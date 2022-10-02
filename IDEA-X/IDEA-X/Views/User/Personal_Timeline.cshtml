@@ -1,0 +1,412 @@
+﻿@{
+    ViewBag.Title = "Personal_Timeline";
+    Layout = "~/Views/Shared/_LayoutDashBoard.cshtml";
+}
+
+<div class="modal fade" aria-hidden="true" aria-labelledby="deletePostModal" role="dialog" id="deletePostModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Delete Post</h4>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure to delete this post ?</p>
+            </div>
+            <div class="modal-footer">
+                <a href="" class="btn btn-danger delete-post-true">Delete</a>
+                <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-9 main-content-scoll" style="background-color: #0c0d0f;">
+
+        <div class="container-fluid post">
+            <div class="row">
+                <div class="col-sm-12 ">
+                    <div class="row post-heading" style="background-color: #0c0d0f; border:1px solid #197d52; padding-bottom:15px; border-radius:10px;">
+                        <div class="col-sm-11   flex-row-style" align="center">
+                            <img src="@Url.Action("GetPostImageUser","User")" class="img-circle" width="40px" height="40px" style="margin-right:1%;margin-left:15%;" />
+                            <a href="javascript:void(0);" onclick="myFunction();" class="col-sm-11   flex-row-style" style="padding-top: 15px; padding-bottom: 15px; padding-left: 20%; padding-right: 20%; background-color: #3e4542; border-radius: 20px; text-decoration: none; color: #3fb494; text-align:center;">Have discovered something new? Share it with IDEA-X.</a>
+                        </div>
+                        @*<div class="col-sm-1 col-sm-offset-0" style="padding:1rem 0;"></div>*@
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        @foreach (var post in Model)
+        {
+            if (post.POSTING_STATUS.Equals("BANNED"))
+            {
+
+                <br />
+                <div class="container-fluid post" >
+                    <div class="row" >
+                        <div class="col-sm-12 " style="border:1px solid red; border-radius:10px">
+                            <div class="row post-heading" >
+                                <div class="col-sm-2   flex-row-style"  >
+                                    @{ var imgUrl = Url.Action("GetImage", "User", new { name = post.AUTHOR });}
+                                    @if (post.PROFILE_IMG != null)
+                                    {
+                                        <img src="@imgUrl" class="img-circle" width="40px" height="40px" style="margin-right:10%;" />
+                                    }
+                                    else
+                                    {
+                                        <img src="~/image/dashboard/Default_pfp.jpg" class="img-circle" width="40px" height="40px" style="margin-right:10%;" />
+                                    }
+                                    <p class="text-color text-left text-nowrap" style="vertical-align:central;margin-top:10%;">@post.AUTHOR</p>
+                                </div>
+                                <div class="col-sm-1 col-sm-offset-9" >
+                                    <a href="" class="menu-link-style dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-stack-1x fa-solid fa-ellipsis-vertical" style="padding:1rem 0rem;"></i>
+                                    </a>
+                                    <!--Drop down menu-->
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li>
+                                            <a href="/User/EditPost/@post.POST_ID">
+                                                <span class="row-no-gutters" style="padding:1rem;">
+                                                    <span class="col-sm-3">
+                                                        <i class="fa fa-pen"></i>
+                                                    </span>
+                                                    <span class="col-sm-5">
+                                                        Edit
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-id="@post.POST_ID" data-toggle="modal" data-target="#deletePostModal" class="deletePostBtn">
+                                                <span class="row-no-gutters" style="padding:1rem;">
+                                                    <span class="col-sm-3">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                    <span class="col-sm-5">
+                                                        Delete
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            @if (post.TIMELINE_TEXT != null)
+                            {
+                                <div class="row post-body">
+                                    <div class="col-sm-12 ">
+                                        <p class="text-color" >
+                                            @post.TIMELINE_TEXT
+                                        </p>
+                                    </div>
+                                </div>}
+
+                            @if (post.TIMELINE_IMAGE != null)
+                            {
+                                <div class="row post-body">
+                                    <div class="col-sm-12 ">
+                                        <img src="@Url.Action("GetPostImage", "User", new { id = post.POST_ID })" alt="Post image" class="img-responsive" />
+                                    </div>
+                                </div>}
+
+                            <div class="row post-body flex-row-style">
+                                <div class="col-sm-2">
+                                    <p class="tag-style">@post.POST_TAG</p>
+                                </div>
+
+                            </div>
+                            <div class="row post-action">
+                                <div class="col-sm-2  flex-row-style">
+                                    <!--Place id here-->
+                                    @if (post.POST_STATUS != null && post.POST_STATUS.Equals("UPVOTE"))
+                                    {
+                                        <a onclick="upvoteSelect(@post.POST_ID)" id="@post.POST_ID" class="post-action-style upvote-select upvote upvote-active-style" style="margin-right: 0.5rem; display: normal; cursor: pointer;">
+                                            <img src="~/image/timeline/like-s.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                        <a onclick="upvoteNormal(@post.POST_ID)" id="@post.POST_ID" class="post-action-style upvote upvote-normal" style="margin-right: 0.5rem; display: none; cursor: pointer;">
+                                            <img src="~/image/timeline/like-n.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                    }
+                                    else
+                                    {
+                                        <a onclick="upvoteSelect(@post.POST_ID)" id="@post.POST_ID" class="post-action-style upvote-select upvote upvote-active-style" style="margin-right: 0.5rem; display: none; cursor: pointer;">
+                                            <img src="~/image/timeline/like-s.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                        <a onclick="upvoteNormal(@post.POST_ID)" id="@post.POST_ID" class="post-action-style upvote upvote-normal" style="margin-right: 0.5rem; display: normal; cursor: pointer;">
+                                            <img src="~/image/timeline/like-n.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                    }
+                                    <b id="@post.POST_ID" class="upvote_count">@post.POST_LIKE</b>
+                                </div>
+
+                                <div class="col-sm-2  flex-row-style">
+                                    <!--Place id here-->
+                                    @if (post.POST_STATUS != null && post.POST_STATUS.Equals("DOWNVOTE"))
+                                    {
+                                        <a onclick="downvoteSelect(@post.POST_ID)" id="@post.POST_ID" class="post-action-style downvote-select downvote downvote-active-style" style="margin-right: 0.5rem; display: normal; cursor: pointer; ">
+                                            <img src="~/image/timeline/dislike-s.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+
+                                        <a onclick="downvoteNormal(@post.POST_ID)" id="@post.POST_ID" class="post-action-style downvote downvote-normal" style="margin-right: 0.5rem; display: none; cursor: pointer; ">
+                                            <img src="~/image/timeline/dislike-n.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                    }
+                                    else
+                                    {
+                                        <a onclick="downvoteSelect(@post.POST_ID)" id="@post.POST_ID" class="post-action-style downvote-select downvote downvote-active-style" style="margin-right: 0.5rem; display: none; cursor: pointer; ">
+                                            <img src="~/image/timeline/dislike-s.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                        <a onclick="downvoteNormal(@post.POST_ID)" id="@post.POST_ID" class="post-action-style downvote downvote-normal" style="margin-right: 0.5rem; display: normal; cursor: pointer; ">
+                                            <img src="~/image/timeline/dislike-n.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                    }
+                                    <b id="@post.POST_ID" class="downvote_count">@post.POST_DISLIKE</b>
+                                </div>
+                                <div class="col-sm-offset-10  " style="background-color: rgba(228, 113, 122,0.7); padding-top: 5px; color: gainsboro; padding-bottom: 5px; padding-left: 13px; max-width: 90px; border-radius: 15px; border: 1px solid red; ">
+                                    <i class="fa fa-skull-crossbones"></i>
+
+                                    Banned
+
+                                </div>
+
+
+                                <!-- <div class="col-sm-1  col-sm-offset-7">
+        <a href="">
+            <i class="fa-solid fa-flag report-btn-style"></i>
+        </a>
+    </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+            }
+            else
+            {
+
+                <br />
+                <div class="container-fluid post" style="border: red 2px;">
+                    <div class="row">
+                        <div class="col-sm-12 ">
+                            <div class="row post-heading">
+                                <div class="col-sm-2   flex-row-style">
+                                    @{ var imgUrl = Url.Action("GetImage", "User", new { name = post.AUTHOR });}
+                                    @if (post.PROFILE_IMG != null)
+                                    {
+                                        <img src="@imgUrl" class="img-circle" width="40px" height="40px" style="margin-right:10%;" />
+                                    }
+                                    else
+                                    {
+                                        <img src="~/image/dashboard/Default_pfp.jpg" class="img-circle" width="40px" height="40px" style="margin-right:10%;" />
+                                    }
+                                    <p class="text-color text-left text-nowrap" style="vertical-align:central;margin-top:10%;">@post.AUTHOR</p>
+                                </div>
+                                <div class="col-sm-1 col-sm-offset-9">
+                                    <a href="" class="menu-link-style dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-stack-1x fa-solid fa-ellipsis-vertical" style="padding:1rem 0rem;"></i>
+                                    </a>
+                                    <!--Drop down menu-->
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li>
+                                            <a href="/User/EditPost/@post.POST_ID">
+                                                <span class="row-no-gutters" style="padding:1rem;">
+                                                    <span class="col-sm-3">
+                                                        <i class="fa fa-pen"></i>
+                                                    </span>
+                                                    <span class="col-sm-5">
+                                                        Edit
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-id="@post.POST_ID" data-toggle="modal" data-target="#deletePostModal" class="deletePostBtn">
+                                                <span class="row-no-gutters" style="padding:1rem;">
+                                                    <span class="col-sm-3">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                    <span class="col-sm-5">
+                                                        Delete
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            @if (post.TIMELINE_TEXT != null)
+                            {
+                                <div class="row post-body">
+                                    <div class="col-sm-12 ">
+                                        <p class="text-color">
+                                            @post.TIMELINE_TEXT
+                                        </p>
+                                    </div>
+                                </div>}
+
+                            @if (post.TIMELINE_IMAGE != null)
+                            {
+                                <div class="row post-body">
+                                    <div class="col-sm-12 ">
+                                        <img src="@Url.Action("GetPostImage", "User", new { id = post.POST_ID })" alt="Post image" class="img-responsive" />
+                                    </div>
+                                </div>}
+
+                            <div class="row post-body flex-row-style">
+                                <div class="col-sm-2">
+                                    <p class="tag-style">@post.POST_TAG</p>
+                                </div>
+
+                            </div>
+                            <div class="row post-action">
+                                <div class="col-sm-2  flex-row-style">
+                                    <!--Place id here-->
+                                    @if (post.POST_STATUS != null && post.POST_STATUS.Equals("UPVOTE"))
+                                    {
+                                        <a onclick="upvoteSelect(@post.POST_ID)" id="@post.POST_ID" class="post-action-style upvote-select upvote upvote-active-style" style="margin-right: 0.5rem; display: normal; cursor: pointer;">
+                                            <img src="~/image/timeline/like-s.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                        <a onclick="upvoteNormal(@post.POST_ID)" id="@post.POST_ID" class="post-action-style upvote upvote-normal" style="margin-right: 0.5rem; display: none; cursor: pointer;">
+                                            <img src="~/image/timeline/like-n.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                    }
+                                    else
+                                    {
+                                        <a onclick="upvoteSelect(@post.POST_ID)" id="@post.POST_ID" class="post-action-style upvote-select upvote upvote-active-style" style="margin-right: 0.5rem; display: none; cursor: pointer;">
+                                            <img src="~/image/timeline/like-s.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                        <a onclick="upvoteNormal(@post.POST_ID)" id="@post.POST_ID" class="post-action-style upvote upvote-normal" style="margin-right: 0.5rem; display: normal; cursor: pointer;">
+                                            <img src="~/image/timeline/like-n.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                    }
+                                    <b id="@post.POST_ID" class="upvote_count">@post.POST_LIKE</b>
+                                </div>
+
+                                <div class="col-sm-2  flex-row-style">
+                                    <!--Place id here-->
+                                    @if (post.POST_STATUS != null && post.POST_STATUS.Equals("DOWNVOTE"))
+                                    {
+                                        <a onclick="downvoteSelect(@post.POST_ID)" id="@post.POST_ID" class="post-action-style downvote-select downvote downvote-active-style" style="margin-right: 0.5rem; display: normal; cursor: pointer; ">
+                                            <img src="~/image/timeline/dislike-s.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+
+                                        <a onclick="downvoteNormal(@post.POST_ID)" id="@post.POST_ID" class="post-action-style downvote downvote-normal" style="margin-right: 0.5rem; display: none; cursor: pointer; ">
+                                            <img src="~/image/timeline/dislike-n.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                    }
+                                    else
+                                    {
+                                        <a onclick="downvoteSelect(@post.POST_ID)" id="@post.POST_ID" class="post-action-style downvote-select downvote downvote-active-style" style="margin-right: 0.5rem; display: none; cursor: pointer; ">
+                                            <img src="~/image/timeline/dislike-s.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                        <a onclick="downvoteNormal(@post.POST_ID)" id="@post.POST_ID" class="post-action-style downvote downvote-normal" style="margin-right: 0.5rem; display: normal; cursor: pointer; ">
+                                            <img src="~/image/timeline/dislike-n.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                    }
+                                    <b id="@post.POST_ID" class="downvote_count">@post.POST_DISLIKE</b>
+                                </div>
+
+                                <!-- <div class="col-sm-1  col-sm-offset-7">
+                                <a href="">
+                                    <i class="fa-solid fa-flag report-btn-style"></i>
+                                </a>
+                            </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+            }
+        }
+
+
+
+    </div>
+    <div class="col-sm-2 col-sm-offset-0 search-content">
+
+        <ul class="nav nav-pills nav-stacked search-bar">
+            <li>
+                <a href="@Url.Action("Profile","User")" style="padding: 2rem 1rem">
+                    <span class="row-no-gutters">
+                        <span class="col-sm-2">
+                            <i class="fa-solid fa-user">
+                            </i>
+                        </span>
+                        <span class="col-sm-offset-0">
+                            About
+                        </span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Personal_Timeline","User")" style="padding: 2rem 1rem">
+                    <span class="row-no-gutters">
+                        <span class="col-sm-2">
+                            <i class="fa-solid fa-timeline">
+                            </i>
+                        </span>
+                        <span class="col-sm-offset-0">
+                            Your Timeline
+                        </span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Activity","User")" style="padding: 2rem 1rem">
+                    <span class="row-no-gutters">
+                        <span class="col-sm-2">
+                            <i class="fa-solid fa-bolt-lightning">
+                            </i>
+                        </span>
+                        <span class="col-sm-offset-0">
+                            Your Activities
+                        </span>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="popupCP" align="center" style="position: fixed; left: 8%; top: 10%; width: 84%; height: 80%; display: none; box-shadow: 0 0 20px #21ebff; transition: 0.5s; border-radius:20px;">
+        @Html.Partial("~/Views/User/CreatePost.cshtml")
+        <a href="javascript:void(0);" onclick="myFunctionRem();" id="call" style="box-shadow: 0 0 20px #000000; transition-delay: 0.5s; border-radius: 20px; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; text-decoration: none; background-color: #4b4949; border-radius: 10px; font-size: 18px; color: #ee7e7e; border:2px solid #21ebff;">
+            <i class="fa-solid fa-arrow-up">
+            </i>
+        </a>
+
+    </div>
+</div>
+
+<script src="@Url.Content("~/Scripts/jquery-3.4.1.js")"></script>
+<script src="@Url.Content("~/Scripts/postAction.js")"></script>
+
+
+@section scripts{
+    <script>
+        if ('@TempData["deletePostSucess"]'.length > 0) {
+            toastr.success('@TempData["deletePostSucess"]', "Success", {
+                positionClass: 'toast-bottom-left',
+                timeOut: 5000, closeButton: true,
+                showMethod: 'slideDown', closeMethod: 'slideUp', hideMethod: 'slideUp',
+            });
+        }
+        function myFunction() {
+            // document.getElementById("call").style.color = "#000000";
+            var element = document.getElementById("popupCP");
+            element.style.display = "block";
+
+        }
+        function myFunctionRem() {
+            // document.getElementById("call").style.color = "#000000";
+            var element = document.getElementById("popupCP");
+            element.style.display = "none";
+
+        }
+    </script>
+
+
+}
+
+

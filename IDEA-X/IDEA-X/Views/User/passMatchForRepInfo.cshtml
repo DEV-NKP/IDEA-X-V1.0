@@ -1,0 +1,100 @@
+﻿
+@{
+    ViewBag.Title = "passMatchForRepInfo";
+
+}
+
+
+<link href="@Url.Content("~/Content/Text_Box.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/ButtonFillGlow.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/MidWordLine.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/Text_Decor.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/TextBoxLog.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/VerificationCode.css")" rel="stylesheet" type="text/css" />
+
+@*#0f1011*@
+<div align="center" style="background-color: #0f1011; height: 100%; width: 100%; border-radius: 20px; ">
+
+    <table align="center" style="height: 100%; width: 100%; background-color: #0f1011; border-radius: 20px;">
+        <tr>
+
+
+
+            <td width="100%" align="center">
+                <div align="center" style="margin-left: 40px; margin-right: 40px; margin-top: 20px; background-color: #303030; height: 500px; width: 450px; border-radius: 10px; padding-top: 20px; padding-left: 30px; padding-right: 30px; padding-bottom: 20px; border: 1px solid #808080 ">
+
+
+
+                    <h4 style="width:300px; color: #b0acac; border-bottom:1px solid white; padding-bottom:15px;">Verify Yourself</h4>
+                    <br />
+                    <span class="msg-require text-danger passbox">
+                    </span>
+
+                    <form action="" method="post" id="form">
+                        <h6 style="font-weight: lighter; padding-top: 10px; color: #c9c9c9; margin-left: 0px;">
+                            Enter your password
+                        </h6>
+
+                        <input type="password" name="PASSWORD" value="" class="form-control reppass" id="text-box-normal" />
+                        <font style="color:#fe9783; line-height:3;">
+                            @Html.ValidationMessage("PASSWORD", new { @class = "msg-require" })
+                        </font>
+
+
+
+
+
+
+
+
+                        @*<h6 style="font-weight: lighter; padding-top: 5px; color: #c9c9c9; margin-left: -170px;">
+                                New Password
+                            </h6>
+
+                            <input type="password" name="NEW_PASSWORD" value="" class="form-control newpassword" id="text-box-normal" />
+                            <font style="color:#fe9783; line-height:3;">
+                                @Html.ValidationMessage("NEW_PASSWORD", new { @class = "msg-require" })
+                            </font>*@
+
+
+
+                        <br> <br>
+                        <a @*href="javascript:$('form').submit();"*@ onclick="verifyClickRep()" id="button-glow" style=" filter: hue-rotate(180deg); cursor: pointer;">Verify</a>
+
+                        <br />
+                        <br />
+                        <br />
+
+                        <div align="center">
+                            <h6 style="font-weight: lighter; padding-top: 10px; color: #808080; margin-left: 0px;">
+                                We just want to verify that you are the legal person who wants to view the login informations.
+                            </h6>
+                            <h6 style="font-weight: lighter; padding-top: 10px; color: #808080; margin-left: 0px;">
+                                Thanks for cooperating with us.
+                            </h6>
+                        </div>
+
+
+                        <div style="padding-top:5px;"> </div>
+                        <!--<input type="submit" class="btn btn-success" id="button-glow" />-->
+                    </form>
+
+                </div>
+
+            </td>
+
+
+        </tr>
+
+
+
+    </table>
+
+
+</div>
+
+
+<script src="@Url.Content("~/Scripts/jquery-3.4.1.js")"></script>
+<script src="@Url.Content("~/Scripts/User/Password_Change.js")"></script>
+
+

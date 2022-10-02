@@ -1,0 +1,443 @@
+﻿
+@{
+    ViewBag.Title = "MeetTheTeam";
+}
+
+<link href="@Url.Content("~/Content/Text_Box.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/ButtonFillGlow.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/MidWordLine.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/Text_Decor.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/TextBoxLog.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/MeetTeam.css")" rel="stylesheet" type="text/css" />
+
+
+<body style="background-color: #0f1011; ">
+    <h2 align="center"></h2>
+    <br />
+    <table border="0" style="height:600px; width: 100%; background-color: #0f1011; border-radius:15px;">
+        <tr>
+
+            <td width="50%" align="center" style="padding-right:20px">
+                <img src=@Url.Content("~/image/ideax.svg") width="80%">
+                @*<div style="border:dashed 2px #790d9d; border-radius: 10px; padding:20px;">*@
+                <p style="font-size: 24px; font-family: 'Times New Roman', Times, serif;">TEAM <span style="color: #0cd7d1; font-family:'Times New Roman', Times, serif;"><b><i>BRAVO-ALIEN</i></b></span></p>
+                <p style="font-size: 18px; color: #808080; font-family: 'Times New Roman', Times, serif;">
+                    This team was build to create a system for the general users to share the new upcoming innovations of the world. This group was build with total 4 people
+                    introducing <span style="color: #0cd7d1; font-family:'Times New Roman', Times, serif;">Anindra</span>, <span style="color: #0cd7d1; font-family:'Times New Roman', Times, serif;">Niloy</span>,
+                    <span style="color: #0cd7d1; font-family:'Times New Roman', Times, serif;">Dipanwita</span> & <span style="color: #0cd7d1; font-family:'Times New Roman', Times, serif;">Kaushik</span>.
+
+                </p>
+
+                @*</div>*@
+
+            </td>
+
+            <td width="50%">
+
+
+
+
+
+                @*Niloy Panel*@
+
+                <div id="niloy_show" align="center" style="background-color: #303030; height: 700px; width: 100%; border-radius: 10px; padding-top: 20px; padding-left: 4vw; padding-right: 4vw; padding-bottom: 25px; border: 1px solid #808080; ">
+
+
+
+                    <h4 style="width:300px; color: #b0acac;  padding-bottom:15px;">Team Members</h4>
+
+                    <div style="height: 600px; width: 100%; background-color: #0f1011; border-radius: 10px; border: 1px solid #808080;">
+                        <div style="height: 50px; width: 100%; display:flex; background-color: transparent;  border-radius: 10px 10px 0px 0px;">
+
+
+                            <div onclick="Niloy()" style="height: 50px; width: 50%; background-color: #303030; padding-top: 10px; border-radius: 10px 0px 0px 0px; cursor: pointer; ">
+                                <span style="font-family:Calibri; font-size:20px;">Niloy</span>
+
+                            </div>
+                            <div onclick="Dipanwita()" style="height: 50px; width: 50%; background-image: linear-gradient(180deg, #303030, #0f1011); padding-top: 10px; border-left: 1px solid #808080; border-radius: 0px 0px 0px 0px; cursor: pointer;">
+                                <span style="font-family:Calibri; font-size:20px;">Dipanwita</span>
+
+                            </div>
+                            <div onclick="Kaushik()" style="height: 50px; width: 50%; background-image: linear-gradient(180deg, #303030, #0f1011); padding-top: 10px; border-left: 1px solid #808080; border-radius: 0px 0px 0px 0px; cursor: pointer;">
+                                <span style="font-family:Calibri; font-size:20px;">Kaushik</span>
+
+                            </div>
+                            <div onclick="Anindra()" style="height: 50px; width: 50%; background-image: linear-gradient(180deg, #303030, #0f1011); padding-top: 10px; border-radius: 0px 10px 0px 0px; text-align: center; justify-content: center; border-left: 1px solid #808080; cursor: pointer; ">
+
+                                <span style="font-family:Calibri; font-size:20px;">Anindra</span>
+                            </div>
+
+                        </div>
+
+                        <br />
+                        <br /><br /><br />
+
+                        <form action="/Home/Contact" method="post" id="form">
+                            <div class="card">
+                                <div class="imgbx">
+                                    <img src=@Url.Content("~/image/meetTheTeam/niloy_paul_credit_picture.png")>
+                                </div>
+
+                                <div class="content">
+                                    <div class="details">
+                                        <h2 style="color:#c6204e;">Niloy Kanti Paul</h2><span style="color: #0cd7d1;">Student</span>
+
+                                        <div class="data" style="margin-bottom: 20px;">
+                                            <br />
+                                            <b style="color:#0b959a">Email    : </b> niloykantipaul.2020@gmail.com<br />
+                                            <b style="color:#0b959a">Mobile    : </b> xx-xxxxx-x<br />
+                                            <b style="color:#0b959a">Institute : </b> American International University-Bangladesh<br />
+                                            <b style="color:#0b959a"></b>
+                                        </div>
+
+
+                                        <div class="actionBttn" style="margin-top: 50px;">
+                                            <div class="icons">
+                                                <a href="https://www.facebook.com/" style="margin-right: 50px; text-decoration:none">
+                                                    <i class="fab fa-facebook-f fa-2x"></i>
+                                                </a>
+                                                <a href="https://github.com/" style="margin-right: 50px; text-decoration: none">
+                                                    <i class="fa-brands fa-github fa-2x"></i>
+                                                </a>
+                                                <a href="https://www.messenger.com/" style="margin-right: 50px; text-decoration: none">
+                                                    <i class="fa-brands fa-facebook-messenger fa-2x"></i>
+                                                </a>
+
+                                                <a href="https://twitter.com/" style="text-decoration: none">
+                                                    <i class="fa-brands fa-twitter fa-2x"></i>
+                                                </a>
+                                            </div>
+                                            <br />
+                                            <br />
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+
+
+
+                @*Dipanwita Panel*@
+
+                <div id="dipanwita_show" align="center" style="background-color: #303030; height: 700px; width: 100%; border-radius: 10px; padding-top: 20px; padding-left: 4vw; padding-right: 4vw; padding-bottom: 25px; border: 1px solid #808080; ">
+
+
+
+                    <h4 style="width:300px; color: #b0acac;  padding-bottom:15px;">Team Members</h4>
+
+                    <div style="height: 600px; width: 100%; background-color: #0f1011; border-radius: 10px; border: 1px solid #808080;">
+                        <div style="height: 50px; width: 100%; display:flex; background-color: transparent;  border-radius: 10px 10px 0px 0px;">
+
+
+                            <div onclick="Niloy()" style="height: 50px; width: 50%; background-image: linear-gradient(180deg, #303030, #0f1011); padding-top: 10px; border-radius: 10px 0px 0px 0px; cursor: pointer; ">
+                                <span style="font-family:Calibri; font-size:20px;">Niloy</span>
+
+                            </div>
+                            <div onclick="Dipanwita()" style="height: 50px; width: 50%; background-color: #303030; padding-top: 10px; border-radius: 0px 0px 0px 0px; cursor: pointer; border-left: 1px solid #808080; ">
+                                <span style="font-family:Calibri; font-size:20px;">Dipanwita</span>
+
+                            </div>
+                            <div onclick="Kaushik()" style="height: 50px; width: 50%; background-image: linear-gradient(180deg, #303030, #0f1011); padding-top: 10px; border-radius: 0px 0px 0px 0px; cursor: pointer; border-left: 1px solid #808080;">
+                                <span style="font-family:Calibri; font-size:20px;">Kaushik</span>
+
+                            </div>
+                            <div onclick="Anindra()" style="height: 50px; width: 50%; background-image: linear-gradient(180deg, #303030, #0f1011); padding-top: 10px; border-radius: 0px 10px 0px 0px; text-align: center; justify-content: center; border-left: 1px solid #808080; cursor: pointer;">
+
+                                <span style="font-family:Calibri; font-size:20px;">Anindra</span>
+                            </div>
+
+                        </div>
+
+                        <br />
+                        <br /><br /><br />
+
+                        <form action="/Home/Contact" method="post" id="form">
+                            <div class="card">
+                                <div class="imgbx">
+                                    <img src=@Url.Content("~/image/meetTheTeam/dipanwita_saha_credit_picture.png")>
+                                </div>
+
+                                <div class="content">
+                                    <div class="details">
+                                        <h2 style="color:#c6204e;">Dipanwita Saha</h2><span style="color: #0cd7d1;">Student</span>
+
+                                        <div class="data" style="margin-bottom: 20px;">
+                                            <br />
+                                            <b style="color:#0b959a">Email    : </b> dipanwitasaha@gmail.com<br />
+                                            <b style="color:#0b959a">Mobile    : </b> xx-xxxxx-x<br />
+                                            <b style="color:#0b959a">Institute : </b> American International University-Bangladesh<br />
+                                            <b style="color:#0b959a"></b>
+                                        </div>
+
+
+                                        <div class="actionBttn" style="margin-top: 50px;">
+                                            <div class="icons">
+                                                <a href="https://www.facebook.com/" style="margin-right: 50px; text-decoration:none">
+                                                    <i class="fab fa-facebook-f fa-2x"></i>
+                                                </a>
+                                                <a href="https://github.com/" style="margin-right: 50px; text-decoration: none">
+                                                    <i class="fa-brands fa-github fa-2x"></i>
+                                                </a>
+                                                <a href="https://www.messenger.com/" style="margin-right: 50px; text-decoration: none">
+                                                    <i class="fa-brands fa-facebook-messenger fa-2x"></i>
+                                                </a>
+
+                                                <a href="https://twitter.com/" style="text-decoration: none">
+                                                    <i class="fa-brands fa-twitter fa-2x"></i>
+                                                </a>
+                                            </div>
+                                            <br />
+                                            <br />
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+
+
+                @*Kaushik Panel*@
+
+                <div id="kaushik_show" align="center" style="background-color: #303030; height: 700px; width: 100%; border-radius: 10px; padding-top: 20px; padding-left: 4vw; padding-right: 4vw; padding-bottom: 25px; border: 1px solid #808080; ">
+
+
+
+                    <h4 style="width:300px; color: #b0acac;  padding-bottom:15px;">Team Members</h4>
+
+                    <div style="height: 600px; width: 100%; background-color: #0f1011; border-radius: 10px; border: 1px solid #808080;">
+                        <div style="height: 50px; width: 100%; display:flex; background-color: transparent;  border-radius: 10px 10px 0px 0px;">
+
+                            <div onclick="Niloy()" style="height: 50px; width: 50%; background-image: linear-gradient(180deg, #303030, #0f1011); padding-top: 10px; border-radius: 10px 0px 0px 0px; cursor: pointer;">
+                                <span style="font-family:Calibri; font-size:20px;">Niloy</span>
+
+                            </div>
+                            <div onclick="Dipanwita()" style="height: 50px; width: 50%; background-image: linear-gradient(180deg, #303030, #0f1011); padding-top: 10px; border-radius: 0px 0px 0px 0px; cursor: pointer; border-left: 1px solid #808080;">
+                                <span style="font-family:Calibri; font-size:20px;">Dipanwita</span>
+
+                            </div>
+                            <div onclick="Kaushik()" style="height: 50px; width: 50%; background-color: #303030; padding-top: 10px; border-radius: 0px 0px 0px 0px; cursor: pointer; border-left: 1px solid #808080; ">
+                                <span style="font-family:Calibri; font-size:20px;">Kaushik</span>
+
+                            </div>
+                            <div onclick="Anindra()" style="height: 50px; width: 50%; background-image: linear-gradient(180deg, #303030, #0f1011); padding-top: 10px; border-radius: 0px 10px 0px 0px; text-align: center; justify-content: center; border-left: 1px solid #808080; cursor: pointer; border-left: 1px solid #808080; ">
+
+                                <span style="font-family:Calibri; font-size:20px;">Anindra</span>
+                            </div>
+
+                        </div>
+
+                        <br />
+                        <br /><br /><br />
+
+                        <form action="/Home/Contact" method="post" id="form">
+                            <div class="card">
+                                <div class="imgbx">
+                                    <img src=@Url.Content("~/image/meetTheTeam/kaushik_credit_picture.png")>
+                                </div>
+
+                                <div class="content">
+                                    <div class="details">
+                                        <h2 style="color:#c6204e;">Kaushik Biswas</h2><span style="color: #0cd7d1;">Student</span>
+
+                                        <div class="data" style="margin-bottom: 20px;">
+                                            <br />
+                                            <b style="color:#0b959a">Email     : </b> biswaskaushik.2020@gmail.com<br />
+                                            <b style="color:#0b959a">Mobile    : </b> 01778385387<br />
+                                            <b style="color:#0b959a">Institute : </b> American International University-Bangladesh<br />
+                                            <b style="color:#0b959a"></b>
+                                        </div>
+
+
+                                        <div class="actionBttn" style="margin-top: 50px;">
+                                            <div class="icons">
+                                                <a href="https://www.facebook.com/" style="margin-right: 50px; text-decoration:none">
+                                                    <i class="fab fa-facebook-f fa-2x"></i>
+                                                </a>
+                                                <a href="https://github.com/" style="margin-right: 50px; text-decoration: none">
+                                                    <i class="fa-brands fa-github fa-2x"></i>
+                                                </a>
+                                                <a href="https://www.messenger.com/" style="margin-right: 50px; text-decoration: none">
+                                                    <i class="fa-brands fa-facebook-messenger fa-2x"></i>
+                                                </a>
+
+                                                <a href="https://twitter.com/" style="text-decoration: none">
+                                                    <i class="fa-brands fa-twitter fa-2x"></i>
+                                                </a>
+                                            </div>
+                                            <br />
+                                            <br />
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+
+                @*Anindra Panel*@
+
+                <div id="anindra_show" align="center" style="background-color: #303030; height: 700px; width: 100%; border-radius: 10px; padding-top: 20px; padding-left: 4vw; padding-right: 4vw; padding-bottom: 25px; border: 1px solid #808080; ">
+
+                    <h4 style="width:300px; color: #b0acac;  padding-bottom:15px;">Team Members</h4>
+
+                    <div style="height: 600px; width: 100%; background-color: #0f1011; border-radius: 10px; border: 1px solid #808080;">
+                        <div style="height: 50px; width: 100%; display:flex; background-color: transparent;  border-radius: 10px 10px 0px 0px;">
+
+
+                            <div onclick="Niloy()" style="height: 50px; width: 50%; background-image: linear-gradient(180deg, #303030, #0f1011); padding-top: 10px; border-radius: 10px 0px 0px 0px; cursor: pointer;">
+                                <span style="font-family:Calibri; font-size:20px;">Niloy</span>
+
+                            </div>
+                            <div onclick="Dipanwita()" style="height: 50px; width: 50%; background-image: linear-gradient(180deg, #303030, #0f1011); padding-top: 10px; border-radius: 0px 0px 0px 0px; cursor: pointer; border-left: 1px solid #808080;">
+                                <span style="font-family:Calibri; font-size:20px;">Dipanwita</span>
+
+                            </div>
+                            <div onclick="Kaushik()" style="height: 50px; width: 50%; background-image: linear-gradient(180deg, #303030, #0f1011); padding-top: 10px; border-radius: 0px 0px 0px 0px; cursor: pointer; border-left: 1px solid #808080;">
+                                <span style="font-family:Calibri; font-size:20px;">Kaushik</span>
+
+                            </div>
+                            <div onclick="Anindra()" style="height: 50px; width: 50%; background-color: #303030; padding-top: 10px; border-radius: 0px 10px 0px 0px; text-align: center; justify-content: center; border-left: 1px solid #808080; cursor: pointer;">
+
+                                <span style="font-family:Calibri; font-size:20px;">Anindra</span>
+                            </div>
+                        </div>
+
+                        <br />
+                        <br /><br /><br />
+
+                        <form action="/Home/Contact" method="post" id="form">
+                            <div class="card">
+                                <div class="imgbx">
+                                    <img src=@Url.Content("~/image/meetTheTeam/anindra_das_credit_picture.jpg")>
+                                </div>
+
+                                <div class="content">
+                                    <div class="details">
+                                        <h2 style="color:#c6204e;">Anindra Das Bivash</h2><span style="color: #0cd7d1;">Student</span>
+
+                                        <div class="data" style="margin-bottom: 20px;">
+                                            <br />
+                                            <b style="color:#0b959a;">Email    : </b> anindra@gmail.com<br />
+                                            <b style="color:#0b959a">Mobile    : </b> xx-xxxxx-x<br />
+                                            <b style="color:#0b959a">Institute : </b> American International University-Bangladesh<br />
+                                            <b style="color:#0b959a"></b>
+                                        </div>
+
+
+                                        <div class="actionBttn" style="margin-top: 50px;">
+                                            <div class="icons">
+                                                <a href="https://www.facebook.com/" style="margin-right: 50px; text-decoration:none">
+                                                    <i class="fab fa-facebook-f fa-2x"></i>
+                                                </a>
+                                                <a href="https://github.com/" style="margin-right: 50px; text-decoration: none">
+                                                    <i class="fa-brands fa-github fa-2x"></i>
+                                                </a>
+                                                <a href="https://www.messenger.com/" style="margin-right: 50px; text-decoration: none">
+                                                    <i class="fa-brands fa-facebook-messenger fa-2x"></i>
+                                                </a>
+
+                                                <a href="https://twitter.com/" style="text-decoration: none">
+                                                    <i class="fa-brands fa-twitter fa-2x"></i>
+                                                </a>
+                                            </div>
+                                            <br />
+                                            <br />
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+
+
+
+                <br><br>
+
+
+
+
+            </td>
+
+
+        </tr>
+
+
+
+    </table>
+
+
+    <script src="@Url.Content("~/Scripts/jquery-3.4.1.js")"></script>
+    @*<script src="@Url.Content("~/Scripts/Contact_Validation.js")"></script>*@
+
+    <!--<script src="@Url.Content("~/Scripts/Email_Validation.js")"></script>
+    <script src="@Url.Content("~/Scripts/UserName_Validation.js")"></script>-->
+<script>
+    const anindradiv = document.getElementById("anindra_show");
+    const niloydiv = document.getElementById("niloy_show");
+    const dipanwitadiv = document.getElementById("dipanwita_show");
+    const kaushikdiv = document.getElementById("kaushik_show");
+
+
+    
+    niloydiv.hidden = false;
+    dipanwitadiv.hidden = true;
+    kaushikdiv.hidden = true;
+    anindradiv.hidden = true;
+
+    function Anindra() {
+        anindradiv.hidden = false;
+        niloydiv.hidden = true;
+        dipanwitadiv.hidden = true;
+        kaushikdiv.hidden = true;
+    }
+    function Niloy() {
+        anindradiv.hidden = true;
+        niloydiv.hidden = false;
+        dipanwitadiv.hidden = true;
+        kaushikdiv.hidden = true;
+    }
+    function Dipanwita() {
+        anindradiv.hidden = true;
+        niloydiv.hidden = true;
+        dipanwitadiv.hidden = false;
+        kaushikdiv.hidden = true;
+    }
+    function Kaushik() {
+        anindradiv.hidden = true;
+        niloydiv.hidden = true;
+        dipanwitadiv.hidden = true;
+        kaushikdiv.hidden = false;
+    }
+
+
+
+
+
+</script>
+
+</body>
+

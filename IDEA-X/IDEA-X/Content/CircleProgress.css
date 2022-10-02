@@ -1,0 +1,532 @@
+﻿.wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+    .wrapper .card {
+        background: rgba(255,255,255,0.1);
+        width: calc(33%);
+        height: 300px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        /*box-shadow: 0px 0px 15px rgba(250, 66, 153,0.50);*/
+
+        border: 1px solid #a445b2;
+    }
+
+        .wrapper .card .circle {
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            cursor: default;
+        }
+
+.card .circle .box,
+.card .circle .box span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.card .circle .box {
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    transition: all 0.2s;
+}
+
+.card .circle:hover .box {
+    transform: translate(-50%, -50%) scale(0.91);
+}
+
+.card .circle .box span,
+.wrapper .card .text {
+    background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.circle .box span {
+    font-size: 38px;
+    font-family: sans-serif;
+    font-weight: 600;
+    transform: translate(-45%, -45%);
+    transition: all 0.1s;
+}
+
+.card .circle:hover .box span {
+    transform: translate(-45%, -45%) scale(1.09);
+}
+
+.card .text {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media(max-width: 753px) {
+    .wrapper {
+        max-width: 700px;
+    }
+
+        .wrapper .card {
+            width: calc(50% - 20px);
+            margin-bottom: 20px;
+        }
+}
+
+@media(max-width: 505px) {
+    .wrapper {
+        max-width: 500px;
+    }
+
+        .wrapper .card {
+            width: 100%;
+        }
+}
+
+/**/
+
+
+
+.wrapperL {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    .wrapperL .cardL {
+        background: rgba(255,255,255,0.1);
+        width: calc(33%);
+        height: 300px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        /*box-shadow: 0px 0px 15px rgba(250, 66, 153,0.50);
+*/
+
+       
+        border-top: 1px solid #0abab5;
+            border-bottom: 1px solid #f08080;
+            border-left: 1px solid #0abab5;
+            border-right: 1px solid #f08080;
+      
+    }
+        .wrapperL .cardL:hover {
+          
+            box-shadow: -1px -1px 8px #21ebff, 2px 2px 8px #fd5e53;
+            transition: all 0.3s;
+        }
+
+        .wrapperL .cardL .circleL {
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            cursor: default;
+        }
+
+.cardL .circleL .boxL,
+.cardL .circleL .boxL span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.cardL .circleL .boxL {
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    transition: all 0.2s;
+}
+
+.cardL .circleL:hover .boxL {
+    transform: translate(-50%, -50%) scale(0.91);
+}
+
+.cardL .circleL .boxL span,
+.wrapperL .cardL .textL {
+    background: -webkit-linear-gradient(left, #0abab5, #f08080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.circleL .boxL span {
+    font-size: 38px;
+    font-family: sans-serif;
+    font-weight: 600;
+    transform: translate(-45%, -45%);
+    transition: all 0.1s;
+}
+
+.cardL .circleL:hover .boxL span {
+    transform: translate(-45%, -45%) scale(1.09);
+}
+
+.cardL .textL {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media(max-width: 753px) {
+    .wrapperL {
+        max-width: 700px;
+    }
+
+        .wrapperL .cardL {
+            width: calc(50% - 20px);
+            margin-bottom: 20px;
+        }
+}
+
+@media(max-width: 505px) {
+    .wrapperL {
+        max-width: 500px;
+    }
+
+        .wrapperL .cardL {
+            width: 100%;
+        }
+}
+/**/
+
+/*
+.wrapperD {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+*/
+    .wrapperL .cardD {
+        background: rgba(255,255,255,0.1);
+        width: calc(33%);
+        height: 300px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        /*box-shadow: 0px 0px 15px rgba(250, 66, 153,0.50);
+*/
+
+
+        border-top: 1px solid #f08080;
+        border-bottom: 1px solid #0abab5;
+        border-left: 1px solid #f08080;
+        border-right: 1px solid #0abab5;
+    }
+
+        .wrapperL .cardD:hover {
+            box-shadow: -1px -1px 8px #fd5e53 , 2px 2px 8px #21ebff;
+            transition: all 0.3s;
+        }
+
+        .wrapperL .cardD .circleD {
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            cursor: default;
+        }
+
+.cardD .circleD .boxD,
+.cardD .circleD .boxD  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.cardD .circleD .boxD {
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    transition: all 0.2s;
+}
+
+.cardD .circleD:hover .boxD {
+    transform: translate(-50%, -50%) scale(0.91);
+}
+
+.cardD .circleD .boxD span,
+.wrapperL .cardD .textD {
+    background: -webkit-linear-gradient(left, #f08080,#0abab5 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.circleD .boxD span {
+    font-size: 38px;
+    font-family: sans-serif;
+    font-weight: 600;
+    transform: translate(-45%, -45%);
+    transition: all 0.1s;
+}
+
+.cardD .circleD:hover .boxD span {
+    transform: translate(-45%, -45%) scale(1.09);
+}
+
+.cardD .textD {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media(max-width: 753px) {
+    .wrapperL {
+        max-width: 700px;
+    }
+
+        .wrapperL .cardD {
+            width: calc(50% - 20px);
+            margin-bottom: 20px;
+        }
+}
+
+@media(max-width: 505px) {
+    .wrapperL {
+        max-width: 500px;
+    }
+
+        .wrapperL .cardD {
+            width: 100%;
+        }
+}
+
+
+
+
+
+/**/
+
+
+
+.wrapperLN {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    .wrapperLN .cardLN {
+        background: rgba(255,255,255,0.1);
+        width: calc(33%);
+        height: 300px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        /*box-shadow: 0px 0px 15px rgba(250, 66, 153,0.50);
+*/
+
+
+        border-top: 1px solid #0abab5;
+        border-bottom: 1px solid #f08080;
+        border-left: 1px solid #0abab5;
+        border-right: 1px solid #f08080;
+    }
+
+        .wrapperLN .cardLN:hover {
+            box-shadow: -1px -1px 8px #21ebff, 2px 2px 8px #fd5e53;
+            transition: all 0.3s;
+        }
+
+        .wrapperLN .cardLN .circleLN {
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            cursor: default;
+        }
+
+.cardLN .circleLN .boxLN,
+.cardLN .circleLN .boxLN span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.cardLN .circleLN .boxLN {
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    transition: all 0.2s;
+}
+
+.cardLN .circleLN:hover .boxLN {
+    transform: translate(-50%, -50%) scale(0.91);
+}
+
+.cardLN .circleLN .boxLN span,
+.wrapperLN .cardLN .textLN {
+    background: -webkit-linear-gradient(left, #0abab5, #f08080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.circleLN .boxLN span {
+    font-size: 38px;
+    font-family: sans-serif;
+    font-weight: 600;
+    transform: translate(-45%, -45%);
+    transition: all 0.1s;
+}
+
+.cardLN .circleLN:hover .boxLN span {
+    transform: translate(-45%, -45%) scale(1.09);
+}
+
+.cardLN .textLN {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media(max-width: 753px) {
+    .wrapperLN {
+        max-width: 700px;
+    }
+
+        .wrapperLN .cardLN {
+            width: calc(50% - 20px);
+            margin-bottom: 20px;
+        }
+}
+
+@media(max-width: 505px) {
+    .wrapperLN {
+        max-width: 500px;
+    }
+
+        .wrapperLN .cardLN {
+            width: 100%;
+        }
+}
+/**/
+
+/*
+.wrapperD {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+*/
+.wrapperLN .cardDN {
+    background: rgba(255,255,255,0.1);
+    width: calc(33%);
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    /*box-shadow: 0px 0px 15px rgba(250, 66, 153,0.50);
+*/
+
+
+    border-top: 1px solid #f08080;
+    border-bottom: 1px solid #0abab5;
+    border-left: 1px solid #f08080;
+    border-right: 1px solid #0abab5;
+}
+
+    .wrapperLN .cardDN:hover {
+        box-shadow: -1px -1px 8px #fd5e53, 2px 2px 8px #21ebff;
+        transition: all 0.3s;
+    }
+
+    .wrapperLN .cardDN .circleDN {
+        position: relative;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        cursor: default;
+    }
+
+.cardDN .circleDN .boxDN,
+.cardDN .circleDN .boxDN span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.cardDN .circleDN .boxDN {
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    transition: all 0.2s;
+}
+
+.cardDN .circleDN:hover .boxDN {
+    transform: translate(-50%, -50%) scale(0.91);
+}
+
+.cardDN .circleDN .boxDN span,
+.wrapperLN .cardDN .textDN {
+    background: -webkit-linear-gradient(left, #f08080,#0abab5 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.circleDN .boxDN span {
+    font-size: 38px;
+    font-family: sans-serif;
+    font-weight: 600;
+    transform: translate(-45%, -45%);
+    transition: all 0.1s;
+}
+
+.cardDN .circleDN:hover .boxDN span {
+    transform: translate(-45%, -45%) scale(1.09);
+}
+
+.cardDN .textDN {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media(max-width: 753px) {
+    .wrapperLN {
+        max-width: 700px;
+    }
+
+        .wrapperLN .cardDN {
+            width: calc(50% - 20px);
+            margin-bottom: 20px;
+        }
+}
+
+@media(max-width: 505px) {
+    .wrapperLN {
+        max-width: 500px;
+    }
+
+        .wrapperLN .cardDN {
+            width: 100%;
+        }
+}

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="IDEA_XModelStoreContainer" CdmEntityContainer="IDEA_XEntities">
+    <EntitySetMapping Name="ADMINS">
+      <EntityTypeMapping TypeName="IDEA_XModel.ADMIN">
+        <MappingFragment StoreEntitySet="ADMINS">
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="USER_PASSWORD" ColumnName="USER_PASSWORD" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ALL_USERS">
+      <EntityTypeMapping TypeName="IDEA_XModel.ALL_USERS">
+        <MappingFragment StoreEntitySet="ALL_USERS">
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="LEVEL" ColumnName="LEVEL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CHAT_BOXS">
+      <EntityTypeMapping TypeName="IDEA_XModel.CHAT_BOXS">
+        <MappingFragment StoreEntitySet="CHAT_BOXS">
+          <ScalarProperty Name="CHAT_SESSION" ColumnName="CHAT_SESSION" />
+          <ScalarProperty Name="SENDER" ColumnName="SENDER" />
+          <ScalarProperty Name="RECEIVER" ColumnName="RECEIVER" />
+          <ScalarProperty Name="CHAT_TIME" ColumnName="CHAT_TIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGINS">
+      <EntityTypeMapping TypeName="IDEA_XModel.LOGIN">
+        <MappingFragment StoreEntitySet="LOGINS">
+          <ScalarProperty Name="LOGIN_ID" ColumnName="LOGIN_ID" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="LOGIN_TIME" ColumnName="LOGIN_TIME" />
+          <ScalarProperty Name="LOGIN_IP" ColumnName="LOGIN_IP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MESSAGE_REQUESTS">
+      <EntityTypeMapping TypeName="IDEA_XModel.MESSAGE_REQUESTS">
+        <MappingFragment StoreEntitySet="MESSAGE_REQUESTS">
+          <ScalarProperty Name="REQUEST_ID" ColumnName="REQUEST_ID" />
+          <ScalarProperty Name="SENDER" ColumnName="SENDER" />
+          <ScalarProperty Name="RECEIVER" ColumnName="RECEIVER" />
+          <ScalarProperty Name="MESSAGE_TIME" ColumnName="MESSAGE_TIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USER_DETAILS">
+      <EntityTypeMapping TypeName="IDEA_XModel.USER_DETAILS">
+        <MappingFragment StoreEntitySet="USER_DETAILS">
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="FIRST_NAME" ColumnName="FIRST_NAME" />
+          <ScalarProperty Name="LAST_NAME" ColumnName="LAST_NAME" />
+          <ScalarProperty Name="HEADLINE" ColumnName="HEADLINE" />
+          <ScalarProperty Name="DATE_OF_BIRTH" ColumnName="DATE_OF_BIRTH" />
+          <ScalarProperty Name="GENDER" ColumnName="GENDER" />
+          <ScalarProperty Name="MOBILE" ColumnName="MOBILE" />
+          <ScalarProperty Name="USER_ADDRESS" ColumnName="USER_ADDRESS" />
+          <ScalarProperty Name="USER_STATE" ColumnName="USER_STATE" />
+          <ScalarProperty Name="ZIP_CODE" ColumnName="ZIP_CODE" />
+          <ScalarProperty Name="COUNTRY" ColumnName="COUNTRY" />
+          <ScalarProperty Name="INDUSTRY" ColumnName="INDUSTRY" />
+          <ScalarProperty Name="EDUCATIONAL_INSTITUTION" ColumnName="EDUCATIONAL_INSTITUTION" />
+          <ScalarProperty Name="DEPARTMENT" ColumnName="DEPARTMENT" />
+          <ScalarProperty Name="CONTACT_URL" ColumnName="CONTACT_URL" />
+          <ScalarProperty Name="PROFILE_PICTURE" ColumnName="PROFILE_PICTURE" />
+          <ScalarProperty Name="SIGNUP_TIME" ColumnName="SIGNUP_TIME" />
+          <ScalarProperty Name="USER_STATUS" ColumnName="USER_STATUS" />
+          <ScalarProperty Name="SIGNUP_IP" ColumnName="SIGNUP_IP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USER_MESSAGES">
+      <EntityTypeMapping TypeName="IDEA_XModel.USER_MESSAGES">
+        <MappingFragment StoreEntitySet="USER_MESSAGES">
+          <ScalarProperty Name="MESSAGE_ID" ColumnName="MESSAGE_ID" />
+          <ScalarProperty Name="SESSION_NAME" ColumnName="SESSION_NAME" />
+          <ScalarProperty Name="SENDER" ColumnName="SENDER" />
+          <ScalarProperty Name="RECEIVER" ColumnName="RECEIVER" />
+          <ScalarProperty Name="USER_MESSAGE" ColumnName="USER_MESSAGE" />
+          <ScalarProperty Name="MESSAGE_TIME" ColumnName="MESSAGE_TIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GENERAL_POSTS">
+      <EntityTypeMapping TypeName="IDEA_XModel.GENERAL_POSTS">
+        <MappingFragment StoreEntitySet="GENERAL_POSTS">
+          <ScalarProperty Name="POST_TAG" ColumnName="POST_TAG" />
+          <ScalarProperty Name="POST_IP" ColumnName="POST_IP" />
+          <ScalarProperty Name="POST_DISLIKE" ColumnName="POST_DISLIKE" />
+          <ScalarProperty Name="POST_LIKE" ColumnName="POST_LIKE" />
+          <ScalarProperty Name="POSTING_STATUS" ColumnName="POSTING_STATUS" />
+          <ScalarProperty Name="POSTING_TIME" ColumnName="POSTING_TIME" />
+          <ScalarProperty Name="TIMELINE_IMAGE" ColumnName="TIMELINE_IMAGE" />
+          <ScalarProperty Name="TIMELINE_TEXT" ColumnName="TIMELINE_TEXT" />
+          <ScalarProperty Name="AUTHOR" ColumnName="AUTHOR" />
+          <ScalarProperty Name="POST_ID" ColumnName="POST_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="POST_ACTIONS">
+      <EntityTypeMapping TypeName="IDEA_XModel.POST_ACTIONS">
+        <MappingFragment StoreEntitySet="POST_ACTIONS">
+          <ScalarProperty Name="POST_STATUS" ColumnName="POST_STATUS" />
+          <ScalarProperty Name="POST_ID" ColumnName="POST_ID" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="POST_ACTION_ID" ColumnName="POST_ACTION_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

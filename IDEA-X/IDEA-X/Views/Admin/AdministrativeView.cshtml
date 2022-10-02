@@ -1,0 +1,110 @@
+﻿
+@{
+    ViewBag.Title = "AdministrativeView";
+    Layout = "~/Views/Shared/_AdminDashboard.cshtml";
+
+}
+
+<link href="@Url.Content("~/Content/TextBoxLog.css")" rel="stylesheet" type="text/css" />
+
+<div class="row">
+    <div class="col-sm-9 main-content-scoll">
+
+        <div class="container-fluid" style="padding:2rem;">
+            <div class="row-no-gutters">
+                <div class="col-sm-1">
+                    @if (Request["page"] != null)
+                    {
+                        <a href="@Url.Action(Request["page"],"Admin")">
+                            <i class="fa-2xl fa-solid fa-angle-left back-btn-style"></i>
+                        </a>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Profile","Admin")">
+                            <i class="fa-2xl fa-solid fa-angle-left back-btn-style"></i>
+                        </a>
+                    }
+                </div>
+                @if (Request["page"] != null)
+                {
+                    <div class="col-sm-10 col-sm-offset-0">
+                        <span class="fa-2xl">Administrative View</span>
+                        <br />
+                        <br />
+                        <br />
+                    </div>
+                }
+                else
+                {
+                    <div class="col-sm-10 col-sm-offset-0">
+                        <span class="fa-2xl">Search User : @Request["search_text"]</span>
+                    </div>
+                }
+
+            </div>
+        </div>
+ 
+        <div width="100%" align="center" style="font-family: 'Times New Roman'; font-size: 20px; color: #e2344d ">
+
+            <img src="~/image/ideax.svg" title="Profile" class="img-circle hover-profile" width="15%" height="15%" />
+            <br /><br />
+
+            <label style="color: #cac163">@Model.USERNAME</label>
+
+            <br />
+            @*<a href="/User/EditProfile" style="padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; text-decoration: none; background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.1)); border-radius: 10px; font-size: 18px; color: #bedafb;">Edit Profile</a>*@
+
+            <hr style="width:50%" />
+
+            <br />
+            <div style="text-align: left; padding-left: 10%; font-family: 'Times New Roman'; font-size: 20px; color: #eade94">
+
+                <span style="border-image: linear-gradient(135deg, #d8bd1b, #808080); border-image-slice: 1; border-bottom: solid; padding-left: 0px; padding-right: 20px; padding-bottom:5px;">
+                    User Details
+                </span>
+                <br />
+
+                <br />
+
+
+
+                <div style="text-align: left; padding-left: 10%; font-family: 'Times New Roman'; font-size: 20px; color: #2e91ef">
+
+                    User Name : <span style="color:#bedafb"> @Model.USERNAME</span>
+                    <br />
+                    Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span style="color: #bedafb "> @Model.EMAIL</span>
+                    <br />
+                    @*<h5>User Name : <span style="color:#bedafb"> @a.USERNAME </span></h5>
+                    <br />
+                    <h5>Email: <span style="color: #bedafb "> @a.EMAIL </span></h5>*@
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="col-sm-2 col-sm-offset-0 search-content">
+
+
+        <div class="row">
+
+        </div>
+
+        <div class="row">
+            <ul class="nav nav-pills nav-stacked search-result-user"></ul>
+        </div>
+
+    </div>
+</div>
+
+

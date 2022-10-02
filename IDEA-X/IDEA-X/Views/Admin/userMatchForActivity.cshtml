@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "userMatchForActivity";
+
+}
+
+
+<link href="@Url.Content("~/Content/Text_Box.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/ButtonFillGlow.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/MidWordLine.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/Text_Decor.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/TextBoxLog.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/VerificationCode.css")" rel="stylesheet" type="text/css" />
+
+@*#0f1011*@
+<div align="center" style="background-color: #0f1011; height: 100%; width: 100%; border-radius: 20px; ">
+
+    
+                <div align="center" style="margin-left: 5px; margin-right: 40px; margin-top: 0px; background-color: #0f1011; height: 100%; width: 100%; border-radius: 10px; padding-top: 15px; padding-left: 25px; padding-right: 30px; padding-bottom: 20px; ">
+                   
+                        <form class="form-group search-bar">
+                            <div style="height: 40px;" >
+
+                                <input type="search" class="form-control search_box_activity" placeholder="Search UserName here" id="text-box-normal" style="border: 2px solid #76b8ac;" />
+                            </div>
+                            @*<div >
+                                <a href="#" class="btn btn-default" id="text-box-normal" style="border: 2px solid #76b8ac;">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                            </div>*@
+                        <div class="main-content-scoll">
+                            <ul class="nav nav-pills nav-stacked search-result-user"></ul>
+
+                        </div>
+
+                        </form>
+                    </div>
+                    <div class="row">
+                    </div>
+                
+
+</div>
+
+
+<script src="@Url.Content("~/Scripts/jquery-3.4.1.js")"></script>
+<script src="@Url.Content("~/Scripts/SearchUserActivity.js")"></script>
+
+
+
+

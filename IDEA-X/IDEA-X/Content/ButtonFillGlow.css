@@ -1,0 +1,63 @@
+﻿#button-glow {
+    position: relative;
+    padding: 10px 30px;
+    margin: 015px;
+    color: #21ebff;
+    text-decoration: none;
+    text-transform: uppercase;
+    Letter-spacing: 2px;
+    font-size: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0003);
+    cursor:pointer;
+}
+
+
+
+    #button-glow:hover {
+        background: #21ebff;
+        color: #111;
+        box-shadow: 0 0 20px #21ebff;
+        transition-delay: 0.5s;
+       
+    }
+
+
+    #button-glow:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        Left: 0;
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid #21ebff;
+        border-left: 2px solid #21ebff;
+        transition: 0.5s;
+        transition-delay: 0.5s;
+    }
+
+    #button-glow:hover:before {
+        width: 99%;
+        height: 95%;
+        transition-delay: 0s;
+    }
+
+    #button-glow:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        border-bottom: 2px solid #21ebff;
+        border-right: 2px solid #21ebff;
+        transition: 0.5s;
+        transition-delay: 0.5s;
+    }
+
+    #button-glow:hover:after {
+        width: 99%;
+        height: 95%;
+        transition-delay: 0s;
+    }

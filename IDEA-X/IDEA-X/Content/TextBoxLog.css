@@ -1,0 +1,17 @@
+﻿#text-box-normal {
+   
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgb(5 250 250 / 0.10);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    color:#e7e7e7;
+}
+
+    #text-box-normal:focus {
+        background: linear-gradient(135deg, rgb(234 225 225 / 0.5), rgba(255,255,255,0));
+        color: #e7e7e7;
+    }
+
+

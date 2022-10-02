@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IDEA_XModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ADMINS">
+    <Key>
+      <PropertyRef Name="USERNAME" />
+    </Key>
+    <Property Name="USERNAME" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="USER_PASSWORD" Type="varchar(max)" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="ALL_USERS">
+    <Key>
+      <PropertyRef Name="USERNAME" />
+    </Key>
+    <Property Name="USERNAME" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PASSWORD" Type="varchar(max)" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="100" />
+    <Property Name="LEVEL" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="CHAT_BOXS">
+    <Key>
+      <PropertyRef Name="CHAT_SESSION" />
+    </Key>
+    <Property Name="CHAT_SESSION" Type="varchar" MaxLength="120" Nullable="false" />
+    <Property Name="SENDER" Type="varchar" MaxLength="50" />
+    <Property Name="RECEIVER" Type="varchar" MaxLength="50" />
+    <Property Name="CHAT_TIME" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="CONTACTS">
+    <Key>
+      <PropertyRef Name="CONTACT_ID" />
+    </Key>
+    <Property Name="CONTACT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FIRST_NAME" Type="varchar" MaxLength="50" />
+    <Property Name="LAST_NAME" Type="varchar" MaxLength="50" />
+    <Property Name="USERNAME" Type="varchar" MaxLength="50" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="100" />
+    <Property Name="MESSAGE" Type="varchar(max)" />
+    <Property Name="LEVEL" Type="varchar" MaxLength="25" />
+    <Property Name="STATUS" Type="varchar" MaxLength="25" />
+    <Property Name="LOGIN_TIME" Type="varchar" MaxLength="100" />
+    <Property Name="LOGIN_IP" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="GENERAL_POSTS">
+    <Key>
+      <PropertyRef Name="POST_ID" />
+    </Key>
+    <Property Name="POST_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AUTHOR" Type="varchar" MaxLength="50" />
+    <Property Name="TIMELINE_TEXT" Type="varchar(max)" />
+    <Property Name="TIMELINE_IMAGE" Type="varbinary(max)" />
+    <Property Name="POSTING_TIME" Type="varchar" MaxLength="100" />
+    <Property Name="POSTING_STATUS" Type="varchar" MaxLength="50" />
+    <Property Name="POST_LIKE" Type="int" Nullable="false" />
+    <Property Name="POST_DISLIKE" Type="int" Nullable="false" />
+    <Property Name="POST_IP" Type="varchar" MaxLength="150" />
+    <Property Name="POST_TAG" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="LOGINS">
+    <Key>
+      <PropertyRef Name="LOGIN_ID" />
+    </Key>
+    <Property Name="LOGIN_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="USERNAME" Type="varchar" MaxLength="50" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="100" />
+    <Property Name="LOGIN_TIME" Type="varchar" MaxLength="100" />
+    <Property Name="LOGIN_IP" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="MESSAGE_REQUESTS">
+    <Key>
+      <PropertyRef Name="REQUEST_ID" />
+    </Key>
+    <Property Name="REQUEST_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SENDER" Type="varchar" MaxLength="50" />
+    <Property Name="RECEIVER" Type="varchar" MaxLength="50" />
+    <Property Name="MESSAGE_TIME" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="NOTES">
+    <Key>
+      <PropertyRef Name="NOTE_ID" />
+    </Key>
+    <Property Name="NOTE_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="USERNAME" Type="varchar" MaxLength="50" />
+    <Property Name="NOTE_DATE" Type="varchar" MaxLength="100" />
+    <Property Name="NOTE_TEXT" Type="varchar(max)" />
+    <Property Name="STATUS" Type="varchar" MaxLength="25" />
+    <Property Name="NOTE_TIME" Type="varchar" MaxLength="100" />
+    <Property Name="NOTE_IP" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="POST_ACTIONS">
+    <Key>
+      <PropertyRef Name="POST_ACTION_ID" />
+    </Key>
+    <Property Name="POST_ACTION_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="USERNAME" Type="varchar" MaxLength="50" />
+    <Property Name="POST_ID" Type="int" />
+    <Property Name="POST_STATUS" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="POST_REPORT">
+    <Key>
+      <PropertyRef Name="REPORT_ID" />
+    </Key>
+    <Property Name="REPORT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="POST_ID" Type="int" />
+    <Property Name="POST_AUTHOR" Type="varchar" MaxLength="50" />
+    <Property Name="REPORTED_BY" Type="varchar" MaxLength="50" />
+    <Property Name="REPORT_CATEGORY" Type="varchar(max)" />
+    <Property Name="REPORT_DETAILS" Type="varchar(max)" />
+    <Property Name="REPORT_TIME" Type="varchar" MaxLength="100" />
+    <Property Name="REPORT_IP" Type="varchar" MaxLength="150" />
+    <Property Name="REPORT_STATUS" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="USER_ACCESS_CONTROLLER">
+    <Key>
+      <PropertyRef Name="USERNAME" />
+    </Key>
+    <Property Name="USERNAME" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="USER_PASSWORD" Type="varchar(max)" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="USER_DETAILS">
+    <Key>
+      <PropertyRef Name="USERNAME" />
+    </Key>
+    <Property Name="USERNAME" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FIRST_NAME" Type="varchar" MaxLength="50" />
+    <Property Name="LAST_NAME" Type="varchar" MaxLength="50" />
+    <Property Name="HEADLINE" Type="varchar" MaxLength="320" />
+    <Property Name="DATE_OF_BIRTH" Type="varchar" MaxLength="20" />
+    <Property Name="GENDER" Type="varchar" MaxLength="10" />
+    <Property Name="MOBILE" Type="varchar" MaxLength="20" />
+    <Property Name="USER_ADDRESS" Type="varchar" MaxLength="100" />
+    <Property Name="USER_STATE" Type="varchar" MaxLength="25" />
+    <Property Name="ZIP_CODE" Type="varchar" MaxLength="10" />
+    <Property Name="COUNTRY" Type="varchar" MaxLength="80" />
+    <Property Name="INDUSTRY" Type="varchar" MaxLength="100" />
+    <Property Name="EDUCATIONAL_INSTITUTION" Type="varchar" MaxLength="100" />
+    <Property Name="DEPARTMENT" Type="varchar" MaxLength="100" />
+    <Property Name="CONTACT_URL" Type="varchar" MaxLength="200" />
+    <Property Name="PROFILE_PICTURE" Type="varbinary(max)" />
+    <Property Name="SIGNUP_TIME" Type="varchar" MaxLength="100" />
+    <Property Name="USER_STATUS" Type="varchar" MaxLength="25" />
+    <Property Name="SIGNUP_IP" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="USER_MESSAGES">
+    <Key>
+      <PropertyRef Name="MESSAGE_ID" />
+    </Key>
+    <Property Name="MESSAGE_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SESSION_NAME" Type="varchar" MaxLength="120" />
+    <Property Name="SENDER" Type="varchar" MaxLength="50" />
+    <Property Name="RECEIVER" Type="varchar" MaxLength="50" />
+    <Property Name="USER_MESSAGE" Type="varchar" MaxLength="500" />
+    <Property Name="MESSAGE_TIME" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityContainer Name="IDEA_XModelStoreContainer">
+    <EntitySet Name="ADMINS" EntityType="Self.ADMINS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ALL_USERS" EntityType="Self.ALL_USERS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CHAT_BOXS" EntityType="Self.CHAT_BOXS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CONTACTS" EntityType="Self.CONTACTS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GENERAL_POSTS" EntityType="Self.GENERAL_POSTS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LOGINS" EntityType="Self.LOGINS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MESSAGE_REQUESTS" EntityType="Self.MESSAGE_REQUESTS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NOTES" EntityType="Self.NOTES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="POST_ACTIONS" EntityType="Self.POST_ACTIONS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="POST_REPORT" EntityType="Self.POST_REPORT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="USER_ACCESS_CONTROLLER" EntityType="Self.USER_ACCESS_CONTROLLER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="USER_DETAILS" EntityType="Self.USER_DETAILS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="USER_MESSAGES" EntityType="Self.USER_MESSAGES" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

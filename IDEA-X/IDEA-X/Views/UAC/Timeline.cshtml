@@ -1,0 +1,339 @@
+﻿
+@{ ViewBag.Title = "Timeline";
+    Layout = "~/Views/Shared/_UACDashboard.cshtml"; }
+
+
+<link href="@Url.Content("~/Content/TextBoxLog.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/new_post_btn.css")" rel="stylesheet" type="text/css" />
+
+<div class="row">
+    <div class="col-sm-9 admin-content main-content-scoll">
+
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-sm-5">
+                </div>
+                <div class="col-sm-2">
+                    <a href="#" class="new-post-up-btn">
+                        <div class="post-up-btn">
+                            <b style="color:#FFFFFF;text-align:center;vertical-align:middle;display:table-cell;">
+                                See new post
+                                <i class="fa-solid fa-arrow-up"></i>
+                            </b>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-sm-5">
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--Image post starts here-->
+        @*@foreach (var post in Model)
+        {*@
+        @if (Model != null)
+        {
+            if (Model.POSTING_STATUS.Equals("BANNED"))
+            {
+                <br />
+                <div class="container-fluid post">
+                    <div class="row">
+                        <div class="col-sm-12 " style="border:1px solid red;border-radius:10px">
+                            <div class="row post-heading">
+                                <div class="col-sm-2   flex-row-style">
+                                    @{ var imgUrl = Url.Action("GetImage", "UAC", new { name = Model.AUTHOR });}
+                                    @if (Model.PROFILE_IMG != null)
+                                    {
+                                        <img src="@imgUrl" class="img-circle" width="40px" height="40px" style="margin-right:10%;" /> }
+                                    else
+                                    {
+                                        <img src="~/image/dashboard/Default_pfp.jpg" class="img-circle" width="40px" height="40px" style="margin-right:10%;" />}
+                                    <p class="text-color text-left text-nowrap" style="vertical-align:central;margin-top:10%;">@Model.AUTHOR</p>
+                                </div>
+
+                                <div class="col-sm-1 col-sm-offset-9">
+                                    <a href="" class="menu-link-style dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-stack-1x fa-solid fa-ellipsis-vertical" style="padding:1rem 0rem;"></i>
+                                    </a>
+                                    <!--Drop down menu-->
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li>
+                                            <a onclick="UnBanPost(@Model.POST_ID)" style="cursor:pointer;">
+                                                <span class="row-no-gutters" style="padding:1rem;">
+                                                    <span class="col-sm-3">
+                                                        <i class="fa fa-universal-access"></i>
+                                                    </span>
+                                                    <span class="col-sm-5">
+                                                        Revoke Ban
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            @if (Model.TIMELINE_TEXT != null)
+                            {
+                                <div class="row post-body">
+                                    <div class="col-sm-12 ">
+                                        <p class="text-color">
+                                            @Model.TIMELINE_TEXT
+                                        </p>
+                                    </div>
+                                </div>}
+
+                            @if (Model.TIMELINE_IMAGE != null)
+                            {
+                                <div class="row post-body">
+                                    <div class="col-sm-12 ">
+                                        <img src="@Url.Action("GetPostImage", "UAC", new { id = Model.POST_ID })" alt="Post image" class="img-responsive" />
+                                    </div>
+                                </div>}
+
+                            <div class="row post-body flex-row-style">
+                                <div class="col-sm-2">
+                                    <p class="tag-style">@Model.POST_TAG</p>
+                                </div>
+
+                            </div>
+                            <div class="row post-action">
+                                <div class="col-sm-2  flex-row-style">
+                                    <!--Place id here-->
+                                    @if (Model.POST_STATUS != null && Model.POST_STATUS.Equals("UPVOTE"))
+                                    {
+                                        <a onclick="upvoteSelect(@Model.POST_ID)" id="@Model.POST_ID" class="post-action-style upvote-select upvote upvote-active-style" style="margin-right: 0.5rem; display: normal; cursor: pointer;">
+                                            <img src="~/image/timeline/like-s.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                        <a onclick="upvoteNormal(@Model.POST_ID)" id="@Model.POST_ID" class="post-action-style upvote upvote-normal" style="margin-right: 0.5rem; display: none; cursor: pointer;">
+                                            <img src="~/image/timeline/like-n.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                    }
+                                    else
+                                    {
+                                        <a onclick="upvoteSelect(@Model.POST_ID)" id="@Model.POST_ID" class="post-action-style upvote-select upvote upvote-active-style" style="margin-right: 0.5rem; display: none; cursor: pointer;">
+                                            <img src="~/image/timeline/like-s.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                        <a onclick="upvoteNormal(@Model.POST_ID)" id="@Model.POST_ID" class="post-action-style upvote upvote-normal" style="margin-right: 0.5rem; display: normal; cursor: pointer;">
+                                            <img src="~/image/timeline/like-n.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                    }
+                                    <b id="@Model.POST_ID" class="upvote_count">@Model.POST_LIKE</b>
+                                </div>
+
+                                <div class="col-sm-2  flex-row-style">
+                                    <!--Place id here-->
+                                    @if (Model.POST_STATUS != null && Model.POST_STATUS.Equals("DOWNVOTE"))
+                                    {
+                                        <a onclick="downvoteSelect(@Model.POST_ID)" id="@Model.POST_ID" class="post-action-style downvote-select downvote downvote-active-style" style="margin-right: 0.5rem; display: normal; cursor: pointer; ">
+                                            <img src="~/image/timeline/dislike-s.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+
+                                        <a onclick="downvoteNormal(@Model.POST_ID)" id="@Model.POST_ID" class="post-action-style downvote downvote-normal" style="margin-right: 0.5rem; display: none; cursor: pointer; ">
+                                            <img src="~/image/timeline/dislike-n.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                    }
+                                    else
+                                    {
+                                        <a onclick="downvoteSelect(@Model.POST_ID)" id="@Model.POST_ID" class="post-action-style downvote-select downvote downvote-active-style" style="margin-right: 0.5rem; display: none; cursor: pointer; ">
+                                            <img src="~/image/timeline/dislike-s.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                        <a onclick="downvoteNormal(@Model.POST_ID)" id="@Model.POST_ID" class="post-action-style downvote downvote-normal" style="margin-right: 0.5rem; display: normal; cursor: pointer; ">
+                                            <img src="~/image/timeline/dislike-n.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                    }
+                                    <b id="@Model.POST_ID" class="downvote_count">@Model.POST_DISLIKE</b>
+                                </div>
+                                <div class="col-sm-offset-10  " style="background-color: rgba(228, 113, 122,0.7); padding-top: 5px; color: gainsboro; padding-bottom: 5px; padding-left: 13px; max-width: 90px; border-radius: 15px; border: 1px solid red; ">
+                                    <i class="fa fa-skull-crossbones"></i>
+
+                                    Banned
+
+                                </div>
+
+                                <div class="col-sm-1  col-sm-offset-7">
+
+
+
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+            }
+
+
+            else
+            {
+                <br />
+                <div class="container-fluid post">
+                    <div class="row">
+                        <div class="col-sm-12 ">
+                            <div class="row post-heading">
+                                <div class="col-sm-2   flex-row-style">
+                                    @{ var imgUrl = Url.Action("GetImage", "UAC", new { name = Model.AUTHOR });}
+                                    @if (Model.PROFILE_IMG != null)
+                                    {
+                                        <img src="@imgUrl" class="img-circle" width="40px" height="40px" style="margin-right:10%;" /> }
+                                    else
+                                    {
+                                        <img src="~/image/dashboard/Default_pfp.jpg" class="img-circle" width="40px" height="40px" style="margin-right:10%;" />}
+                                    <p class="text-color text-left text-nowrap" style="vertical-align:central;margin-top:10%;">@Model.AUTHOR</p>
+                                </div>
+
+                                <div class="col-sm-1 col-sm-offset-9">
+                                    <a href="" class="menu-link-style dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-stack-1x fa-solid fa-ellipsis-vertical" style="padding:1rem 0rem;"></i>
+                                    </a>
+                                    <!--Drop down menu-->
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li>
+                                            <a onclick="BanPost(@Model.POST_ID)" style="cursor:pointer;">
+                                                <span class="row-no-gutters" style="padding:1rem;">
+                                                    <span class="col-sm-3">
+                                                        <i class="fa fa-low-vision"></i>
+                                                    </span>
+                                                    <span class="col-sm-5">
+                                                        Ban
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                            @if (Model.TIMELINE_TEXT != null)
+                            {
+                                <div class="row post-body">
+                                    <div class="col-sm-12 ">
+                                        <p class="text-color">
+                                            @Model.TIMELINE_TEXT
+                                        </p>
+                                    </div>
+                                </div>}
+
+                            @if (Model.TIMELINE_IMAGE != null)
+                            {
+                                <div class="row post-body">
+                                    <div class="col-sm-12 ">
+                                        <img src="@Url.Action("GetPostImage", "UAC", new { id = Model.POST_ID })" alt="Post image" class="img-responsive" />
+                                    </div>
+                                </div>}
+
+                            <div class="row post-body flex-row-style">
+                                <div class="col-sm-2">
+                                    <p class="tag-style">@Model.POST_TAG</p>
+                                </div>
+
+                            </div>
+                            <div class="row post-action">
+                                <div class="col-sm-2  flex-row-style">
+                                    <!--Place id here-->
+                                    @if (Model.POST_STATUS != null && Model.POST_STATUS.Equals("UPVOTE"))
+                                    {
+                                        <a onclick="upvoteSelect(@Model.POST_ID)" id="@Model.POST_ID" class="post-action-style upvote-select upvote upvote-active-style" style="margin-right: 0.5rem; display: normal; cursor: pointer;">
+                                            <img src="~/image/timeline/like-s.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                        <a onclick="upvoteNormal(@Model.POST_ID)" id="@Model.POST_ID" class="post-action-style upvote upvote-normal" style="margin-right: 0.5rem; display: none; cursor: pointer;">
+                                            <img src="~/image/timeline/like-n.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                    }
+                                    else
+                                    {
+                                        <a onclick="upvoteSelect(@Model.POST_ID)" id="@Model.POST_ID" class="post-action-style upvote-select upvote upvote-active-style" style="margin-right: 0.5rem; display: none; cursor: pointer;">
+                                            <img src="~/image/timeline/like-s.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                        <a onclick="upvoteNormal(@Model.POST_ID)" id="@Model.POST_ID" class="post-action-style upvote upvote-normal" style="margin-right: 0.5rem; display: normal; cursor: pointer;">
+                                            <img src="~/image/timeline/like-n.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                    }
+                                    <b id="@Model.POST_ID" class="upvote_count">@Model.POST_LIKE</b>
+                                </div>
+
+                                <div class="col-sm-2  flex-row-style">
+                                    <!--Place id here-->
+                                    @if (Model.POST_STATUS != null && Model.POST_STATUS.Equals("DOWNVOTE"))
+                                    {
+                                        <a onclick="downvoteSelect(@Model.POST_ID)" id="@Model.POST_ID" class="post-action-style downvote-select downvote downvote-active-style" style="margin-right: 0.5rem; display: normal; cursor: pointer; ">
+                                            <img src="~/image/timeline/dislike-s.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+
+                                        <a onclick="downvoteNormal(@Model.POST_ID)" id="@Model.POST_ID" class="post-action-style downvote downvote-normal" style="margin-right: 0.5rem; display: none; cursor: pointer; ">
+                                            <img src="~/image/timeline/dislike-n.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                    }
+                                    else
+                                    {
+                                        <a onclick="downvoteSelect(@Model.POST_ID)" id="@Model.POST_ID" class="post-action-style downvote-select downvote downvote-active-style" style="margin-right: 0.5rem; display: none; cursor: pointer; ">
+                                            <img src="~/image/timeline/dislike-s.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                        <a onclick="downvoteNormal(@Model.POST_ID)" id="@Model.POST_ID" class="post-action-style downvote downvote-normal" style="margin-right: 0.5rem; display: normal; cursor: pointer; ">
+                                            <img src="~/image/timeline/dislike-n.svg" class="img-responsive" width="25" height="25" />
+                                        </a>
+                                    }
+                                    <b id="@Model.POST_ID" class="downvote_count">@Model.POST_DISLIKE</b>
+                                </div>
+
+
+                                <div class="col-sm-1  col-sm-offset-7">
+
+
+
+
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*<br />*@
+
+            }
+        }
+        @*//}*@
+
+
+    </div>
+    <div class="col-sm-2 col-sm-offset-0 search-content">
+        <div class="row">
+            <form class="form-group search-bar">
+
+                <div class="row-no-gutters">
+                    <div class="col-sm-10 ">
+                        <input type="search" class="form-control search_box" placeholder="search for post" id="text-box-normal" style="border: 2px solid #76b8ac;" />
+                    </div>
+                    <div class="col-sm-1 col-sm-offset-1">
+                        <a href="#" class="btn btn-default" id="text-box-normal" style="border: 2px solid #76b8ac;">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row main-content-scoll" style="overflow-y:scroll; overflow-x:hidden;">
+            <ul class="nav nav-pills nav-stacked search-result"></ul>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="@Url.Content("~/Scripts/jquery-3.4.1.js")"></script>
+<script src="@Url.Content("~/Scripts/UACScripts/SearchUserPostUAC.js")"></script>
+<script src="@Url.Content("~/Scripts/lazy_loadPostUAC.js")"></script>
+<script src="@Url.Content("~/Scripts/ShowNewPostUAC.js")"></script>
+<script src="@Url.Content("~/Scripts/UACScripts/postActionUAC.js")"></script>

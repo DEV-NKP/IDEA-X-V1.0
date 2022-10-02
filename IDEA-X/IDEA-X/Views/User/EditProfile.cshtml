@@ -1,0 +1,276 @@
+﻿
+@{
+    ViewBag.Title = "EditProfile";
+    Layout = "~/Views/Shared/_LayoutDashBoard.cshtml";
+}
+
+<link href="@Url.Content("~/Content/TextBoxEdit.css")" rel="stylesheet" type="text/css" />
+
+<div class="row">
+    <div class="col-sm-9 main-content-scoll" >
+
+
+        <div width="85%" align="center" style="font-family: 'Times New Roman'; font-size: 20px; color: #e2344d ">
+            <form action="/User/EditProfile" enctype="multipart/form-data" method="post" id="form">
+                @{ var imgUrl = Url.Action("GetImage", "User", new { name = Model.USERNAME });}
+                @if (Model.PROFILE_PICTURE != null)
+                {
+        <img src="@imgUrl" title="Profile" class="img-circle hover-profile" width="200" height="200" id="output" /> }
+    else
+    {
+        <img src="~/image/dashboard/Default_pfp.jpg" title="Profile" class="img-circle hover-profile" width="200" height="200" id="output" />}                <br /><br />
+                <label style="color: #cac163">@Model.USERNAME</label>
+
+
+
+                <br />
+                <label for="file" id="button-glow" style="cursor: pointer; font-size:14px; padding-top: 10px; padding-bottom:10px; padding-left:20px; padding-right:20px; background-color: #808080; border-radius:10px; color:black;">Select Image</label>
+                <input type="file" asp-for="PROFILE_PICTURE" accept="image/*" name="PROFILE_PICTURE" id="file" onchange="loadFile(event)"
+                       style="display: none;">
+                <hr style="width:50%" />
+
+                <br />
+                <div style="text-align: left; padding-left: 10%; font-family: 'Times New Roman'; font-size: 20px; color: #eade94">
+
+                    <span style="border-image: linear-gradient(135deg, #d8bd1b, #808080); border-image-slice: 1; border-bottom: solid; padding-left: 0px; padding-right: 20px; padding-bottom:5px;">
+                        User Details
+                    </span>
+                    <br />
+
+                    <br />
+                    <div style="text-align: left; padding-left: 10%; font-family: 'Times New Roman'; font-size: 20px; color: #bedafb">
+                        User Name:
+                        <input type="text" name="USERNAME" value="@(Model != null? Model.USERNAME:"")" class="form-control" id="text-box-normal" readonly />
+                        <font style="color:#fe9783">
+                            @Html.ValidationMessage("USERNAME", new { @class = "msg-require" })
+                        </font>
+                        <br />
+                        First Name:
+                        <input type="text" name="FIRST_NAME" value="@(Model != null? Model.FIRST_NAME:"")" class="form-control" id="text-box-normal" />
+                        <font style="color:#fe9783">
+                            @Html.ValidationMessage("FIRST_NAME", new { @class = "msg-require" })
+                        </font>
+                        <br />
+                        Last Name:
+                        <input type="text" name="LAST_NAME" value="@(Model != null? Model.LAST_NAME:"")" class="form-control" id="text-box-normal" />
+                        <font style="color:#fe9783">
+                            @Html.ValidationMessage("LAST_NAME", new { @class = "msg-require" })
+                        </font>
+                        <br />
+                        Headline:
+                        <input type="text" name="HEADLINE" value="@(Model != null? Model.HEADLINE:"")" class="form-control" id="text-box-normal" />
+                        <font style="color:#fe9783">
+                            @Html.ValidationMessage("HEADLINE", new { @class = "msg-require" })
+                        </font>
+                        <br />
+
+                        Status:
+                        <select name="USER_STATUS" value="@(Model != null? Model.USER_STATUS:"")" class="form-control" id="text-box-normal">
+                            <option value="ACTIVE" style="color:#808080">Active</option>
+                            <option value="BUSY" style="color:#808080">Busy</option>
+                            <option value="INVISIBLE" style="color:#808080">Invisible</option>
+                        </select>
+
+                        <br />
+                    </div>
+                </div>
+                <br />
+                <hr />
+                <br />
+                <div style="text-align: left; padding-left: 10%; font-family: 'Times New Roman'; font-size: 20px; color: #eade94">
+                    <span style="border-image: linear-gradient(135deg, #d8bd1b, #808080); border-image-slice: 1; border-bottom: solid; padding-left: 0px; padding-right: 20px; padding-bottom:5px;">
+
+                        About User
+                    </span>
+                    <br /><br />
+                    <div style="text-align: left; padding-left: 10%; font-family: 'Times New Roman'; font-size: 20px; color: #bedafb">
+                        Date Of Birth:
+                        <input type="date" name="DATE_OF_BIRTH" value="@(Model != null? Model.DATE_OF_BIRTH:"")" class="form-control" id="text-box-normal" />
+                        <font style="color:#fe9783">
+                            @Html.ValidationMessage("DATE_OF_BIRTH", new { @class = "msg-require" })
+                        </font>
+                        <br />
+                        Gender:
+                        <select name="GENDER" value="@(Model != null? Model.GENDER:"")" class="form-control" id="text-box-normal">
+
+                            <option value="Male" style="color:#808080">Male</option>
+                            <option value="Female" style="color:#808080">Female</option>
+                            <option value="Custom" style="color:#808080">Custom</option>
+                        </select>
+                        <br />
+                        Industry:
+                        <input type="text" name="INDUSTRY" value="@(Model != null? Model.INDUSTRY:"")" class="form-control" id="text-box-normal" />
+                        <font style="color:#fe9783">
+                            @Html.ValidationMessage("INDUSTRY", new { @class = "msg-require" })
+                        </font>
+                        <br />
+                        Education Institution:
+                        <input type="text" name="EDUCATIONAL_INSTITUTION" value="@(Model != null? Model.EDUCATIONAL_INSTITUTION:"")" class="form-control" id="text-box-normal" />
+                        <font style="color:#fe9783">
+                            @Html.ValidationMessage("EDUCATIONAL_INSTITUTION", new { @class = "msg-require" })
+                        </font>
+                        <br />
+                        Department:
+                        <select name="DEPARTMENT" value="@(Model != null? Model.DEPARTMENT:"")" class="form-control" id="text-box-normal">
+                            <option value="" style="color:#808080">Select Your Department</option>
+                            <option value="Aeronautical Engineering" style="color:#808080">Aeronautical Engineering</option>
+                            <option value="Textile Engineering" style="color:#808080">Textile Engineering</option>
+                            <option value="Mechatronics Engineering" style="color:#808080">Mechatronics Engineering</option>
+                            <option value="Aerospace Engineering" style="color:#808080">Aerospace Engineering</option>
+                            <option value="Mechanical Engineering" style="color:#808080">Mechanical Engineering</option>
+                            <option value="Structural Engineering" style="color:#808080">Structural Engineering</option>
+                            <option value="Automobile Engineering" style="color:#808080">Automobile Engineering</option>
+                            <option value="Production Engineering" style="color:#808080">Production Engineering</option>
+                            <option value="Metallurgical Engineering" style="color:#808080">Metallurgical Engineering</option>
+                            <option value="Ceramic Engineering" style="color:#808080">Ceramic Engineering</option>
+                            <option value="Biomedical Engineering" style="color:#808080">Biomedical Engineering</option>
+                            <option value="Construction Engineering" style="color:#808080">Construction Engineering</option>
+                            <option value="Civil Engineering" style="color:#808080">Civil Engineering</option>
+                            <option value="Robotics Engineering" style="color:#808080">Robotics Engineering</option>
+                            <option value="Power Engineering" style="color:#808080">Power Engineering</option>
+                            <option value="Communications Engineering" style="color:#808080">Communications Engineering</option>
+                            <option value="Biotechnology Engineering" style="color:#808080">Biotechnology Engineering</option>
+                            <option value="Electrical Engineering" style="color:#808080">Electrical Engineering</option>
+                            <option value="Computer Science Engineering" style="color:#808080">Computer Science Engineering</option>
+                            <option value="Chemical Engineering" style="color:#808080">Chemical Engineering</option>
+                            <option value="Mining Engineering" style="color:#808080">Mining Engineering</option>
+                            <option value="Electronics Engineering" style="color:#808080">Electronics Engineering</option>
+                            <option value="Marine Engineering" style="color:#808080">Marine Engineering</option>
+                            <option value="Tool Engineering" style="color:#808080">Tool Engineering</option>
+                            <option value="Industrial Engineering" style="color:#808080">Industrial Engineering</option>
+                            <option value="Marine Engineering" style="color:#808080">Marine Engineering</option>
+                            <option value="Petroleum Engineering" style="color:#808080">Petroleum Engineering</option>
+                            <option value="Software Engineering" style="color:#808080">Software Engineering</option>
+                            <option value="Telecommunication Engineering" style="color:#808080">Telecommunication Engineering</option>
+                            <option value="Environmental Engineering" style="color:#808080">Environmental Engineering</option>
+                            <option value="Transportation Engineering" style="color:#808080">Transportation Engineering</option>
+                        </select>
+                        <br />
+
+                    </div>
+                </div>
+                <br />
+                <hr />
+                <br />
+                <div style="text-align: left; padding-left: 10%; font-family: 'Times New Roman'; font-size: 20px; color: #eade94">
+                    <span style="border-image: linear-gradient(135deg, #d8bd1b, #808080); border-image-slice: 1; border-bottom: solid; padding-left: 0px; padding-right: 20px; padding-bottom:5px;">
+
+                        Contact Details
+                    </span>
+                    <br /><br />
+                    <div style="text-align: left; padding-left: 10%; font-family: 'Times New Roman'; font-size: 20px; color: #bedafb">
+
+
+                        Address:
+                        <input type="text" name="USER_ADDRESS" value="@(Model != null? Model.USER_ADDRESS:"")" class="form-control" id="text-box-normal" />
+                        <font style="color:#fe9783">
+                            @Html.ValidationMessage("USER_ADDRESS", new { @class = "msg-require" })
+                        </font>
+                        <br />
+                        State:
+                        <input type="text" name="USER_STATE" value="@(Model != null? Model.USER_STATE:"")" class="form-control" id="text-box-normal" />
+                        <font style="color:#fe9783">
+                            @Html.ValidationMessage("USER_STATE", new { @class = "msg-require" })
+                        </font>
+                        <br />
+                        Zip Code:
+                        <input type="text" name="ZIP_CODE" value="@(Model != null? Model.ZIP_CODE:"")" class="form-control" id="text-box-normal" />
+                        <font style="color:#fe9783">
+                            @Html.ValidationMessage("ZIP_CODE", new { @class = "msg-require" })
+                        </font>
+                        <br />
+                        Country:
+                        <input type="text" name="COUNTRY" value="@(Model != null? Model.COUNTRY:"")" class="form-control" id="text-box-normal" />
+                        <font style="color:#fe9783">
+                            @Html.ValidationMessage("COUNTRY", new { @class = "msg-require" })
+                        </font>
+                        <br />
+                        Mobile:
+                        <input type="number" name="MOBILE" value="@(Model != null? Model.MOBILE:"")" class="form-control" id="text-box-normal" />
+                        <font style="color:#fe9783">
+                            @Html.ValidationMessage("MOBILE", new { @class = "msg-require" })
+                        </font>
+                        <br />
+                        Contact URL:
+                        <input type="text" name="CONTACT_URL" value="@(Model != null? Model.CONTACT_URL:"")" class="form-control" id="text-box-normal" />
+                        <font style="color:#fe9783">
+                            @Html.ValidationMessage("CONTACT_URL", new { @class = "msg-require" })
+                        </font>
+                        <br />
+
+                    </div>
+                </div>
+                <br />
+
+                <br />
+
+
+
+                <a href="javascript:$('form').submit();" style="padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; text-decoration: none; background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.1)); border-radius: 10px; font-size: 18px; color: #9bf2df;">Update Information</a>
+
+            </form>
+
+        </div>
+
+
+
+
+    </div>
+    <div class="col-sm-2 col-sm-offset-0 search-content">
+        <ul class="nav nav-pills nav-stacked search-bar">
+            <li>
+                <a href="@Url.Action("Profile","User")" style="padding: 2rem 1rem">
+                    <span class="row-no-gutters">
+                        <span class="col-sm-2">
+                            <i class="fa-solid fa-user">
+                            </i>
+                        </span>
+                        <span class="col-sm-offset-0">
+                            About
+                        </span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Personal_Timeline","User")" style="padding: 2rem 1rem">
+                    <span class="row-no-gutters">
+                        <span class="col-sm-2">
+                            <i class="fa-solid fa-timeline">
+                            </i>
+                        </span>
+                        <span class="col-sm-offset-0">
+                            Your Timeline
+                        </span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Activity","User")" style="padding: 2rem 1rem">
+                    <span class="row-no-gutters">
+                        <span class="col-sm-2">
+                            <i class="fa-solid fa-bolt-lightning">
+                            </i>
+                        </span>
+                        <span class="col-sm-offset-0">
+                            Your Activities
+                        </span>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+<script>
+    var loadFile = function (event) {
+        var image = document.getElementById('output');
+        image.src = URL.createObjectURL(event.target.files[0]);
+    };
+
+</script>
+
+
+
+

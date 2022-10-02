@@ -1,0 +1,313 @@
+﻿
+@{ ViewBag.Title = "Chat";
+                Layout = "~/Views/Shared/_LayoutDashBoard.cshtml"; }
+
+<link href="@Url.Content("~/Content/TextBoxLog.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/div-gradiant.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/home-menu-layout.css")" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<div class="row">
+    <div class="col-sm-9 main-content-scoll">
+        <div align="center"style=" margin-left:25px; margin-top:10vh">
+
+            <img src="~/image/dashboard/chat_home.svg" align="center" style="width:50vw; height:50vh; justify-content:center" />
+            <br><br><br> <br><br><span>Communicate with your mate is now more easier with IDEA_X messenger.</span><br>
+<span style="color: azure; ">
+Just search your mate by name and start the communication.
+</span>
+
+
+
+
+
+
+
+        </div>
+       
+
+
+        <!--  <div aling="center" style="background-color: #303030; border-top-left-radius: 15px; border-top-right-radius: 15px; margin-left:3%; margin-top: 0px; height: 100%; width: 98%; overflow:hidden">
+                <div align="left" style="border-top-left-radius: 15px; border-top-right-radius: 15px; border: 2px solid #76b8ac;  height: 10%; width: 100%; " id="div-grad">
+                    <table style="border-radius: 15px; margin-left: 10px; background-color: transparent; height: 70px; width: 70%; ">
+                        <tr style="  margin-left: 10px; margin-bottom: -5px; ">
+                            <td style=" padding: 10px; padding-right: 10px; width: 70px; ">
+                                <img src="~/image/dashboard/Default_pfp.jpg" class="img-circle" width="40px" height="40px" />
+                            </td>
+                            <td>
+                                <table align="left" style=" margin-left: 0px; background-color: transparent; ">
+                                    <tr>
+                                        <td style="background-color:transparent;">
+                                            <font size="5" face="Monospace" style="font-weight: bold; color: white; ">Receiver Name</font>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background-color: transparent;">
+                                            <font size="3" face="Monospace" style="color: #696969; ">Receiver Bio</font>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+
+                        </tr>
+                    </table>
+
+                </div>
+
+
+                <div style="margin-top: 5px; padding-left: 30px; padding-bottom: 5px; padding-top: 5px; padding-right: 30px; background-color: #303030; height: 570px; width: 100%; overflow-y: auto ">
+
+                    <div text-aling="right" style="margin-top:2px; margin-bottom:2px;">
+                        <table align="right" border="0" style="height: 19%; width: 55%; background-color: transparent;">
+                            <tr>
+                                <td width="90%">
+                                    <p style="border-radius: 20px; background-color: #eae0c8; border: 1px solid silver; margin: 5px; padding: 8px; ">
+                                        <font size="3" face="Monospace" style="color: #3b444b; text-align: justify; ">Communication – The human connection is the key to personal and career success.</font>
+                                    </p>
+                                </td>
+                                <td width="10%" align="center" style=" padding: 10px;">
+                                    <img src="~/image/dashboard/Default_pfp.jpg" class="img-circle" width="40px" height="40px" />
+
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div align="left" style="margin-top:2px; margin-bottom:2px; ">
+                        <table border="0" style="height: 20%; width: 55%; background-color: transparent;">
+                            <tr>
+
+                                <td width="10%" align="center" style=" padding: 10px;">
+                                    <img src="~/image/dashboard/Default_pfp.jpg" class="img-circle" width="40px" height="40px" />
+
+                                </td>
+
+                                <td width="90%">
+                                    <p style="border-radius: 20px; background-color: #c4c3d0; border: 1px solid siver; margin: 5px; padding: 8px; ">
+                                        <font size="3" face="Monospace" style="color: #3b444b; text-align: justify;">Communication – The human connection is the key to personal and career success.</font>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div text-aling="right" style="margin-top:2px; margin-bottom:2px;">
+                        <table align="right" border="0" style="height: 19%; width: 55%; background-color: transparent;">
+                            <tr>
+                                <td width="90%">
+                                    <p style="border-radius: 20px; background-color: #eae0c8; border: 1px solid silver; margin: 5px; padding: 8px; ">
+                                        <font size="3" face="Monospace" style="color: #3b444b; text-align: justify; ">Communication – The human connection is the key to personal and career success.</font>
+                                    </p>
+                                </td>
+                                <td width="10%" align="center" style=" padding: 10px;">
+                                    <img src="~/image/dashboard/Default_pfp.jpg" class="img-circle" width="40px" height="40px" />
+
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div align="left" style="margin-top:2px; margin-bottom:2px; ">
+                        <table border="0" style="height: 20%; width: 55%; background-color: transparent;">
+                            <tr>
+
+                                <td width="10%" align="center" style=" padding: 10px;">
+                                    <img src="~/image/dashboard/Default_pfp.jpg" class="img-circle" width="40px" height="40px" />
+
+                                </td>
+
+                                <td width="90%">
+                                    <p style="border-radius: 20px; background-color: #c4c3d0; border: 1px solid siver; margin: 5px; padding: 8px; ">
+                                        <font size="3" face="Monospace" style="color: #3b444b; text-align: justify;">Communication – The human connection is the key to personal and career success.</font>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+
+
+                <div aling="center" style="padding: 5px;  background-color: #0f1011; height: 15%; width: 100%; ">
+                    <form action="@Url.Action("Chat","User")" method="post" id="form">
+                        <table style="padding-left: 10px; padding-right: 10px; margin-top:1%; margin-bottom:5px; width: 100%; border-top: 2px; border-color: #30d5c8; ">
+                            <tr>
+                                <td align="right" style=" width: 80%; padding-right: 40px;margin-top:5px; background-color: #0f1011; ">
+                                    <input type="text" name="USER_MESSAGE" placeholder="Type Message Here" class=" form-control" id="text-box-normal" style=" border-radius: 12px; border: 2px solid #76b8ac; width: 80%; max-width: 90%; " />
+                                </td>
+                                <td align="right" style=" width: 20%; padding-right:120px; background-color: #0f1011; ">
+                                    <h7><a href="/Home/Index" style="text-decoration:none;" id="sign-btn">SEND</a></h7>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+                <div aling="center" style="padding: 5px;  background-color: #0f1011; height: 15%; width: 100%; ">
+                    <form action="@Url.Action("Chat","User")" method="post" id="form">
+                        <table style="padding-left: 10px; padding-right: 10px; margin-top:1%; margin-bottom:5px; width: 100%; border-top: 2px; border-color: #30d5c8; ">
+                            <tr>
+                                <td align="right" style="margin-left:30px; width: 90%; padding-right: 40px;margin-top:5px; background-color: #0f1011; ">
+                                    <p>
+                                        <font size="4" face="Monospace" style=" color: #808080; width: 80%; ">Have not connected yet? Send a request and become mate.</font>
+                                    </p>
+                                </td>
+                                <td align="right" style=" width: 20%; padding-right:80px; background-color: #0f1011; ">
+                                    <h7><a href="/Home/Index" style="text-decoration:none;" id="sign-btn">REQUEST</a></h7>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+            </div>
+    -->
+
+    </div>
+
+
+
+        <div class="col-sm-2 col-sm-offset-0 search-content">
+
+
+            <div class="row">
+                <form class="form-group search-bar">
+                    <div class="row-no-gutters">
+                        <div class="col-sm-10 ">
+                            <input type="search" class="form-control search_box-user" placeholder="Search For Mate" id="text-box-normal" style="border: 2px solid #76b8ac;" />
+                        </div>
+                        <div class="col-sm-1 col-sm-offset-1">
+                            <a href="#" class="btn btn-default" id="text-box-normal" style="border: 2px solid #76b8ac;">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="row main-content-scoll" style="overflow-y:scroll; overflow-x:hidden;">
+                <ul class="nav nav-pills nav-stacked search-result-user"></ul>
+            </div>
+            <!--
+               <div align="center" style=" margin-top: 5px; margin-left:0px; border: 1px solid #76b8ac; border-radius: 5px; height: 10%; width: 100%; " id="div-grad">
+                   <table style="border-radius: 15px; background-color: transparent; height: 70px; width: 70%; ">
+                       <tr style="  margin-left: 10px; margin-bottom: -5px; ">
+                           <td style=" padding: 10px; padding-right: 10px; width: 70px; ">
+                               <img src="~/image/dashboard/Default_pfp.jpg" class="img-circle" width="40px" height="40px" />
+                           </td>
+                           <td>
+                               <table align="left" style=" margin-left: 0px; background-color: transparent; width:170px ">
+                                   <tr>
+                                       <td style="background-color:transparent; width:100px">
+                                           <font size="3" face="Monospace" style="font-weight: bold; color: white; ">post.FIRST_NAME&nbsp;post.LAST_NAME</font>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td style="background-color: transparent;">
+                                           <font size="3" face="Monospace" style="color: #696969; ">post.USERNAME</font>
+                                       </td>
+                                   </tr>
+                               </table>
+                           </td>
+
+                       </tr>
+                   </table>
+        <br />
+               </div>-->
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+<!--
+<div class="container-fluid body-content">
+    <div class="row">
+        <div class="col-lg-2 side-nav-content side-nav-layout">
+
+            <div class="list-group">
+                <a class="list-group-item" href="@Url.Action("Timeline","User")">
+
+                    <span class="row-no-gutters">
+                        <span class="col-sm-2">
+                            <i class="fa fa-house">
+                            </i>
+                        </span>
+                        <span class="col-sm-offset-0">
+                            Timeline
+                        </span>
+                    </span>
+
+
+                </a>
+
+                <a class="list-group-item" href="@Url.Action("Chat","User")">
+                    <span class="row-no-gutters">
+                        <span class="col-sm-2">
+                            <i class="fa-solid fa-message">
+                            </i>
+                        </span>
+                        <span class="col-sm-offset-0">
+                            Chat
+                        </span>
+                    </span>
+                </a>
+
+
+                <a class="list-group-item" href="@Url.Action("Profile","User")">
+                    <span class="row-no-gutters">
+                        <span class="col-sm-2">
+                            <i class="fa-solid fa-user">
+                            </i>
+                        </span>
+                        <span class="col-sm-offset-0">
+                            User Profile
+                        </span>
+                    </span>
+                </a>
+            </div>
+            <div class="footer" style="position:fixed; bottom:0px; left:4.5vw">
+
+                <div style="display: flex; align-items: center;">
+
+                    <span>
+                        <img src="~/image/ideax.svg" alt="idea x logo" class="img-rounded" width="40px" height="40px" />
+                    </span>
+
+                    <b>IDEA-X</b>
+
+                </div>
+                <div>
+                    <span class="text-center">
+                        &copy; Copyright @DateTime.Now.Year
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+
+
+        </div>
+        <div class="col-lg-3 side-nav-search" style="border-left:2px solid grey;">
+
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search for post by username or #tag" />
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+-->
+<script src="@Url.Content("~/Scripts/jquery-3.4.1.js")"></script>
+<script src="@Url.Content("~/Scripts/SearchUser.js")"></script>

@@ -1,0 +1,65 @@
+﻿
+
+.paper {
+    position: relative;
+    width: 45vw;
+    max-width: 45vw;
+    min-width: 45vw;
+    height: 480px;
+    max-height: 480px;
+    min-height:480px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.3);
+    overflow: hidden;
+}
+
+    .paper:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 60px;
+        background: radial-gradient(#575450 6px, transparent 7px) repeat-y;
+        background-size: 30px 30px;
+        border-right: 3px solid #724545;
+        box-sizing: border-box;
+    }
+
+.paper-content {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    bottom: 30px;
+    left: 60px;
+    background: linear-gradient(transparent, transparent 28px, #3c6057 28px);
+    background-size: 30px 30px;
+}
+
+    .paper-content textarea {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        height: 100%;
+        min-height: 100%;
+        max-height: 100%;
+        line-height: 30px;
+        padding: 0 10px;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        color:aliceblue;
+        font-family: 'Handlee', cursive;
+        font-weight: bold;
+        font-size: 18px;
+        box-sizing: border-box;
+        z-index: 1;
+    }
+
+
+@font-face {
+    font-family: 'Handlee';
+    src: url("fonts/Handler/handler-regular.ttf");
+}

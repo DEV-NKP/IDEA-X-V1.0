@@ -1,0 +1,25 @@
+﻿#word-mid-line {
+    overflow: hidden;
+    text-align: center;
+}
+
+    #word-mid-line:before,
+    #word-mid-line:after {
+        background-color: #ffffff;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+    }
+
+    #word-mid-line:before {
+        right: 0.5em;
+        margin-left: -50%;
+    }
+
+    #word-mid-line:after {
+        left: 0.5em;
+        margin-right: -50%;
+    }

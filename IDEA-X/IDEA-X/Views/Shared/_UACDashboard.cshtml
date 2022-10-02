@@ -1,0 +1,131 @@
+﻿
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/Admin_Table.css")
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/dashboard_css")
+    @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("Styles", false)
+</head>
+<body class="body-background">
+    <div class="nav navbar-inverse navbar-fixed-top ">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="@Url.Action("Timeline","UAC")" class="navbar-left" style="text-decoration:none">
+                    <img src="~/image/ideax.svg" alt="Idea X logo" class="img-rounded" width="60px" height="60px" />
+                    <b class="text-muted">IDEA-X</b>
+                </a>
+
+
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <li>
+                    <a href="@Url.Action("Profile","UAC")">
+                        @*@foreach (var ads2 in Model)
+                            {*@
+                        <b style="padding-right:20px;">@Session["UNAME"]</b>
+                        @* } *@
+                        <img src="~/image/ideax.svg" title="Profile" class="img-circle hover-profile"
+                             width="30px" height="30px" />
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Logout","UAC")" style="pointer-events:none">
+                        <i class="fa-2x fa-solid fa-arrow-right-from-bracket logout" title="Logout"></i>
+
+
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="container-fluid body-content">
+        <div class="row">
+            <div class="col-sm-2 side-nav-content side-nav-layout">
+
+                <div class="list-group">
+                    <a class="list-group-item" href="@Url.Action("Timeline","UAC")">
+
+                        <span class="row-no-gutters">
+                            <span class="col-sm-2">
+                                <i class="fa fa-house">
+                                </i>
+                            </span>
+                            <span class="col-sm-offset-1">
+                                Timeline
+                            </span>
+                        </span>
+
+
+                    </a>
+
+                    <a class="list-group-item" href="@Url.Action("Profile","UAC")">
+                        <span class="row-no-gutters">
+                            <span class="col-sm-2">
+                                <i class="fa-solid fa-user">
+                                </i>
+                            </span>
+                            <span class="col-sm-offset-1">
+                                Profile
+                            </span>
+                        </span>
+                    </a>
+
+                    <a class="list-group-item" href="@Url.Action("PendingReport","UAC")">
+                        <span class="row-no-gutters">
+                            <span class="col-sm-2">
+                                <i class="fa-solid fa-pencil-square">
+                                </i>
+                            </span>
+                            <span class="col-sm-offset-1">
+                                Post Reports
+                            </span>
+                        </span>
+                    </a>
+                  
+
+                </div>
+                <div class="footer" style="position:fixed; bottom:0px; left:4.5vw">
+
+                    <div style="display: flex; align-items: center;">
+
+                        <span>
+                            <img src="~/image/ideax.svg" alt="idea x logo" class="img-rounded" width="40px" height="40px" />
+                        </span>
+
+                        <b>IDEA-X</b>
+
+                    </div>
+                    <div>
+                        <span class="text-center">
+                            &copy; Copyright @DateTime.Now.Year
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-10">
+
+                @RenderBody()
+
+
+            </div>
+
+        </div>
+
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/timeline")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

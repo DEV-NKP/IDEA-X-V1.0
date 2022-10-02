@@ -1,0 +1,204 @@
+﻿
+@{ ViewBag.Title = "SignUpExtend"; }
+<link href="@Url.Content("~/Content/Text_Box.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/ButtonFillGlow.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/MidWordLine.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/Text_Decor.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/TextBoxLog.css")" rel="stylesheet" type="text/css" />
+
+
+
+<body style="background-color: #0f1011;" onload="checkuname()">
+    <h2 align="center"></h2>
+    <table border="0" style="height: 75vh; width: 100%; background-color: #0f1011;">
+        <tr>
+            <td width="100%" align="center">
+                <div align="center" style="margin-left: 0px; background-color: #303030; height: 680px; width: 800px; border-radius: 10px; padding-top: 20px; padding-left: 10px; padding-right: 10px; padding-bottom: 20px; border: 1px solid #808080 ">
+                    <h4 style="width:300px; color: #b0acac; border-bottom:1px solid white; padding-bottom:15px;">More Information</h4>
+                    <br />
+                    <form action="" method="post" id="form">
+                        <table border="0">
+
+                            <tr>
+
+                                <td width="50%" style="margin-left: 0px; background-color: #303030;">
+
+                                    <h6 style="font-weight: lighter; color: #c9c9c9; margin-left: -50px;">
+                                        Username:
+                                    </h6>
+
+                                    <input style="margin-left:-50px;" type="text" name="USERNAME" value="@(Model != null? Model.USERNAME:"")" class="form-control uname_box" id="text-box-normal" />
+                                    <font style="margin-left: -50px; color: #fe9783">
+                                        @Html.ValidationMessage("USERNAME", new { @class = "msg-require uname-box-validation text-danger" })
+                                    </font>
+                                </td>
+
+                                <td width="50%" style="margin-left: 0px; background-color: #303030;">
+
+                                    <h6 style="font-weight: lighter; padding-top: 0px; color: #c9c9c9; margin-left: 40px;">
+                                        Password:
+                                    </h6>
+
+                                    <input style="margin-left: 40px;" type="password" name="PASSWORD" value="@(Model != null? Model.PASSWORD:"")" class="form-control" id="text-box-normal" />
+                                    <font style="margin-left: 40px; color: #fe9783">
+                                        @Html.ValidationMessage("PASSWORD", new { @class = "msg-require" })
+                                    </font>
+
+                                </td>
+                            </tr>
+
+
+                            <tr>
+
+                                <td width="50%" style="margin-left: 0px; background-color: #303030;">
+                                    <h6 style="font-weight: lighter; padding-top: 0px; color: #c9c9c9; margin-left: -50px;">
+                                        Department:
+                                    </h6>
+
+                                    <select name="DEPARTMENT" value="@(Model != null? Model.DEPARTMENT:"")" style="margin-left:-50px;" class="form-control" id="text-box-normal">
+                                        <option value="" style="color:#808080">Select Your Department</option>
+                                        <option value="Aeronautical Engineering" style="color:#808080">Aeronautical Engineering</option>
+                                        <option value="Textile Engineering" style="color:#808080">Textile Engineering</option>
+                                        <option value="Mechatronics Engineering" style="color:#808080">Mechatronics Engineering</option>
+                                        <option value="Aerospace Engineering" style="color:#808080">Aerospace Engineering</option>
+                                        <option value="Mechanical Engineering" style="color:#808080">Mechanical Engineering</option>
+                                        <option value="Structural Engineering" style="color:#808080">Structural Engineering</option>
+                                        <option value="Automobile Engineering" style="color:#808080">Automobile Engineering</option>
+                                        <option value="Production Engineering" style="color:#808080">Production Engineering</option>
+                                        <option value="Metallurgical Engineering" style="color:#808080">Metallurgical Engineering</option>
+                                        <option value="Ceramic Engineering" style="color:#808080">Ceramic Engineering</option>
+                                        <option value="Biomedical Engineering" style="color:#808080">Biomedical Engineering</option>
+                                        <option value="Construction Engineering" style="color:#808080">Construction Engineering</option>
+                                        <option value="Civil Engineering" style="color:#808080">Civil Engineering</option>
+                                        <option value="Robotics Engineering" style="color:#808080">Robotics Engineering</option>
+                                        <option value="Power Engineering" style="color:#808080">Power Engineering</option>
+                                        <option value="Communications Engineering" style="color:#808080">Communications Engineering</option>
+                                        <option value="Biotechnology Engineering" style="color:#808080">Biotechnology Engineering</option>
+                                        <option value="Electrical Engineering" style="color:#808080">Electrical Engineering</option>
+                                        <option value="Computer Science Engineering" style="color:#808080">Computer Science Engineering</option>
+                                        <option value="Chemical Engineering" style="color:#808080">Chemical Engineering</option>
+                                        <option value="Mining Engineering" style="color:#808080">Mining Engineering</option>
+                                        <option value="Electronics Engineering" style="color:#808080">Electronics Engineering</option>
+                                        <option value="Marine Engineering" style="color:#808080">Marine Engineering</option>
+                                        <option value="Tool Engineering" style="color:#808080">Tool Engineering</option>
+                                        <option value="Industrial Engineering" style="color:#808080">Industrial Engineering</option>
+                                        <option value="Marine Engineering" style="color:#808080">Marine Engineering</option>
+                                        <option value="Petroleum Engineering" style="color:#808080">Petroleum Engineering</option>
+                                        <option value="Software Engineering" style="color:#808080">Software Engineering</option>
+                                        <option value="Telecommunication Engineering" style="color:#808080">Telecommunication Engineering</option>
+                                        <option value="Environmental Engineering" style="color:#808080">Environmental Engineering</option>
+                                        <option value="Transportation Engineering" style="color:#808080">Transportation Engineering</option>
+                                    </select>
+                                    <font style="margin-left: -40px; color: #fe9783">
+                                        @Html.ValidationMessage("DEPARTMENT", new { @class = "msg-require" })
+                                    </font>
+
+                                </td>
+
+                                <td width="50%" style="margin-left: 0px; background-color: #303030;">
+                                    <h6 style="font-weight: lighter; padding-top: 0px; color: #c9c9c9; margin-left: 40px;">
+                                        Mobile:
+                                    </h6>
+
+                                    <input style="margin-left: 40px;" type="number" name="MOBILE" value="@(Model != null? Model.MOBILE:"")" class="form-control" id="text-box-normal" />
+                                    <font style="margin-left: 40px; color: #fe9783">
+                                        @Html.ValidationMessage("MOBILE", new { @class = "msg-require" })
+                                    </font>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+
+                                <td width="50%" style="margin-left: 0px; background-color: #303030;">
+
+                                    <h6 style="font-weight: lighter; color: #c9c9c9; margin-left: -50px;">
+                                        Industry:
+                                    </h6>
+
+                                    <input style="margin-left:-50px;" type="text" name="INDUSTRY" value="@(Model != null? Model.INDUSTRY:"")" class="form-control" id="text-box-normal" />
+                                    <font style="margin-left: -50px; color: #fe9783">
+                                        @Html.ValidationMessage("INDUSTRY", new { @class = "msg-require" })
+                                    </font>
+                                </td>
+
+                                <td width="50%" style="margin-left: 0px; background-color: #303030;">
+                                    <h6 style="font-weight: lighter; padding-top: 0px; color: #c9c9c9; margin-left: 40px;">
+                                        Country:
+                                    </h6>
+
+                                    <input style="margin-left: 40px;" type="text" name="COUNTRY" value="@(Model != null? Model.COUNTRY:"")" class="form-control" id="text-box-normal" />
+                                    <font style="margin-left: 40px; color: #fe9783">
+                                        @Html.ValidationMessage("COUNTRY", new { @class = "msg-require" })
+                                    </font>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+                                <td width="50%" style="margin-left: 0px; background-color: #303030;">
+
+                                    <h6 style="font-weight: lighter; color: #c9c9c9; margin-left: -50px;">
+                                        Educational Institution:
+                                    </h6>
+
+                                    <input style="margin-left:-50px;" type="text" name="EDUCATIONAL_INSTITUTION" value="@(Model != null? Model.EDUCATIONAL_INSTITUTION:"")" class="form-control" id="text-box-normal" />
+                                    <font style="margin-left: -50px; color: #fe9783">
+                                        @Html.ValidationMessage("EDUCATIONAL_INSTITUTION", new { @class = "msg-require" })
+                                    </font>
+                                </td>
+
+                                <td width="50%" style="margin-left: 0px; background-color: #303030;">
+                                    <h6 style="font-weight: lighter; padding-top: 0px; color: #c9c9c9; margin-left: 40px;">
+                                        Headline:
+                                    </h6>
+
+                                    <input style="margin-left:40px;" type="text" name="HEADLINE" value="@(Model != null? Model.HEADLINE:"")" class="form-control" id="text-box-normal" />
+                                    <font style="margin-left:40px; color:#fe9783">
+                                        @Html.ValidationMessage("HEADLINE", new { @class = "msg-require" })
+                                    </font>
+                                </td>
+                            </tr>
+
+                        </table>
+
+
+                        <br />
+                        <!-- <a href="/Home/SignUp" onMouseOver="this.style.color='#1bbdd6'"
+         onMouseOut="this.style.color='#fe9783'"
+         style="margin-left: 0px; color: #fe9783; text-decoration: none; margin-top: 10px; line-height: 4; ">Back to the previous page</a>-->
+                        <br />
+                       
+
+                        <div style="padding-top:10px; margin-left:0px">
+                            <!--<input type="submit" class="btn btn-success" id="button-glow" />-->
+                            <a href="javascript:$('form').submit();" id="button-glow" style=" filter: hue-rotate(180deg); pointer-events:none;" class="unamesuccess">Sign Up</a>
+
+                        </div>
+                        <br />
+
+
+                    </form>
+
+                    @*<br><br>
+
+                        <font id="word-mid-line"> OR </font><br /><br />
+                        <font> No account created?  &nbsp; </font> <a href="/Home/Login"
+                                                                      onMouseOver="this.style.color='#1bbdd6'"
+                                                                      onMouseOut="this.style.color='#fe9783'"
+                                                                      style="color: #fe9783; text-decoration: none;">Sign Up</a>*@
+
+
+                </div>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+</body>
+<script src="@Url.Content("~/Scripts/jquery-3.4.1.js")"></script>
+<script src="@Url.Content("~/Scripts/UserName_Validation.js")"></script>
+

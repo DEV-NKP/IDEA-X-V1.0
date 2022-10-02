@@ -1,0 +1,128 @@
+﻿
+@{
+    ViewBag.Title = "AddUserController";
+    Layout = "~/Views/Shared/_AdminDashboard.cshtml";
+
+}
+
+<link href="@Url.Content("~/Content/TextBoxEdit.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/ButtonFillGlow.css")" rel="stylesheet" type="text/css" />
+
+<body onload="checkuname(); emailcheck();">
+
+
+    <div class="row">
+        <div class="col-sm-9 main-content-scoll" style="background-color: #0f1011; ">
+
+            <h2 align="center"></h2>
+            <table border="0" style="height: 75vh; width: 100%; background-color: #0f1011;">
+                <tr>
+
+                    <td width="50%" align="center">
+
+
+
+                        <h4 style="width:300px; color: #b0acac; border-bottom:1px solid white; padding-bottom:15px;">Create an User Controller</h4>
+
+
+                        <span class="msg-require text-danger">
+                            @ViewBag.message
+
+                        </span>
+                        <br />
+                        <form action="" method="post" id="form">
+                            <h6 style="font-weight: lighter; padding-top: 10px; color: #c9c9c9; margin-left: -200px;">
+                                UserName:
+                            </h6>
+                            <input type="text" name="USERNAME" value="@(Model != null? Model.USERNAME:"")" class="form-control uname_box" id="text-box-normal" />
+
+                            <font style="color:#fe9783">
+                                @Html.ValidationMessage("USERNAME", new { @class = "msg-require uname-box-validation text-danger" })
+                            </font>
+
+                            <h6 style="font-weight: lighter; padding-top: 10px; color: #c9c9c9; margin-left: -240px;">
+                                Email:
+                            </h6>
+                            <input type="text" name="EMAIL" value="@(Model != null? Model.EMAIL:"")" class="form-control email_box" id="text-box-normal" />
+
+                            <font style="color:#fe9783">
+                                @Html.ValidationMessage("EMAIL", new { @class = "msg-require email-box-validation text-danger" })
+                            </font>
+
+                            <h6 style="font-weight: lighter; padding-top: 10px; color: #c9c9c9; margin-left: -200px;">
+                                Password:
+                            </h6>
+                            <input type="password" name="PASSWORD" value="@(Model != null? Model.PASSWORD:"")" class="form-control" id="text-box-normal" />
+                            @Html.ValidationMessage("PASSWORD", new { @class = "msg-require text-danger" })
+
+
+
+                            <br /><br />
+
+
+                            <div style="padding-top:5px;"> </div>
+                            <!--<input type="submit" class="btn btn-success" id="button-glow" />-->
+                            <a href="javascript:$('form').submit();" id="button-glow" style=" filter: hue-rotate(180deg); pointer-events:none;" class="unamesuccess emailsuccess ">Create</a>
+                            @*<input type="submit" value="Log In" id="button-glow" style="filter:hue-rotate(180deg);" />*@
+
+                        </form>
+                        <br><br>
+
+
+
+
+
+                    </td>
+
+
+                </tr>
+
+
+
+            </table>
+
+
+
+
+        </div>
+        <div class="col-sm-2 col-sm-offset-0 search-content">
+            <ul class="nav nav-pills nav-stacked search-bar">
+                <li>
+                    <a href="@Url.Action("ViewUserController","Admin")" style="padding: 2rem 1rem">
+                        <span class="row-no-gutters">
+                            <span class="col-sm-2">
+                                <i class="fa-solid fa-users">
+                                </i>
+                            </span>
+                            <span class="col-sm-offset-0">
+                                View UAC
+                            </span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("AddUserController","Admin")" style="padding: 2rem 1rem">
+                        <span class="row-no-gutters">
+                            <span class="col-sm-2">
+                                <i class="fa-solid fa-user-cog">
+                                </i>
+                            </span>
+                            <span class="col-sm-offset-0">
+                                Add UAC
+                            </span>
+                        </span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</body>
+
+<script src="@Url.Content("~/Scripts/jquery-3.4.1.js")"></script>
+<script src="@Url.Content("~/Scripts/Email_Validation_UAC.js")"></script>
+<script src="@Url.Content("~/Scripts/UserName_Validation_UAC.js")"></script>
+
+
+
+
