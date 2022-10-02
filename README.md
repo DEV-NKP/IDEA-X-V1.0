@@ -19,7 +19,9 @@ Thank you everyone.
 -------------------
 
  >> Any version of windows operating system which is compatible to run Microsoft Visual Studio.
+ 
  >> Microsoft Visual Studio 2019
+ 
  >> Microsoft SQL Server Management Studio
 
 --------------------------
@@ -39,19 +41,33 @@ Thank you everyone.
 ---------------------------
 
  >> Open "SQL Server Management Studio" and connect your device to server.
+ 
  >> Click on "New Query" option, paste the statement "CREATE DATABASE IDEA_X" and Execute it.
+ 
  >> Open "IDEA-X" file and copy the sql queries from "IDEA-X_Query.txt" file.
+ 
  >> Go to "SQL Server Management Studio", click on database "IDEA_X", Execute the sql queries.
+ 
  >> Connect your device to server and copy the server name.
+ 
  >> Open "RAW.sln" in Microsoft Visual Studio.
+ 
  >> Go to "View" and click on "Solution Explorer" option or only press "Ctrl+Alt+L".
+ 
  >> Open "Models" folder and click right button of "EntityFramework" folder.
+ 
  >> Select "New Item" of "Add" option.
+ 
  >> Open "Visual C#", select "Data", keep the default option and press "Add".
+ 
  >> Go to Next and select "New Connection".
+ 
  >> Paste the server name in the box, select database "IDEA_X" from options and press OK.
+ 
  >> After that paste "IDEA_XEntities" in the below box and press Next.
+ 
  >> Make sure you are checking the "Tables" option and press "Finish".
+ 
  >> Finally, IDEA-X is ready to Run. Click the run button to get access of "IDEA-X".
 
 
@@ -60,12 +76,19 @@ Thank you everyone.
 -----------------------
 
  >> First, make sure your screen size is '100%'.
+ 
  >> To explore IDEA-X, at first you must Sign up with proper information.
+ 
  >> For entering email, a valid email is required.
+ 
  >> To verify yourself you must enter the OTP.
+ 
  >> For mobile number, you have to give a valid mobile number. 
+ 
  >> You must fill all the required field.
+ 
  >> After Sign up, Log in to your profile and share Ideas!
+ 
  >> There are 3 different users: User, Admin & User Access controller(UAC).
 
    User :
@@ -95,7 +118,7 @@ Thank you everyone.
            3. Post Reports                 - All pending, investigating and closed reports are shown here.
           
          
- >> There are some other options for IDEA-X Users.
+ > There are some other options for IDEA-X Users.
 
    IDEA-X Options:
 
@@ -174,7 +197,7 @@ From this point onward, "IDEA-X" is introduced to share uniquer thoughts for eng
 ![REPORT_POST!](README_IMAGE/report_post.png)
 
 > If user mistakenly reports any post, he/she can revoke it.
-![REVOKE_POST!](README_IMAGE/revoke_post.png)
+![REVOKE_POST!](README_IMAGE/revoke.png)
 
 > The daily routine tracker is one of the unique features of IDEA-X. Get updated every day by keeping quick notes!
 ![TRACKER!](README_IMAGE/tracker.png)
@@ -201,7 +224,7 @@ From this point onward, "IDEA-X" is introduced to share uniquer thoughts for eng
 ![UAC!](README_IMAGE/uac.png)
 
 > Admin can ban any disturbing post. A red tag is marked to identify banned posts.
-![BAN_USER!](README_IMAGE/ban_user.png)
+![BAN_USER!](README_IMAGE/banned_post.jpg)
 
 > To know more about IDEA-X features visit About page.
 ![ABOUT!](README_IMAGE/about.png)
