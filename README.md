@@ -163,9 +163,9 @@ From this point onward, "IDEA-X" is introduced to share uniquer thoughts for eng
 	    Github	: https://github.com/Dipanwita-Saha+
          
 	 3. Anindra Das Bivas
-            Email	: 
-	    LinkedIn	: 
-	    Github	: 
+            Email	: bivasdas911@gmail.com
+	    LinkedIn	: https://www.linkedin.com/in/anindra-das-bivas-4aa0b523a/
+	    Github	: https://github.com/Anindra123
 
 
 ----------------------
